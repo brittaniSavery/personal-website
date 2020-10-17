@@ -1,5 +1,11 @@
-import {react as ResumeContent} from "../content/resume.md";
+import React from "react";
+import Layout from "../components/Layout";
+import { react as ResumeContent } from "../content/resume.md";
 
-export default function Resume() {
-    return <ResumeContent />
+export default function Resume(): JSX.Element {
+  return (
+    <Layout>
+      <ResumeContent />
+    </Layout>
+  );
 }

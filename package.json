@@ -5,19 +5,24 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && npm export",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint --ext .js,.ts,.tsx --quiet --fix"
   },
   "dependencies": {
+    "bulma": "^0.9.1",
     "next": "9.5.5",
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "sass": "^1.27.0"
   },
   "devDependencies": {
-    "@types/node": "^14.11.8",
-    "@types/react": "^16.9.52",
+    "@types/node": "^14.11.10",
+    "@types/react": "^16.9.53",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "@typescript-eslint/parser": "^4.4.1",
     "eslint": "^7.11.0",
-    "eslint-config-prettier": "^6.12.0",
+    "eslint-config-prettier": "^6.13.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.4",
     "frontmatter-markdown-loader": "^3.6.1",
     "prettier": "2.1.2",

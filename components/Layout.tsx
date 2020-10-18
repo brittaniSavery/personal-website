@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Navigation from "./Navigation";
+import Footer from "./Footer";
 
 type Props = {
   children: React.ReactNode;
@@ -8,7 +9,7 @@ type Props = {
 
 export default function Layout({ children }: Props): JSX.Element {
   return (
-    <div className="container">
+    <>
       <Head>
         <title>Brittani S Avery</title>
         <meta charSet="utf-8" />
@@ -33,8 +34,11 @@ export default function Layout({ children }: Props): JSX.Element {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <Navigation />
-      <main className="container">{children}</main>
-    </div>
+      <div className="container bsa-container">
+        <Navigation />
+        <main>{children}</main>
+      </div>
+      <Footer />
+    </>
   );
 }

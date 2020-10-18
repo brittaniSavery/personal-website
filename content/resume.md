@@ -112,10 +112,15 @@ University of Nebraska at Omaha | Omaha, NE
 
 ## Projects
 
-### Freelance & Open Source Developer
+### Freelance Developer
 
 2012–Present
 
 - Created websites for [HALLINS Corporation](https://www.hallinscorp.com), a non-profit organization with limited technical expertise
+
+### Open Source Contributor
+
+2017-Present
+
 - Designed website for a simulation basketball league, [SIBA](http://siba.averyincorporated.com), using React, Node.js, PHP, and AWS. Learn more about the SIBA project [here](/projects/siba).
 - Created database with authentication for users to manage their lineages for the collection game [Dragon Cave](http://dragcave.net) using Next.js, Bulma CSS framework, and MongoDB. Learn more about the Dragon Cave Lineage Database or DCLDB [here](/projects/dcldb).

@@ -10,6 +10,6 @@ This is the code for my personal website, [brittanisavery.com](https://brittanis
 - [Bulma CSS Framework](https://bulma.io/)
 - [Markdown-It](https://markdown-it.github.io/) + several plugins
 
-## References
+## 📖 References
 
 - [Next.js + Netlify Blog Template](https://github.com/wutali/nextjs-netlify-blog-template)

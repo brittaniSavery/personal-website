@@ -33,6 +33,7 @@ export default function Layout({ children }: Props): JSX.Element {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js" />
       </Head>
       <div className="container bsa-container">
         <Navigation />

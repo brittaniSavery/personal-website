@@ -1,8 +1,7 @@
 ---
 title: "Introduction of Me—Part 2: The Writer"
 slug: intro-of-me-the-writer
-date: 2020-06-10T15:00:00Z
-author: brittanisavery
+publishDate: 2020-06-10
 tags:
   - introduction
   - writer
@@ -12,7 +11,7 @@ thumbnail:
 
 My imagination has been brilliantly creative probably since birth. One of my parents' favorite story from my toddlerhood is how I entertained myself while in timeout. Apparently, I did not realize that it was a punishment. I took off my shoes and socks, placed the socks on my hands, and held conversations with my new sock friends. I was thoroughly entertained as well as my parents despite their choice of discipline failing.
 
-Playing secret agent in the living room, traveling through portals with ancient keys at my grandmother’s house, and creating soap operas with my stuffed animals and toys continued to feed my imagination throughout the years. Eventually, the stories found their way onto paper. The inspiration for one story I wrote in fifth grade came from anthropomorphic characters based on a How-To-Draw book. I actually never followed the directions of how to draw them. I just traced the characters and then gave them personalities based on their appearances. :woman_shrugging:
+Playing secret agent in the living room, traveling through portals with ancient keys at my grandmother’s house, and creating soap operas with my stuffed animals and toys continued to feed my imagination throughout the years. Eventually, the stories found their way onto paper. The inspiration for one story I wrote in fifth grade came from anthropomorphic characters based on a How-To-Draw book. I actually never followed the directions of how to draw them. I just traced the characters and then gave them personalities based on their appearances. :shrug:
 
 Prior to entering high school, I didn’t share my writing often, usually only cringey poems dedicated to crushes. While my family always encouraged me to express myself, they thoroughly admitted not being very creative in a literary sense. I didn’t have a safe place to share my work or experiences with other writers. Thankfully, I found two places where I could express myself and further develop my writing skills and creativity: the Fine Lines Writing Club and various online role-playing forums.
 

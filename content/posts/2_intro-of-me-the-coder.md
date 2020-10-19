@@ -1,8 +1,7 @@
 ---
 title: "Introduction of Me—Part 1: The Coder"
 slug: intro-of-me-the-writer
-date: 2020-05-19T15:00:00Z
-author: brittanisavery
+publishDate: 2020-05-19
 tags:
   - introduction
   - coder
@@ -18,7 +17,7 @@ I don't remember my first created website. One of my earliest had to be my Black
 
 Using the tools I had on hand, I kept playing around with websites and graphics. I even created multiple websites with different personas or topics. One of my favorites was Brown Eyes Looking, a website based around the pixel dolls I had created throughout the years.
 
-![Home Page of Brown Eyes Looking, website created in my youth featuring my pixel dolls](homepage.jpg)
+![Home Page of Brown Eyes Looking, website created in my youth featuring my pixel dolls](images/posts/homepage.jpg)
 
 For my senior year in high school, I decided to take an actual computer programming class. My memory is fuzzy as to exactly why, but I think it was suggested by a counselor as a complement to the computer graphics class I wanted to take.
 
@@ -26,7 +25,7 @@ Mr. Thyden, my programming teacher, noticed a natural talent within me and invit
 
 Since I actually enjoyed coding, I took his advice and did some research on the industry. I saw that the demand for developers would be high for years and the local university, UNO, had a very good computer science program. Getting a full-ride scholarship also helped in cementing my choice of university. So, in August 2008, I started college with a major in computer science and never looked back.
 
-I have been in all sorts of different sub-industries (manufacturing, transportation, insurance, etc.) and I have worked on all parts of the stack, meaning I can build a complete website and manage any databases associated with it. If you have any website questions or projects you need a hand in, I do freelance work. :blush:
+I have been in all sorts of different sub-industries (manufacturing, transportation, insurance, etc.) and I have worked on all parts of the stack, meaning I can build a complete website and manage any databases associated with it. If you have any website questions or projects you need a hand in, I do freelance work. :smile:
 
 Would I ever change occupations? Probably not, unless it was to be a full-time writer, a **well-paid** full-time writer. I'm already a starving artist when only counting my book sales.
 

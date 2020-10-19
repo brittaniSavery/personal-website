@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && npm export",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "eslint --ext .js,.ts,.tsx --quiet --fix"
   },
@@ -16,6 +16,7 @@
     "sass": "^1.27.0"
   },
   "devDependencies": {
+    "@types/markdown-it-emoji": "^1.4.0",
     "@types/node": "^14.11.10",
     "@types/react": "^16.9.53",
     "@typescript-eslint/eslint-plugin": "^4.4.1",
@@ -27,6 +28,10 @@
     "frontmatter-markdown-loader": "^3.6.1",
     "husky": "^4.3.0",
     "lint-staged": "^10.4.2",
+    "markdown-it": "^12.0.0",
+    "markdown-it-attrs": "^3.0.3",
+    "markdown-it-emoji": "^2.0.0",
+    "markdown-it-footnote": "^3.0.2",
     "prettier": "2.1.2",
     "typescript": "^4.0.3"
   },

@@ -1,8 +1,7 @@
 ---
 title: Juggling Projects, Managing Guilt
 slug: juggling-projects-managing-guilt
-date: 2020-09-17T15:00:00Z
-author: brittanisavery
+publishDate: 2020-09-17
 tags:
   - coder
   - writer
@@ -24,4 +23,4 @@ While my desire to type the sequel has basically vanished, my desire to write th
 
 I originally had the goal of finishing the first draft by the end of this year. At this rate, I have no idea if that will happen. I'm going to keep trucking along in writing the sequel as well as coding my projects. Maybe one creative process with bleed into the other.
 
-How have you all been during these turbulent months? Is your motivation or inspiration zapped? If so, you’re not alone and hopefully soon, we’ll be able to get out of this blah mood together. :thumbsup:
+How have you all been during these turbulent months? Is your motivation or inspiration zapped? If so, you’re not alone and hopefully soon, we’ll be able to get out of this blah mood together. :thumbs_up:

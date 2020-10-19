@@ -1,8 +1,7 @@
 ---
 title: A Definition of Creativity
 slug: a-definition-of-creativity
-date: 2020-06-17T15:00:00Z
-author: brittanisavery
+publishDate: 2020-06-17
 tags:
   - coder
 summary: Can creativity be more than drawing and singing? This post explores how imagination and its limits affect what's considered a creative work.

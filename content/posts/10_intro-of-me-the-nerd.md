@@ -1,7 +1,7 @@
 ---
 title: "Introduction of Me—Part 4: The Nerd"
 slug: intro-of-me-the-nerd
-date: 2020-09-02T15:00:00Z
+publishDate: 2020-09-02
 author: brittanisavery
 tags:
   - introduction

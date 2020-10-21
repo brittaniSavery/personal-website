@@ -5,7 +5,7 @@ publishDate: 2020-06-17
 tags:
   - coder
 summary: Can creativity be more than drawing and singing? This post explores how imagination and its limits affect what's considered a creative work.
-thumbnail:
+thumbnail: creative.jpg
 ---
 
 When someone calls another "creative," what specific skills come to mind? For a lot of people, creativity is first and foremost aligned with the traditional visual arts such as drawing and sculpting. Others think of performing arts like singing and dancing before anything else. While visual and performing arts are indeed creativity, they are but a small beginning. Creativity is "the ability to produce or use original and unusual ideas" or "the use of the imagination or original ideas." One's imagination is only limited by oneself. An experience from my software development career clearly demonstrates this.

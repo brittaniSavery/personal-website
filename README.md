@@ -13,3 +13,4 @@ This is the code for my personal website, [brittanisavery.com](https://brittanis
 ## 📖 References
 
 - [Next.js + Netlify Blog Template](https://github.com/wutali/nextjs-netlify-blog-template)
+- [How to Make a Markdown Blog With Next.js by Jose Felix](https://jfelix.info/blog/how-to-make-a-static-blog-with-next-js)

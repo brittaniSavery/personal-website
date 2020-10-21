@@ -5,7 +5,7 @@ publishDate: 2020-07-01
 tags:
   - writer
 summary: In March, I had my first author interview, which was hosted by VS Holmes from the Amphibian Press Podcast! It was a fun conversation.
-thumbnail:
+thumbnail: author-interview.jpg
 ---
 
 I have gone through plenty of interviews, especially in the last few months. With the loss of my previous job, I was interviewing with several companies two or three times a week. I do not recommend this. Even if you are desperate for income, I strongly advise breaks. Interviewing is tiring work.

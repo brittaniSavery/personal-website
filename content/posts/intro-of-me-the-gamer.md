@@ -6,7 +6,7 @@ tags:
   - introduction
   - gamer
 summary: I've been working on a new coding project and ran into some issues when using Next.js and Material UI but thankfully found another solution using the CSS framework, Bulma.
-thumbnail: images/posts/header8.jpg
+thumbnail: intro-gamer.jpg
 ---
 
 Video games have only been recently pushed into the mainstream, but they have been a major part of my life. During my early childhood, my dad was heavily into video games. My first gaming console was the Super Nintendo Entertainment System, or SNES. My cousins, siblings, and I would spend hours playing Super Mario World, Super Mario World 2: Yoshi's Island, Donkey Kong Country, and Tiny Toon Adventures: Wacky Sports Challenge. Yoshi's Island was ridiculously hard and the crying baby Mario always made me so frantic. Donkey Kong Country was my favorite. Awesome music, funny characters, and mine kart mania, what more can a gamer ask for?

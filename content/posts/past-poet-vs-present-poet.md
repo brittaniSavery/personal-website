@@ -1,11 +1,10 @@
 ---
 title: Past Poet vs Present Poet
-slug: past-poet-vs-present-poet
 publishDate: 2020-09-30
 tags:
   - writer
 summary: Having written poetry for 18 years, my skills as a poet have improved greatly. I compare some of my work with earlier versions of itself.
-thumbnail:
+thumbnail: jackets.jpg
 ---
 
 In between starting a new job, supporting the web design needs of a local non-profit, [HALLINS Corporation](https://www.hallinscorp.com), and even dealing with a surprise paperback purchase (which was awesome once I realized the email wasn't spam :sweat_smile:), I've haven't had much time to write for me. Granted, I have not been the most inspired to write creatively, as mentioned in my last post. However, I decided to open up the file where I keep all my poetry, mainly to fix some formatting issues. The seemingly absent-minded task transformed into a trip into my past as I reminisced on the topics, styles, and quality of my poetry.

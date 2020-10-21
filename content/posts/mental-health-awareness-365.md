@@ -5,7 +5,7 @@ publishDate: 2020-05-26
 tags:
   - personal
 summary: May is Mental Health Awareness Month and while I am glad that mental health gains some more exposure during the month, it is important throughout the entire year. I detail how common mental illness is and how simple actions can help those who suffer.
-thumbnail:
+thumbnail: how-are-you.jpg
 ---
 
 May is Mental Health Awareness Month and all around social media, one can see various corporations, celebrities, and influencers posting about the importance of mental health. But as soon as May ends, most of the conversations stop. The next big holiday or theme becomes the new focal point.

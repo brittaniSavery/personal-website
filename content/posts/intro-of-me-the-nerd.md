@@ -1,12 +1,11 @@
 ---
 title: "Introduction of Me—Part 4: The Nerd"
-slug: intro-of-me-the-nerd
 publishDate: 2020-09-02
 author: brittanisavery
 tags:
   - introduction
 summary: I've been a nerd for years and this post gives a brief introduction to that side of my personality.
-thumbnail:
+thumbnail: flair-pens.jpg
 ---
 
 Nerd was once an insult of high disregard. Glasses, braces, expertise in math and science, consumer of all books fantasy and science fiction. That description fitted me perfectly during my youth and while I wasn't always the first to accept it, I have been a part of nerd-dom pretty much since 7th grade.

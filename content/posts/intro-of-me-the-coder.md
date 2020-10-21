@@ -6,7 +6,7 @@ tags:
   - introduction
   - coder
 summary: "In the Introduction of Me Series—Part 1: The Coder, I will discuss how my background led me to become a software engineer, i.e. a coder."
-thumbnail:
+thumbnail: intro-code.jpg
 ---
 
 In 2012, I graduated with a Bachelor of Science in Computer Science from the University of Nebraska at Omaha (UNO), specializing in Internet Technologies. Basically, that means that I have a piece of paper that says I know how to make computers do stuff. I didn't really need that as proof for myself; I've been working with technology since childhood.

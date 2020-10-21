@@ -3,8 +3,8 @@ const md = require("markdown-it")({ html: true, xhtmlOut: true });
 const mdEmoji = require("markdown-it-emoji/bare");
 const mdFootnote = require("markdown-it-footnote");
 const mdAttrs = require("markdown-it-attrs");
-const { default: emojiDefinitions } = require("./lib/emoji-definitions");
-const { default: emojiShortcuts } = require("./lib/emoji-shortcuts");
+const emojiDefinitions = require("./lib/emoji-definitions");
+const emojiShortcuts = require("./lib/emoji-shortcuts");
 
 module.exports = {
   webpack: (cfg) => {
@@ -25,7 +25,7 @@ module.exports = {
           md.renderer.rules.emoji = function (token, idx) {
             return (
               '<span class="iconify" data-icon="' +
-              token[idx].markup +
+              token[idx].content +
               '"></span>'
             );
           };

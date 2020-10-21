@@ -5,7 +5,7 @@ publishDate: 2020-06-03
 tags:
   - writer
 summary: Sometimes the motivation of a creative person disappears out of nowhere. Here is a recent personal experience and how none should worry if inspiration is a little unreliable.
-thumbnail:
+thumbnail: no-muse.jpg
 ---
 
 I'm currently finishing the first draft of my second novel, the sequel to Element Unknown, also known as Book II. I have the entire story written. I am rewriting certain sections due to changes made earlier in the book and timeline issues. :sweat: I was making good progress, working little by little after the day's responsibilities were done. I was excited to write and see what happens next. I wanted to finish it, print it, and read it for myself from start to finish.

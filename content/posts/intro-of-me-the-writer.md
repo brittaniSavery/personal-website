@@ -6,7 +6,7 @@ tags:
   - introduction
   - writer
 summary: My imagination has played a huge part in my growth as a writer. In Part 2 of the Introduction of Me Series, I'll describe how the stories in my head found an exit.
-thumbnail:
+thumbnail: intro-writer.jpg
 ---
 
 My imagination has been brilliantly creative probably since birth. One of my parents' favorite story from my toddlerhood is how I entertained myself while in timeout. Apparently, I did not realize that it was a punishment. I took off my shoes and socks, placed the socks on my hands, and held conversations with my new sock friends. I was thoroughly entertained as well as my parents despite their choice of discipline failing.

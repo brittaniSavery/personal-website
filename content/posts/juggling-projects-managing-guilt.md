@@ -1,12 +1,11 @@
 ---
 title: Juggling Projects, Managing Guilt
-slug: juggling-projects-managing-guilt
 publishDate: 2020-09-17
 tags:
   - coder
   - writer
 summary: While my inspiration for coding has been free-flowing, my writing muse has disappeared. A comic perfectly portrays my feelings on my lack of writing.
-thumbnail:
+thumbnail: big-project-comic.jpg
 ---
 
 My personal-coding-project kick is still in full swing! Currently, I have been focusing on one project, the lineage database for my digital dragons (Dragon Cave Lineage Database or DCLDB for short). It’s actually up and running at [dc-lineage-db.vercel.app](https://dc-lineage-db.vercel.app) if you're curious. I recently completed authentication with [Swoop](https://swoopnow.com/) and [Passport](http://www.passportjs.org/docs/authenticate/) (which I might do a blog about later) as well as the ability to add and view lineages. Im still working out the kinks on searching, mainly displaying the results. Tables are hard to get right, especially when trying to make a site mobile-friendly. :sweat:

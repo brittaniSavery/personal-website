@@ -44,6 +44,6 @@ I found Bulma, a free, open source CSS framework based on Flexbox. It was includ
 
 Since it has been easier to work with Bulma, I’ve been able to change the colors and fiddle with the wording a bit, but here's the home page in the two different styling frameworks.
 
-![A comparison of the home page using the Material UI Framework and the Bulma Framework](compare_homepage.jpg)
+![A comparison of the home page using the Material UI Framework and the Bulma Framework](/images/posts/materialui-bulma-compare.jpg)
 
 If you're a non-coder and made it to the end, thank you for reading my complaints of software development. Let me know which home page you like. Until next time!

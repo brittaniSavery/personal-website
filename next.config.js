@@ -24,7 +24,7 @@ module.exports = {
             .use(mdAttrs);
           md.renderer.rules.emoji = function (token, idx) {
             return (
-              '<span class="iconify" data-icon="' +
+              '<span className="iconify" data-icon="' +
               token[idx].content +
               '"></span>'
             );

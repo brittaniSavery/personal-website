@@ -5,34 +5,21 @@ import dynamic from "next/dynamic";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Layout from "../../components/Layout";
 
-type FrontMatter = {
-  title: string;
-  publishDate: Date;
-  tags: Array<string>;
-  summary: string;
-  thumbnail: string;
-};
-
-type Props = {
-  attributes: FrontMatter;
-  slug: string;
-};
-
-export default function Post({ attributes, slug }: Props): JSX.Element {
+export default function Post({ title, slug }: PostDetails): JSX.Element {
   const Content = dynamic(() =>
     import(`../../content/posts/${slug}.md`).then((mod) => mod.react)
   );
 
   return (
     <Layout>
-      <h1>{attributes.title}</h1>
+      <h1>{title}</h1>
       <Content />
     </Layout>
   );
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const files = fs.readdirSync("content/posts");
+  const files = fs.readdirSync(`${process.cwd()}/content/posts`);
 
   const paths = files.map((filename) => ({
     params: {
@@ -51,7 +38,7 @@ export const getStaticProps: GetStaticProps = async ({ params: { slug } }) => {
 
   return {
     props: {
-      attributes,
+      ...attributes,
       slug,
     },
   };

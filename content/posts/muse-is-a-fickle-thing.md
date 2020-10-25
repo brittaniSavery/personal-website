@@ -1,6 +1,5 @@
 ---
 title: Muse is a Fickle Thing
-slug: muse-is-a-fickle-thing
 publishDate: 2020-06-03
 tags:
   - writer

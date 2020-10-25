@@ -1,6 +1,5 @@
 ---
 title: A Definition of Creativity
-slug: a-definition-of-creativity
 publishDate: 2020-06-17
 tags:
   - coder

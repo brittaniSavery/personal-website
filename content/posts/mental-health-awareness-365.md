@@ -1,6 +1,5 @@
 ---
 title: Mental Health Awareness 365
-slug: mental-health-awareness-365
 publishDate: 2020-05-26
 tags:
   - personal

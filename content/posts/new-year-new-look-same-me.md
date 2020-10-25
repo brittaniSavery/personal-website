@@ -5,7 +5,7 @@ tags:
   - introduction
 summary: I am a multifaceted woman, yet my website only reflected one side of me. I decided to change that. Here's the why and how of that process.
 thumbnail: new-me.jpg
-thumbnail-alt: A comparison of my old profile picture with long braids and no glasses to my new profile picture with short locs and glasses
+thumbnailAlt: A comparison of my old profile picture with long braids and no glasses to my new profile picture with short locs and glasses
 ---
 
 Welcome to the new and improved website of Brittani S Avery! :tada: With this comes a new design, a simplified menu, and a weekly blog.

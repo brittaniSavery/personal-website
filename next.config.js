@@ -1,8 +1,16 @@
 /* eslint @typescript-eslint/no-var-requires: "off" */
-const md = require("markdown-it")({ html: true, xhtmlOut: true });
-const mdEmoji = require("markdown-it-emoji/bare");
+const md = require("markdown-it")({
+  html: true,
+  xhtmlOut: true,
+});
 const mdFootnote = require("markdown-it-footnote");
 const mdAttrs = require("markdown-it-attrs");
+
+const mdPrism = require("markdown-it-prism");
+require("prismjs/components/prism-jsx");
+require("prismjs/components/prism-jsx");
+
+const mdEmoji = require("markdown-it-emoji/bare");
 const emojiDefinitions = require("./lib/emoji-definitions");
 const emojiShortcuts = require("./lib/emoji-shortcuts");
 
@@ -15,13 +23,17 @@ module.exports = {
         mode: ["react-component"],
         react: { root: "content bsa-margin" },
         markdown: (body) => {
-          md.use(mdEmoji, {
+          const emojiConfig = {
             defs: emojiDefinitions,
             shortcuts: emojiShortcuts,
             enabled: [],
-          })
+          };
+
+          md.use(mdEmoji, emojiConfig)
             .use(mdFootnote)
-            .use(mdAttrs);
+            .use(mdAttrs)
+            .use(mdPrism);
+
           md.renderer.rules.emoji = function (token, idx) {
             return (
               '<span className="iconify" data-icon="' +

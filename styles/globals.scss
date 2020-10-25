@@ -37,6 +37,7 @@ $content-blockquote-background-color: findLightColor($bsa-light-gold);
 }
 
 $code: $bsa-dark-blue;
+$pre-background: none;
 
 //bsa custom classes
 
@@ -62,4 +63,14 @@ $code: $bsa-dark-blue;
   height: 1.25em;
 }
 
-@import "../node_modules/bulma/bulma.sass";
+@import "../node_modules/prismjs/themes/prism-twilight.css";
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/components/card.sass";
+@import "../node_modules/bulma/sass/elements/content.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/image.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";

@@ -1,6 +1,5 @@
 ---
 title: My First Author Interview
-slug: my-first-author-interview
 publishDate: 2020-07-01
 tags:
   - writer

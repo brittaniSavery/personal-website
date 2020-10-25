@@ -1,6 +1,5 @@
 ---
-title: "Next.js & Material UI: A Disagreeable Pair"
-slug: intro-of-me-the-gamer
+title: "Introduction of Me—Part 3: The Gamer"
 publishDate: 2020-07-15
 tags:
   - introduction

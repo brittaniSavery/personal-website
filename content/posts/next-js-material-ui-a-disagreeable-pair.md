@@ -1,11 +1,10 @@
 ---
 title: "Next.js & Material UI: A Disagreeable Pair"
-slug: next-js-material-ui-a-disagreeable-pair
 publishDate: 2020-07-22
 tags:
   - coder
 summary: I've been working on a new coding project and ran into some issues when using Next.js and Material UI but thankfully found another solution using the CSS framework, Bulma.
-thumbnail:
+thumbnail: nextjs-material-ui.jpg
 ---
 
 I have been on a personal-coding-project kick lately. Two projects are currently in the works and one is muddling about in my mind. The project discussed in this blog post will be a database for the lineages of my digital dragons from the site [DragCave.net](https://dragcave.net/). It is as nerdy as it sounds. You collect pixel dragons and can breed them together to create all sorts of lines and combinations. The reasoning for this project is that I was tired of using a Google Sheet that took forever and a day to load. Also, searching for anything more complex than name or breed was hard.

@@ -1,6 +1,5 @@
 ---
 title: "Introduction of Me—Part 1: The Coder"
-slug: intro-of-me-the-writer
 publishDate: 2020-05-19
 tags:
   - introduction

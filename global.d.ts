@@ -7,4 +7,5 @@ type PostDetails = {
   publishDate: Date;
   tags: string[];
   thumbnail: string;
+  thumbnailAlt: string;
 };

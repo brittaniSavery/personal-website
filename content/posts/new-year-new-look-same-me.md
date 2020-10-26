@@ -14,7 +14,7 @@ You may be wondering why I decided to make all these changes in the first place.
 
 The catalyst for the changes was a photo, specifically a selfie from a special (and virtual due to COVID-19) event, the annual commemoration of Jesus Christ’s sacrifice. My sister had done my makeup, creating a beautiful sunset effect around my eyes, and my new glasses gave me quite the sophisticated look. This latest photo was much more reflective of my appearance and personality than my current professional photo. This got me thinking if my website could give a more accurate picture of me.
 
-![A feather and the initials 'BSA' between greater-than and less-than symbols, the Brittani S Avery logo](../images/logo-initials.svg) {.is-pulled-left}
+![A feather and the initials 'BSA' between greater-than and less-than symbols, the Brittani S Avery logo](/images/logo-initials.svg) {.is-pulled-left}
 
 I started with the logo. I wanted to combine two big parts of my life: writing and coding. Many associate writing with a book, a notebook, a pen—or better yet, a feather pen! Thus, one part of my logo was complete. The second part comes from a common symbol used to represent a code snippet, `</>`. Also, html tags have the following format: `<example>random words</example>`. So, I decided to replace the slash with the feather pen and use my initials to create my new logo.
 

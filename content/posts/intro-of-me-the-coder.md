@@ -16,7 +16,7 @@ I don't remember my first created website. One of my earliest had to be my Black
 
 Using the tools I had on hand, I kept playing around with websites and graphics. I even created multiple websites with different personas or topics. One of my favorites was Brown Eyes Looking, a website based around the pixel dolls I had created throughout the years.
 
-![Home Page of Brown Eyes Looking, website created in my youth featuring my pixel dolls](images/posts/homepage.jpg)
+![Home Page of Brown Eyes Looking, website created in my youth featuring my pixel dolls](/images/posts/brown-eyes-looking.jpg) {.has-text-centered}
 
 For my senior year in high school, I decided to take an actual computer programming class. My memory is fuzzy as to exactly why, but I think it was suggested by a counselor as a complement to the computer graphics class I wanted to take.
 

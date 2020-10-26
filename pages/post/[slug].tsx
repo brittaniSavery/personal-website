@@ -1,19 +1,15 @@
 import React from "react";
 import fs from "fs";
-import dynamic from "next/dynamic";
 
 import { GetStaticPaths, GetStaticProps } from "next";
 import Layout from "../../components/Layout";
+import MarkdownParser from "../../components/MarkdownParser";
 
-export default function Post({ title, slug }: PostDetails): JSX.Element {
-  const Content = dynamic(() =>
-    import(`../../content/posts/${slug}.md`).then((mod) => mod.react)
-  );
-
+export default function Post({ title, content }: PostDetails): JSX.Element {
   return (
     <Layout>
       <h1>{title}</h1>
-      <Content />
+      <MarkdownParser content={content} />
     </Layout>
   );
 }
@@ -34,12 +30,14 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params: { slug } }) => {
-  const { attributes } = await import("../../content/posts/" + slug + ".md");
+  const { attributes, html } = await import(
+    "../../content/posts/" + slug + ".md"
+  );
 
   return {
     props: {
       ...attributes,
-      slug,
+      content: html,
     },
   };
 };

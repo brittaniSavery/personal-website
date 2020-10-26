@@ -22,6 +22,7 @@ $primary: $bsa-light-blue;
 $danger: $bsa-red;
 
 $text: $bsa-dark-blue;
+$body-weight: $weight-medium;
 $link: $bsa-gold;
 $link-visited: $bsa-bright-blue;
 
@@ -67,6 +68,7 @@ $pre-background: none;
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
 @import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/helpers/_all.sass";
 @import "../node_modules/bulma/sass/layout/_all.sass";
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/components/card.sass";

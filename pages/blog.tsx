@@ -1,6 +1,7 @@
 import React from "react";
 import fs from "fs";
 import { GetStaticProps } from "next";
+import Link from "next/link";
 import Layout from "../components/Layout";
 import PostCard from "../components/PostCard";
 
@@ -16,7 +17,11 @@ export default function BlogList({ posts }: Props): JSX.Element {
         <div className="columns is-multiline">
           {posts.map((post) => (
             <div key={post.title} className="column is-half">
-              <PostCard post={post} />
+              <Link href={`/post/${post.slug}`}>
+                <a>
+                  <PostCard post={post} />
+                </a>
+              </Link>
             </div>
           ))}
         </div>
@@ -39,7 +44,7 @@ export const getStaticProps: GetStaticProps = async () => {
   posts.sort((a: PostDetails, b: PostDetails) => {
     const aDate = new Date(a.publishDate);
     const bDate = new Date(b.publishDate);
-    return aDate.valueOf() - bDate.valueOf();
+    return bDate.valueOf() - aDate.valueOf();
   });
 
   return { props: { posts: posts } };

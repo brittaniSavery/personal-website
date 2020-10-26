@@ -1,11 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { react as HomeContent } from "../content/home.md";
+import MarkdownParser from "../components/MarkdownParser";
+import { html as home } from "../content/home.md";
 
 export default function Home(): JSX.Element {
   return (
     <Layout>
-      <HomeContent />
+      <MarkdownParser content={home} />
     </Layout>
   );
 }

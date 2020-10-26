@@ -3,7 +3,6 @@ const md = require("markdown-it")({
   html: true,
   xhtmlOut: true,
 });
-const mdFootnote = require("markdown-it-footnote");
 const mdAttrs = require("markdown-it-attrs");
 
 const mdPrism = require("markdown-it-prism");
@@ -20,8 +19,6 @@ module.exports = {
       test: /\.md$/,
       loader: "frontmatter-markdown-loader",
       options: {
-        mode: ["react-component"],
-        react: { root: "content bsa-margin" },
         markdown: (body) => {
           const emojiConfig = {
             defs: emojiDefinitions,
@@ -29,15 +26,13 @@ module.exports = {
             enabled: [],
           };
 
-          md.use(mdEmoji, emojiConfig)
-            .use(mdFootnote)
-            .use(mdAttrs)
-            .use(mdPrism);
+          md.use(mdEmoji, emojiConfig).use(mdAttrs).use(mdPrism);
 
-          md.renderer.rules.emoji = function (token, idx) {
+          //change emoji rendering
+          md.renderer.rules.emoji = function (tokens, idx) {
             return (
-              '<span className="iconify" data-icon="' +
-              token[idx].content +
+              '<span class="iconify" data-icon="' +
+              tokens[idx].content +
               '"></span>'
             );
           };

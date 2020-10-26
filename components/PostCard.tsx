@@ -1,5 +1,5 @@
-import Link from "next/link";
 import React from "react";
+import { getPublishDateDisplay } from "../lib/post";
 
 type Props = {
   post: PostDetails;
@@ -12,11 +12,8 @@ export default function PostCard({ post }: Props): JSX.Element {
         <img src={`/images/posts/${post.thumbnail}`} alt={post.thumbnailAlt} />
       </div>
       <div className="card-content">
-        <Link href={`/post/${post.slug}`}>
-          <a>
-            <h2 className="subtitle">{post.title}</h2>
-          </a>
-        </Link>
+        <h2>{post.title}</h2>
+        <p>{getPublishDateDisplay(post.publishDate)}</p>
         <p>{post.summary}</p>
       </div>
     </div>

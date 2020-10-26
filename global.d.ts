@@ -1,4 +1,5 @@
 declare module "*.md";
+declare module "markdown-it-attrs";
 
 type PostDetails = {
   slug: string;
@@ -8,4 +9,5 @@ type PostDetails = {
   tags: string[];
   thumbnail: string;
   thumbnailAlt: string;
+  content: string;
 };

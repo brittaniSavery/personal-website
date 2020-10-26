@@ -18,8 +18,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "lib/emoji-definitions.js",
-    "lib/emoji-shortcuts.js"
+    "lib/emoji-definitions.ts",
+    "lib/emoji-shortcuts.ts"
   ],
   "exclude": ["node_modules"]
 }

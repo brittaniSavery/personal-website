@@ -12,19 +12,17 @@ type Props = {
 export default function BlogList({ posts }: Props): JSX.Element {
   return (
     <Layout>
-      <div className="content bsa-margin">
-        <h1>Blog</h1>
-        <div className="columns is-multiline">
-          {posts.map((post) => (
-            <div key={post.title} className="column is-half">
-              <Link href={`/post/${post.slug}`}>
-                <a>
-                  <PostCard post={post} />
-                </a>
-              </Link>
-            </div>
-          ))}
-        </div>
+      <h1>Blog</h1>
+      <div className="columns is-multiline">
+        {posts.map((post) => (
+          <div key={post.title} className="column is-half">
+            <Link href={`/post/${post.slug}`}>
+              <a>
+                <PostCard post={post} />
+              </a>
+            </Link>
+          </div>
+        ))}
       </div>
     </Layout>
   );

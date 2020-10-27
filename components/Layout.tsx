@@ -37,7 +37,7 @@ export default function Layout({ children }: Props): JSX.Element {
       </Head>
       <div className="container bsa-container">
         <Navigation />
-        <main>{children}</main>
+        <main className="content bsa-margin">{children}</main>
       </div>
       <Footer />
     </>

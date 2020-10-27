@@ -11,7 +11,7 @@ May is Mental Health Awareness Month and all around social media, one can see va
 
 Mental health complications have affected me personally, not just in some specific month out of the year but many months in many years. Eventually after getting professional help, I was diagnosed with chronic depression, allowing me to finally put a name to the nothingness I felt on a daily basis.
 
-I know that my situation is not unique. A study from 2017 estimates that 792 million people lived with a mental health disorder during that year, which is slightly more than one in ten people globally[^source]. I can only imagine that number has gone up in recent years, especially given the current global pandemic. I look forward to the near future of when no one will say, "I am sick." (Isaiah 33:24) But until that day, there are little things that anyone can do to help those affected by dealing with mental illness. These can be done at any time, not only during Mental Health Awareness Month.
+I know that my situation is not unique. A study from 2017 estimates that 792 million people lived with a mental health disorder during that year, which is slightly more than one in ten people globally\*. I can only imagine that number has gone up in recent years, especially given the current global pandemic. I look forward to the near future of when no one will say, "I am sick." (Isaiah 33:24) But until that day, there are little things that anyone can do to help those affected by dealing with mental illness. These can be done at any time, not only during Mental Health Awareness Month.
 
 How you can help:
 
@@ -22,4 +22,4 @@ How you can help:
 
 Stay healthy. Stay safe. Until next time! :wave:
 
-[^source]: Hannah Ritchie and Max Roser (2018) - "Mental Health". Published online at OurWorldInData.org. Retrieved from: [https://ourworldindata.org/mental-health](https://ourworldindata.org/mental-health)
+\*Hannah Ritchie and Max Roser (2018) - "Mental Health". Published online at OurWorldInData.org. Retrieved from: [https://ourworldindata.org/mental-health](https://ourworldindata.org/mental-health)

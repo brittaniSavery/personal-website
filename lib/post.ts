@@ -1,3 +1,5 @@
+export const IMG_DIRECTORY = "/images/posts";
+
 const months: string[] = [
   "Jan",
   "Feb",

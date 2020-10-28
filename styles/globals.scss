@@ -57,6 +57,10 @@ $pre-background: none;
   min-height: calc(100vh - 6rem);
 }
 
+.bsa-card {
+  height: 100%;
+}
+
 //iconify
 
 .iconify {
@@ -70,6 +74,7 @@ $pre-background: none;
 @import "../node_modules/bulma/sass/grid/_all.sass";
 @import "../node_modules/bulma/sass/helpers/_all.sass";
 @import "../node_modules/bulma/sass/layout/_all.sass";
+@import "./bulma-tags.scss"; //same logic as bulma tags just separated to avoid conflict with prism classes
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/components/card.sass";
 @import "../node_modules/bulma/sass/elements/content.sass";

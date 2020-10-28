@@ -1,8 +1,7 @@
 import React from "react";
-import ReactHtmlParser from "react-html-parser";
 
 type Props = { content: string };
 
 export default function MarkdownParser({ content }: Props): JSX.Element {
-  return <>{ReactHtmlParser(content)}</>;
+  return <div dangerouslySetInnerHTML={{ __html: content }} />;
 }

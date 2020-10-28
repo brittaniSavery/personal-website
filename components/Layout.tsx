@@ -35,7 +35,7 @@ export default function Layout({ children }: Props): JSX.Element {
         <link rel="manifest" href="/site.webmanifest" />
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js" />
       </Head>
-      <div className="container bsa-container">
+      <div className="container is-max-desktop bsa-container">
         <Navigation />
         <main className="content bsa-margin">{children}</main>
       </div>

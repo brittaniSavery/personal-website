@@ -6,7 +6,7 @@ const md = require("markdown-it")({
 const mdAttrs = require("markdown-it-attrs");
 
 const mdPrism = require("markdown-it-prism");
-require("prismjs/components/prism-jsx");
+require("prismjs/components/prism-javascript");
 require("prismjs/components/prism-jsx");
 
 const mdEmoji = require("markdown-it-emoji/bare");

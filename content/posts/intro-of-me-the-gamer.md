@@ -4,7 +4,7 @@ publishDate: 2020-07-15
 tags:
   - introduction
   - gamer
-summary: I've been working on a new coding project and ran into some issues when using Next.js and Material UI but thankfully found another solution using the CSS framework, Bulma.
+summary: In Part 3 of the Introduction of Me Series, I talk about growing up with video and computer games and seeing the changes in the industry.
 thumbnail: intro-gamer.jpg
 ---
 

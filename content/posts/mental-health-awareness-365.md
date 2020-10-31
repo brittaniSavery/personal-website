@@ -22,4 +22,6 @@ How you can help:
 
 Stay healthy. Stay safe. Until next time! :wave:
 
+---
+
 \*Hannah Ritchie and Max Roser (2018) - "Mental Health". Published online at OurWorldInData.org. Retrieved from: [https://ourworldindata.org/mental-health](https://ourworldindata.org/mental-health)

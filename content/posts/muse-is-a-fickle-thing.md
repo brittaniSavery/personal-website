@@ -7,7 +7,7 @@ summary: Sometimes the motivation of a creative person disappears out of nowhere
 thumbnail: no-muse.jpg
 ---
 
-I'm currently finishing the first draft of my second novel, the sequel to Element Unknown, also known as Book II. I have the entire story written. I am rewriting certain sections due to changes made earlier in the book and timeline issues. :sweat: I was making good progress, working little by little after the day's responsibilities were done. I was excited to write and see what happens next. I wanted to finish it, print it, and read it for myself from start to finish.
+I'm currently finishing the first draft of my second novel, the sequel to [_Element Unknown_](/element-unknown), also known as Book II. I have the entire story written. I am rewriting certain sections due to changes made earlier in the book and timeline issues. :sweat: I was making good progress, working little by little after the day's responsibilities were done. I was excited to write and see what happens next. I wanted to finish it, print it, and read it for myself from start to finish.
 
 BOOM! Corona hit. I lost my day job at a place where I enjoyed the work, liked my teammates, and worked from home. It happened on a Thursday and so, I decided to take a tiny vacation to visit family and forget about my current troubles. However, that following Monday I hit the ground running so to speak: applying, researching, coding, and interviewing. My main concern was finding a new job. I had little motivation to write much, not even poems which are usually my go-to during turbulent times.
 

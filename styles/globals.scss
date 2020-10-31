@@ -33,8 +33,38 @@ $content-heading-color: $bsa-dark-blue;
 $content-blockquote-border-left: $bsa-light-gold;
 $content-blockquote-background-color: findLightColor($bsa-light-gold);
 
+strong {
+  color: $bsa-dark-blue !important;
+}
+
 .content {
   padding-bottom: 3rem;
+
+  ol li {
+    padding-bottom: 0.75rem;
+  }
+
+  p.is-pulled-left {
+    img {
+      padding-right: 1rem;
+      width: 37vw;
+
+      @media screen and (max-width: $tablet - 1) {
+        width: 100vw;
+      }
+    }
+  }
+
+  p.is-pulled-right {
+    img {
+      padding-left: 1rem;
+      width: 37vw;
+    }
+
+    @media screen and (max-width: $tablet - 1) {
+      width: 100vw;
+    }
+  }
 }
 
 $code: $bsa-dark-blue;
@@ -73,7 +103,7 @@ $pre-background: none;
   height: 1.25em;
 }
 
-@import "../node_modules/prismjs/themes/prism-twilight.css";
+@import "./prism-nord.css"; //css for syntax highlighting
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
 @import "../node_modules/bulma/sass/grid/_all.sass";

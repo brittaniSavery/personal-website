@@ -37,6 +37,31 @@ module.exports = {
             );
           };
 
+          //add target "_blank" to all outside links
+          const defaultLinkRender =
+            md.renderer.rules.link_open ||
+            function (tokens, idx, options, env, self) {
+              return self.renderToken(tokens, idx, options);
+            };
+
+          md.renderer.rules.link_open = function (
+            tokens,
+            idx,
+            options,
+            env,
+            self
+          ) {
+            const hrefIdnex = tokens[idx].attrIndex("href");
+            const url = tokens[idx].attrs[hrefIdnex][1];
+
+            if (/^https?/.test(url)) {
+              tokens[idx].attrPush(["target", "_blank"]);
+            }
+
+            // pass token to default renderer.
+            return defaultLinkRender(tokens, idx, options, env, self);
+          };
+
           return md.render(body);
         },
       },

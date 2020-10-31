@@ -39,10 +39,10 @@ MuiDocument.getInitialProps = async (ctx) => {
 
 Once I added that, things went smooth enough. But then as I kept building out the app, I ran into a more and more errors, like console warnings and npm errors when adding other packages or starting the development server. Eventually, I got frustrated enough to restart building it with a different styling solution.
 
-I found Bulma, a free, open source CSS framework based on Flexbox. It was included in the template I used for the second personal coding project I’m working on. I like how it has variables to easily customize it, has components similar to Material UI, and it works seamlessly with Next.js. I added the necessarily packages and the `.scss` file for customization. And...that's it.
+I found [Bulma](https://bulma.io/), a free, open source CSS framework based on Flexbox. It was included in the template I used for the second personal coding project I'm working on. I like how it has variables to easily customize it, has components similar to Material UI, and it works seamlessly with Next.js. I added the necessarily packages and the `.scss` file for customization. And...that's it.
 
-Since it has been easier to work with Bulma, I’ve been able to change the colors and fiddle with the wording a bit, but here's the home page in the two different styling frameworks.
+Since it has been easier to work with Bulma, I've been able to change the colors and fiddle with the wording a bit, but here's the home page in the two different styling frameworks.
 
-![A comparison of the home page using the Material UI Framework and the Bulma Framework](/images/posts/materialui-bulma-compare.jpg)
+![A comparison of the home page using the Material UI Framework and the Bulma Framework](/images/posts/materialui-bulma-compare.png)
 
 If you're a non-coder and made it to the end, thank you for reading my complaints of software development. Let me know which home page you like. Until next time!

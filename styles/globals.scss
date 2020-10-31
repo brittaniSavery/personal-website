@@ -45,6 +45,7 @@ $pre-background: none;
 .bsa-margin {
   @media screen and (max-width: 1023px) {
     padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
   }
 }
 
@@ -59,6 +60,10 @@ $pre-background: none;
 
 .bsa-card {
   height: 100%;
+}
+
+.bsa-post-img {
+  width: 100%;
 }
 
 //iconify

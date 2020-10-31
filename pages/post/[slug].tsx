@@ -5,20 +5,29 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import Layout from "../../components/Layout";
 import MarkdownParser from "../../components/MarkdownParser";
 import { getPublishDateDisplay, IMG_DIRECTORY } from "../../lib/post";
+import TagGroup from "../../components/TagGroup";
 
 export default function Post({
   title,
   content,
+  tags,
   thumbnail,
   thumbnailAlt,
   publishDate,
 }: PostDetails): JSX.Element {
   return (
     <Layout>
-      <img src={`${IMG_DIRECTORY}/${thumbnail}`} alt={thumbnailAlt} />
-      <h1>{title}</h1>
+      <img
+        className="bsa-post-img"
+        src={`${IMG_DIRECTORY}/${thumbnail}`}
+        alt={thumbnailAlt}
+      />
+      <h1 className="mb-2">{title}</h1>
       <div className="pb-4">
-        <p>{getPublishDateDisplay(publishDate)}</p>
+        <p className="mb-2">
+          {getPublishDateDisplay(publishDate)} &middot; Brittani S Avery
+        </p>
+        <TagGroup className="pb-2" tags={tags} />
       </div>
       <MarkdownParser content={content} />
     </Layout>

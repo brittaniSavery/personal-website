@@ -1,6 +1,8 @@
 export const IMG_DIRECTORY = "/images/posts";
 
-const months: string[] = [
+export const TAGS = ["personal", "writer", "coder", "introduction", "gamer"];
+
+const months = [
   "Jan",
   "Feb",
   "Mar",

@@ -14,3 +14,38 @@ This is the code for my personal website, [brittanisavery.com](https://brittanis
 
 - [Next.js + Netlify Blog Template](https://github.com/wutali/nextjs-netlify-blog-template)
 - [How to Make a Markdown Blog With Next.js by Jose Felix](https://jfelix.info/blog/how-to-make-a-static-blog-with-next-js)
+
+## 📃 TODO List
+
+- Resume
+  - Intro paragraph
+  - Link .pdf
+  - Fill out Plain Concepts Experience
+- Projects
+  - Books
+    - Element Unknown
+    - EU's Sequel (Coming Soon)
+  - Code
+    - SIBA, fictional basketball league
+    - DCLDB, Dragon Cave Lineage DB
+    - brittanisavery.com (current website)
+- Footer components
+  - Newsletter sign-up
+  - Find Me/Connect with Me
+    - Black Meredith Press
+    - Social Media
+- Blog Tags Pages (similar to regular blog page)
+- Meta Data
+  - Main Pages
+    - Home
+    - Resume
+    - Blog
+    - Projects
+  - Posts
+  - Individual Projects
+
+_Nice To Have's_
+
+- Commenting for individual posts
+  - Ability to reply as myself
+  - Alert commenter of reply (send email?)

@@ -1,18 +1,15 @@
 ---
 title: Resume
-pdf: file
 ---
 
-# Professional Resume
+# Resume
 
-Intro paragraph. Link pdf
+"Coder. Writer. Gamer. Nerd." is the tagline for my website and email signature, identifying the main portions of my personality. "Coder" is listed first due to my childhood spent in front of and surrounded by computers, which I discuss in [Part 1](/post/intro-of-me-the-coder) of my introduction posts. My education and profession as a software developer simply solidified that particular ID. Peruse through my professional resume if you're curious or if you're looking to hire a freelancer; I am available to work. :smile:
 
 ## Profile
 
 Self-motivated, full-stack developer with 10+ years of professional experience in software and web development.
-Renowned for a short learning curve, a wide range of knowledge on various technologies and techniques, and quick
-turnarounds. Effective in communicating ideas clearly to multicultural and distributed teams while working in an Agile
-environment. Proficient in the French language.
+Renowned for a short learning curve, a wide range of knowledge on various technologies and techniques, and quick turnarounds. Effective in communicating ideas clearly to multicultural and distributed teams while working in an Agile environment. Proficient in the French language.
 
 ## Skills
 
@@ -122,5 +119,5 @@ University of Nebraska at Omaha | Omaha, NE
 
 2017-Present
 
-- Designed website for a simulation basketball league, [SIBA](http://siba.averyincorporated.com), using React, Node.js, PHP, and AWS. Learn more about the SIBA project [here](/projects/siba).
-- Created database with authentication for users to manage their lineages for the collection game [Dragon Cave](http://dragcave.net) using Next.js, Bulma CSS framework, and MongoDB. Learn more about the Dragon Cave Lineage Database or DCLDB [here](/projects/dcldb).
+- Designed website for a simulation basketball league, [SIBA](http://siba.averyincorporated.com), using React, Node.js, PHP, and AWS. Learn more about the SIBA project [here](/code/siba).
+- Created database with authentication for users to manage their lineages for the collection game [Dragon Cave](http://dragcave.net) using Next.js, Bulma CSS framework, and MongoDB. Learn more about the Dragon Cave Lineage Database or DCLDB [here](/code/dcldb).

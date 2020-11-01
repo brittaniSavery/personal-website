@@ -18,9 +18,11 @@ This is the code for my personal website, [brittanisavery.com](https://brittanis
 ## 📃 TODO List
 
 - Resume
-  - Intro paragraph
-  - Link .pdf
+  - Skills
   - Fill out Plain Concepts Experience
+- Home Page
+  - Recent Blog Posts
+  - Add profile picture on home page logo
 - Projects
   - Books
     - Element Unknown

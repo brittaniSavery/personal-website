@@ -33,6 +33,9 @@ $content-heading-color: $bsa-dark-blue;
 $content-blockquote-border-left: $bsa-light-gold;
 $content-blockquote-background-color: findLightColor($bsa-light-gold);
 
+$code: $bsa-dark-blue;
+$pre-background: none;
+
 strong {
   color: $bsa-dark-blue !important;
 }
@@ -71,8 +74,12 @@ strong {
   }
 }
 
-$code: $bsa-dark-blue;
-$pre-background: none;
+.columns.is-reversed {
+  @media screen and (max-width: $tablet) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 
 //bsa custom classes
 
@@ -94,6 +101,12 @@ $pre-background: none;
 
 .bsa-card {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .card-footer {
+    margin-top: auto;
+  }
 }
 
 .bsa-post-img {

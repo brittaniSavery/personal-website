@@ -25,7 +25,9 @@ This is the code for my personal website, [brittanisavery.com](https://brittanis
 - Projects
   - Books
     - Element Unknown
-    - EU's Sequel (Coming Soon)
+      - Add quotes
+      - Autographed copies order form
+      - Amazon link
   - Code
     - SIBA, fictional basketball league
     - DCLDB, Dragon Cave Lineage DB

@@ -13,6 +13,16 @@ Renowned for a short learning curve, a wide range of knowledge on various techno
 
 ## Skills
 
+| Skill                  | Rating |
+| ---------------------- | ------ |
+| Javascript             | 95     |
+| React/Redux            | 80     |
+| Node.js                | 75     |
+| Java                   | 90     |
+| C#/.NET                | 75     |
+| RESTful APIs           | 95     |
+| SQL (SQL Server,mySQL) | 95     |
+
 ## Professional Experience
 
 ### Software Development Engineer
@@ -20,18 +30,18 @@ Renowned for a short learning curve, a wide range of knowledge on various techno
 Plain Concepts | Seattle, WA (Remote)  
 September 2020–Present
 
-`TODO`
+Maintained and created React websites for various Microsoft projects such as [Microsoft Innovation](https://innovation.microsoft.com/en-us) with an emphasis on internationalize and accessibility.
 
+- Implemented a new experience for the Microsoft Ignite 2020 conference within the first three weeks of hire
 - Tools: Javascript, React, Bootstrap, HTML, CSS, Git
 
-### Senior React Developer
+### React Developer
 
 Jet Linx | Omaha, NE  
 May 2020–September 2020
 
 Aided immature Information Technology department to develop efficient software development processes, including
-outlining new work and writing developer-friendly stories. Brought experience of React and API design to fast track new
-development projects and quick turnover on regular maintenance.
+outlining new work and writing developer-friendly stories. Brought experience of React and API design to fast track new development projects and quick turnover on regular maintenance.
 
 - Led design of UI and API on project to gather feedback from
 - Tools: Javascript, React, Redux, Material UI, CSS, HTML, Git
@@ -55,8 +65,7 @@ AgilityHealth Radar, the most popular application sold by ATI, from ASP.NET to R
 Conductix-Wampfler | Omaha, NE  
 2018–2019
 
-Recruited for vast knowledge of languages, frameworks and expertise in Atlassian products. Successfully became subject
-matter expert in creating and editing complex workflow validation and related scripts for robust software functionality
+Recruited for vast knowledge of languages, frameworks and expertise in Atlassian products. Successfully became subject matter expert in creating and editing complex workflow validation and related scripts for robust software functionality
 
 - Created custom application that enabled engineers to generate and modify specifications for manufactured steel
   products, saving development hours and increasing KPI’s (Key Performance Indicators)
@@ -88,9 +97,7 @@ Designed and implemented several small applications to help migrate or manage in
 Union Pacific Railroad | Omaha, NE  
 2011–2013
 
-Originally hired as an intern and quickly extended a full-time position before graduation. Worked with team members
-located in India and became the go-to mentor of fellow developers, leading daily scrum meetings, helping with code
-reviews, and aiding to gather requirements from the business.
+Originally hired as an intern and quickly extended a full-time position before graduation. Worked with team members located in India and became the go-to mentor of fellow developers, leading daily scrum meetings, helping with code reviews, and aiding to gather requirements from the business.
 
 - Constructed dynamic reports with graphs for direct access to previously obscure sale/production data
 - Optimized complex database schema and queries to reduce processing time by several seconds

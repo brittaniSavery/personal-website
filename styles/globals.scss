@@ -44,6 +44,10 @@ strong {
     padding-bottom: 0.75rem;
   }
 
+  table thead th {
+    color: $text !important;
+  }
+
   p.is-pulled-left {
     img {
       padding-right: 1rem;

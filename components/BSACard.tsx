@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export type FooterLink = {
+type FooterLink = {
   label: string;
   link?: string;
 };

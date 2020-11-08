@@ -26,9 +26,7 @@ This is the code for my personal website, [brittanisavery.com](https://brittanis
   - Create card images for each project
   - Books
     - Element Unknown
-      - Add quotes
       - Autographed copies order form
-      - Amazon link
   - Code
     - SIBA, fictional basketball league
     - DCLDB, Dragon Cave Lineage DB

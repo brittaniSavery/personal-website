@@ -18,7 +18,7 @@ $family-monospace: "Anonymous Pro", monospace;
 @import "../node_modules//bulma/sass/utilities/functions.sass";
 
 //overriding Bulma defaults
-$primary: $bsa-light-blue;
+$primary: $bsa-dark-blue;
 $danger: $bsa-red;
 
 $text: $bsa-dark-blue;
@@ -134,6 +134,7 @@ strong {
 @import "./bulma-tags.scss"; //same logic as bulma tags just separated to avoid conflict with prism classes
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/components/card.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
 @import "../node_modules/bulma/sass/elements/content.sass";
 @import "../node_modules/bulma/sass/elements/container.sass";
 @import "../node_modules/bulma/sass/elements/image.sass";

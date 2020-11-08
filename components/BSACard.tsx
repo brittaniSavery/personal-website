@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import ExternalLink from "./ExternalLink";
 
 type FooterLink = {
   label: string;
@@ -43,14 +44,9 @@ export function BSACardFooter({ items }: FooterProps): JSX.Element {
           const isExternalLink = /^https?/.test(item.link);
 
           return isExternalLink ? (
-            <a
-              className="card-footer-item"
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <ExternalLink href={item.link} className="card-footer-item">
               {item.label}
-            </a>
+            </ExternalLink>
           ) : (
             <Link href={item.link}>
               <a className="card-footer-item">{item.label}</a>

@@ -30,7 +30,7 @@ Renowned for a short learning curve, a wide range of knowledge on various techno
 Plain Concepts | Seattle, WA (Remote)  
 September 2020–Present
 
-Maintained and created React websites for various Microsoft projects such as [Microsoft Innovation](https://innovation.microsoft.com/en-us) with an emphasis on internationalize and accessibility.
+Maintained and created React websites for various Microsoft projects such as [Microsoft Innovation](https://innovation.microsoft.com/en-us) with an emphasis on internationalization and accessibility.
 
 - Implemented a new experience for the Microsoft Ignite 2020 conference within the first three weeks of hire
 - Tools: Javascript, React, Bootstrap, HTML, CSS, Git

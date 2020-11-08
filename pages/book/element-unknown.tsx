@@ -1,4 +1,5 @@
 import React from "react";
+import ExternalLink from "../../components/ExternalLink";
 import Layout from "../../components/Layout";
 import ReviewQuote from "../../components/ReviewQuote";
 
@@ -38,17 +39,17 @@ export default function ElementUnknown(): JSX.Element {
             paperback and an e-book. I have autographed copies for sell if
             you&apos;re looking for a physical option. If digital is more your
             style, you can find the e-books on{" "}
-            <a href="http://amzn.to/2vSpcxR" rel="noopener noreferrer">
-              Amazon
-            </a>
-            .
+            <ExternalLink href="http://amzn.to/2vSpcxR">Amazon</ExternalLink>.
           </p>
-          <button className="button is-primary is-fullwidth">
+          <button className="button is-primary has-text-centered">
             Order Autographed Copies
           </button>
         </div>
         <div className="column is-narrow">
-          <img src="/images/element-unknown-mockup.jpg" />
+          <img
+            src="/images/element-unknown-mockup.jpg"
+            alt="The novel, Element Unknown, in its paperback form"
+          />
         </div>
       </div>
     </Layout>

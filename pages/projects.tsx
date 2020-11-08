@@ -39,7 +39,7 @@ export default function Projects(): JSX.Element {
               <p>
                 Website
                 <br />
-                React, Bootstrap, PHP, mysql
+                React, Bootstrap, AWS Lamda, PHP, mysql
               </p>
             </BSACardContent>
             <BSACardFooter items={footerLinks.siba} />

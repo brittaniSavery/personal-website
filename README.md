@@ -23,6 +23,7 @@ This is the code for my personal website, [brittanisavery.com](https://brittanis
   - Recent Blog Posts
   - Add profile picture on home page logo
 - Projects
+  - Create card images for each project
   - Books
     - Element Unknown
       - Add quotes

@@ -33,6 +33,8 @@ $content-heading-color: $bsa-dark-blue;
 $content-blockquote-border-left: $bsa-light-gold;
 $content-blockquote-background-color: findLightColor($bsa-light-gold);
 
+$card-footer-border-top: 1px solid $bsa-light-blue;
+
 $code: $bsa-dark-blue;
 $pre-background: none;
 
@@ -101,11 +103,14 @@ strong {
 
 .bsa-card {
   height: 100%;
-  display: flex;
-  flex-direction: column;
 
-  .card-footer {
-    margin-top: auto;
+  .card-content {
+    @media screen and (min-width: $desktop) {
+      height: 13rem;
+    }
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+      height: 5rem;
+    }
   }
 }
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { getPublishDateDisplay } from "../lib/post";
+import { BSACard, BSACardContent, BSACardImage } from "./BSACard";
 import TagGroup from "./TagGroup";
 
 type PostCardProps = {
@@ -8,11 +9,12 @@ type PostCardProps = {
 
 export default function PostCard({ post }: PostCardProps): JSX.Element {
   return (
-    <div className="card bsa-card">
-      <div className="card-image">
-        <img src={`/images/posts/${post.thumbnail}`} alt={post.thumbnailAlt} />
-      </div>
-      <div className="card-content">
+    <BSACard>
+      <BSACardImage
+        src={`/images/posts/${post.thumbnail}`}
+        alt={post.thumbnailAlt}
+      />
+      <BSACardContent>
         <h2>{post.title}</h2>
         <p>
           {getPublishDateDisplay(post.publishDate)}
@@ -20,7 +22,7 @@ export default function PostCard({ post }: PostCardProps): JSX.Element {
           <TagGroup tags={post.tags} />
         </p>
         <p>{post.summary}</p>
-      </div>
-    </div>
+      </BSACardContent>
+    </BSACard>
   );
 }

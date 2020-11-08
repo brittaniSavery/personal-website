@@ -1,14 +1,13 @@
+import clsx from "clsx";
 import Link from "next/link";
 import React from "react";
 import ExternalLink from "./ExternalLink";
 
-type FooterLink = {
-  label: string;
-  link?: string;
-};
-
 type FooterProps = {
-  items?: FooterLink[];
+  items?: {
+    label: string;
+    link?: string;
+  }[];
 };
 
 type ImageProps = {
@@ -16,12 +15,8 @@ type ImageProps = {
   alt?: string;
 };
 
-type Props = {
-  children?: React.ReactNode;
-};
-
-export function BSACard({ children }: Props): JSX.Element {
-  return <div className="card bsa-card">{children}</div>;
+export function BSACard({ children, className }: BasicProps): JSX.Element {
+  return <div className={clsx("card bsa-card", className)}>{children}</div>;
 }
 
 export function BSACardImage({ src, alt }: ImageProps): JSX.Element {
@@ -32,8 +27,11 @@ export function BSACardImage({ src, alt }: ImageProps): JSX.Element {
   );
 }
 
-export function BSACardContent({ children }: Props): JSX.Element {
-  return <div className="card-content">{children}</div>;
+export function BSACardContent({
+  children,
+  className,
+}: BasicProps): JSX.Element {
+  return <div className={clsx("card-content", className)}>{children}</div>;
 }
 
 export function BSACardFooter({ items }: FooterProps): JSX.Element {

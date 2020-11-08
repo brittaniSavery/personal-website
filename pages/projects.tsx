@@ -30,7 +30,7 @@ export default function Projects(): JSX.Element {
       <h2>Coding</h2>
       <div className="columns is-multiline">
         <div className="column is-one-third-desktop is-half-tablet">
-          <BSACard>
+          <BSACard className="project-card">
             <BSACardImage src="https://via.placeholder.com/940x534.jpg?text=SIBA" />
             <BSACardContent>
               <p className="is-size-4 mb-0">
@@ -46,7 +46,7 @@ export default function Projects(): JSX.Element {
           </BSACard>
         </div>
         <div className="column is-one-third-desktop is-half-tablet">
-          <BSACard>
+          <BSACard className="project-card">
             <BSACardImage src="https://via.placeholder.com/940x534.jpg?text=DCLDB" />
             <BSACardContent>
               <p className="is-size-4 mb-0">Dragon Cave Lineage Database</p>
@@ -60,7 +60,7 @@ export default function Projects(): JSX.Element {
           </BSACard>
         </div>
         <div className="column is-one-third-desktop is-half-tablet">
-          <BSACard>
+          <BSACard className="project-card">
             <BSACardImage src="https://via.placeholder.com/940x534.jpg?text=BSA.com" />
             <BSACardContent>
               <p className="is-size-4 mb-0">
@@ -79,7 +79,7 @@ export default function Projects(): JSX.Element {
       <h2>Writing</h2>
       <div className="columns">
         <div className="column is-one-third-desktop is-half-tablet">
-          <BSACard>
+          <BSACard className="project-card">
             <BSACardImage src="https://via.placeholder.com/940x534.jpg?text=Element+Unknown" />
             <BSACardContent>
               <p className="is-size-4 is-italic mb-0">Element Unknown</p>
@@ -93,7 +93,7 @@ export default function Projects(): JSX.Element {
           </BSACard>
         </div>
         <div className="column is-one-third-desktop is-half-tablet">
-          <BSACard>
+          <BSACard className="project-card">
             <BSACardImage src="https://via.placeholder.com/940x534.jpg?text=Element+Unknown+Sequel" />
             <BSACardContent>
               <p className="is-size-4 mb-0">

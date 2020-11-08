@@ -104,12 +104,14 @@ strong {
 .bsa-card {
   height: 100%;
 
-  .card-content {
-    @media screen and (min-width: $desktop) {
-      height: 13rem;
-    }
-    @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
-      height: 5rem;
+  &.project-card {
+    .card-content {
+      @media screen and (min-width: $desktop) {
+        height: 13rem;
+      }
+      @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+        height: 10rem;
+      }
     }
   }
 }

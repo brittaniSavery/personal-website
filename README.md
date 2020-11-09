@@ -17,10 +17,11 @@ This is the code for my personal website, [brittanisavery.com](https://brittanis
 
 ## 📃 TODO List
 
+- Navbar
+  - Add small logo to navbar brand section
 - Resume
   - Skills (Images)
 - Home Page
-  - Recent Blog Posts
   - Add profile picture on home page logo
 - Projects
   - Create card and page images for each project

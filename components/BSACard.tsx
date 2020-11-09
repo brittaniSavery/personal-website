@@ -42,11 +42,15 @@ export function BSACardFooter({ items }: FooterProps): JSX.Element {
           const isExternalLink = /^https?/.test(item.link);
 
           return isExternalLink ? (
-            <ExternalLink href={item.link} className="card-footer-item">
+            <ExternalLink
+              key={item.label}
+              href={item.link}
+              className="card-footer-item"
+            >
               {item.label}
             </ExternalLink>
           ) : (
-            <Link href={item.link}>
+            <Link key={item.label} href={item.link}>
               <a className="card-footer-item">{item.label}</a>
             </Link>
           );

@@ -1,4 +1,5 @@
 import React from "react";
+import Emoji from "../../components/Emoji";
 import ExternalLink from "../../components/ExternalLink";
 import Layout from "../../components/Layout";
 
@@ -38,8 +39,7 @@ export default function Siba(): JSX.Element {
           <p>
             If you&apos;re interested in joining either the pro and college
             leagues, be sure to visit the website and check out the rules. There
-            are plenty of teams left.{" "}
-            <span className="iconify" data-icon="noto:smiling-face" />
+            are plenty of teams left. <Emoji name="smile" />
           </p>
           <p>
             If you&apos;re a fellow developer, check out the code on Github. I

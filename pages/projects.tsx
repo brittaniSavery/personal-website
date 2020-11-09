@@ -18,7 +18,7 @@ export default function Projects(): JSX.Element {
       { label: "Learn More", link: "/code/dcldb" },
       { label: "See it Live!", link: "https://dc-lineage-db.vercel.app/" },
     ],
-    bsa: [{ label: "Learn More", link: "/code/personal-site" }],
+    bsa: [{ label: "Learn More", link: "/code/bsa-site" }],
     //writing
     elementUnknown: [{ label: "Learn More", link: "/book/element-unknown" }],
     euSequel: [{ label: "Coming Soon!" }],
@@ -69,7 +69,7 @@ export default function Projects(): JSX.Element {
               <p>
                 Website
                 <br />
-                Next.js, Bulma, Markdown-It
+                Next.js, Typescript, Bulma, Markdown-It
               </p>
             </BSACardContent>
             <BSACardFooter items={footerLinks.bsa} />

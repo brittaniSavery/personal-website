@@ -23,14 +23,10 @@ This is the code for my personal website, [brittanisavery.com](https://brittanis
   - Recent Blog Posts
   - Add profile picture on home page logo
 - Projects
-  - Create card images for each project
+  - Create card and page images for each project
   - Books
     - Element Unknown
       - Autographed copies order form
-  - Code
-    - SIBA, fictional basketball league
-    - DCLDB, Dragon Cave Lineage DB
-    - brittanisavery.com (current website)
 - Footer components
   - Newsletter sign-up
   - Find Me/Connect with Me

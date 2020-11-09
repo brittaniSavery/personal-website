@@ -30,7 +30,7 @@ export default function ElementUnknown(): JSX.Element {
           <ReviewQuote author="Shannon Rohrer" location="Goodreads">
             Environmental details were well-written, the sub-plots involving
             Meenal and Rex trying to learn about their backgrounds was
-            intriguing
+            intriguing.
           </ReviewQuote>
 
           <h2>Grab Your Copy</h2>

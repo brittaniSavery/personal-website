@@ -16,11 +16,8 @@ export default function PostCard({ post }: PostCardProps): JSX.Element {
       />
       <BSACardContent>
         <h2>{post.title}</h2>
-        <p>
-          {getPublishDateDisplay(post.publishDate)}
-          <br />
-          <TagGroup tags={post.tags} />
-        </p>
+        <p className="mb-0">{getPublishDateDisplay(post.publishDate)}</p>
+        <TagGroup tags={post.tags} />
         <p>{post.summary}</p>
       </BSACardContent>
     </BSACard>

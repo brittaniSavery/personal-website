@@ -17,8 +17,6 @@ This is the code for my personal website, [brittanisavery.com](https://brittanis
 
 ## 📃 TODO List
 
-- Navbar
-  - Add small logo to navbar brand section
 - Resume
   - Skills (Images)
 - Home Page
@@ -28,18 +26,13 @@ This is the code for my personal website, [brittanisavery.com](https://brittanis
   - Books
     - Element Unknown
       - Autographed copies order form
-- Footer components
-  - Newsletter sign-up
-  - Find Me/Connect with Me
-    - Black Meredith Press
-    - Social Media
+- Newsletter sign-up
+- Footer (Also Find Me)
+  - Black Meredith Press
+  - Social Media
 - Blog Tags Pages (similar to regular blog page)
 - Meta Data
   - Main Pages
-    - Home
-    - Resume
-    - Blog
-    - Projects
   - Posts
   - Individual Projects
 

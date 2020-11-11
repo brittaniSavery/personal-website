@@ -31,7 +31,7 @@ export default function Projects(): JSX.Element {
       <div className="columns is-multiline">
         <div className="column is-one-third-desktop is-half-tablet">
           <BSACard className="project-card">
-            <BSACardImage src="https://via.placeholder.com/940x534.jpg?text=SIBA" />
+            <BSACardImage src="/images/projects/siba.png" />
             <BSACardContent>
               <p className="is-size-4 mb-0">
                 Simulation International Basketball Association
@@ -47,7 +47,7 @@ export default function Projects(): JSX.Element {
         </div>
         <div className="column is-one-third-desktop is-half-tablet">
           <BSACard className="project-card">
-            <BSACardImage src="https://via.placeholder.com/940x534.jpg?text=DCLDB" />
+            <BSACardImage src="/images/projects/dcldb.png" />
             <BSACardContent>
               <p className="is-size-4 mb-0">Dragon Cave Lineage Database</p>
               <p>
@@ -61,7 +61,7 @@ export default function Projects(): JSX.Element {
         </div>
         <div className="column is-one-third-desktop is-half-tablet">
           <BSACard className="project-card">
-            <BSACardImage src="https://via.placeholder.com/940x534.jpg?text=BSA.com" />
+            <BSACardImage src="/images/projects/bsa.png" />
             <BSACardContent>
               <p className="is-size-4 mb-0">
                 Official Site for Brittani S Avery
@@ -80,7 +80,7 @@ export default function Projects(): JSX.Element {
       <div className="columns">
         <div className="column is-one-third-desktop is-half-tablet">
           <BSACard className="project-card">
-            <BSACardImage src="https://via.placeholder.com/940x534.jpg?text=Element+Unknown" />
+            <BSACardImage src="/images/projects/element-unknown.jpg" />
             <BSACardContent>
               <p className="is-size-4 is-italic mb-0">Element Unknown</p>
               <p>
@@ -94,7 +94,7 @@ export default function Projects(): JSX.Element {
         </div>
         <div className="column is-one-third-desktop is-half-tablet">
           <BSACard className="project-card">
-            <BSACardImage src="https://via.placeholder.com/940x534.jpg?text=Element+Unknown+Sequel" />
+            <BSACardImage src="/images/projects/coming-soon.png" />
             <BSACardContent>
               <p className="is-size-4 mb-0">
                 <span className="is-italic">Element Unknown</span> Sequel

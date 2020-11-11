@@ -17,16 +17,10 @@ This is the code for my personal website, [brittanisavery.com](https://brittanis
 
 ## 📃 TODO List
 
-- Resume
-  - Skills (Images)
-- Home Page
-  - Add profile picture on home page logo
-- Projects
-  - Create card and page images for each project
-  - Books
-    - Element Unknown
-      - Autographed copies order form
+- Resume Skills (Images)
+- Autographed copies order form
 - Newsletter sign-up
+- Contact page
 - Footer (Also Find Me)
   - Black Meredith Press
   - Social Media

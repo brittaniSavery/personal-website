@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import BSALogo from "../public/images/logo-no-initials.svg";
+import clsx from "clsx";
 
 export default function Navigation(): JSX.Element {
   const [isMenuActive, setMenuActive] = React.useState(false);
@@ -15,11 +16,13 @@ export default function Navigation(): JSX.Element {
         </Link>
         <a
           role="button"
-          className={`navbar-burger burger${isMenuActive ? " is-active" : ""}`}
+          className={clsx("navbar-burger burger", {
+            "is-active": isMenuActive,
+          })}
           aria-label="menu"
           aria-expanded="false"
           data-target="navigation-menu"
-          onClick={() => setMenuActive(true)}
+          onClick={() => setMenuActive(!isMenuActive)}
         >
           <span aria-hidden="true" />
           <span aria-hidden="true" />

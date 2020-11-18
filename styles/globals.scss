@@ -8,16 +8,20 @@ $bsa-gold: #b37700; //#c68b15;
 $bsa-light-gold: #d5c485;
 $bsa-red: #972228;
 
+//overriding bulma initial variables
+$tablet: 768px;
+
 //typography
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 $family-sans-serif: "Quicksand", sans-serif;
 $family-monospace: "Anonymous Pro", monospace;
 
-@import "../node_modules//bulma/sass/utilities/initial-variables.sass";
-@import "../node_modules//bulma/sass/utilities/functions.sass";
+@import "../node_modules/bulma/sass/utilities/initial-variables.sass";
+@import "../node_modules/bulma/sass/utilities/functions.sass";
 
-//overriding Bulma defaults
+//overriding Bulma derived variables/defaults
+
 $primary: $bsa-dark-blue;
 $danger: $bsa-red;
 
@@ -26,7 +30,7 @@ $body-weight: $weight-medium;
 $link: $bsa-gold;
 $link-visited: $bsa-bright-blue;
 
-$footer-background-color: $bsa-light-blue;
+$footer-background-color: $white-ter;
 $footer-padding: 2rem 0rem;
 
 $content-heading-color: $bsa-dark-blue;
@@ -58,7 +62,7 @@ strong {
       padding-right: 1rem;
       width: 37vw;
 
-      @media screen and (max-width: $tablet - 1) {
+      @media screen and (max-width: $tablet) {
         width: 100vw;
       }
     }
@@ -70,7 +74,7 @@ strong {
       width: 37vw;
     }
 
-    @media screen and (max-width: $tablet - 1) {
+    @media screen and (max-width: $tablet) {
       width: 100vw;
     }
   }
@@ -92,6 +96,14 @@ strong {
   top: 0.17rem;
 }
 
+.bsa-full-logo {
+  @media screen and (max-width: $tablet) {
+    width: 80vw;
+    margin: auto;
+    display: block;
+  }
+}
+
 .bsa-margin {
   @media screen and (max-width: 1023px) {
     padding-left: 0.75rem !important;
@@ -101,7 +113,6 @@ strong {
 
 .bsa-footer {
   border-top: 6px solid $bsa-light-gold;
-  min-height: 6rem;
 }
 
 .bsa-container {

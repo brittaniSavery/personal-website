@@ -50,13 +50,7 @@ export default function Navigation(): JSX.Element {
             <a className="navbar-item">Contact</a>
           </Link>
         </div>
-        <div className="navbar-end">
-          <div className="navbar-item">
-            <img className="pr-2" src="images/social/instagram-sig.png" />
-            <img src="images/social/facebook-sig.png" />
-            <img className="pl-2" src="images/social/twitter-sig.png" />
-          </div>
-        </div>
+        <div className="navbar-end" />
       </div>
     </nav>
   );

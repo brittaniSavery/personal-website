@@ -3,14 +3,16 @@ import Link from "next/link";
 import React from "react";
 import ExternalLink from "./ExternalLink";
 
-type FooterProps = {
-  items?: {
-    label: string;
-    link?: string;
-  }[];
+export type CardFooterItem = {
+  label: string;
+  link?: string;
 };
 
-type ImageProps = {
+type CardFooterProps = {
+  items?: CardFooterItem[];
+};
+
+type CardImageProps = {
   src: string;
   alt?: string;
 };
@@ -19,7 +21,7 @@ export function BSACard({ children, className }: BasicProps): JSX.Element {
   return <div className={clsx("card bsa-card", className)}>{children}</div>;
 }
 
-export function BSACardImage({ src, alt }: ImageProps): JSX.Element {
+export function BSACardImage({ src, alt }: CardImageProps): JSX.Element {
   return (
     <div className="card-image">
       <img src={src} alt={alt} />
@@ -34,7 +36,7 @@ export function BSACardContent({
   return <div className={clsx("card-content", className)}>{children}</div>;
 }
 
-export function BSACardFooter({ items }: FooterProps): JSX.Element {
+export function BSACardFooter({ items }: CardFooterProps): JSX.Element {
   return (
     <div className="card-footer">
       {items.map((item) => {
@@ -55,7 +57,11 @@ export function BSACardFooter({ items }: FooterProps): JSX.Element {
             </Link>
           );
         } else {
-          return <p className="card-footer-item">{item.label}</p>;
+          return (
+            <p key={item.label} className="card-footer-item">
+              {item.label}
+            </p>
+          );
         }
       })}
     </div>

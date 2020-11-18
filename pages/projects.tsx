@@ -1,11 +1,45 @@
 import React from "react";
-import Layout from "../components/Layout";
 import {
   BSACard,
   BSACardContent,
   BSACardFooter,
   BSACardImage,
+  CardFooterItem,
 } from "../components/BSACard";
+import Layout from "../components/Layout";
+
+type ProjectProps = {
+  title: string;
+  image: string;
+  type: string;
+  details: string;
+  footerItems: CardFooterItem[];
+};
+
+function Project({
+  title,
+  image,
+  type,
+  details,
+  footerItems,
+}: ProjectProps): JSX.Element {
+  return (
+    <div className="column is-one-third-desktop is-half-tablet">
+      <BSACard className="project-card">
+        <BSACardImage src={`/images/projects/${image}`} />
+        <BSACardContent>
+          <p className="is-size-4 mb-0">{title}</p>
+          <p>
+            {type}
+            <br />
+            {details}
+          </p>
+        </BSACardContent>
+        <BSACardFooter items={footerItems} />
+      </BSACard>
+    </div>
+  );
+}
 
 export default function Projects(): JSX.Element {
   const footerLinks = {
@@ -29,85 +63,44 @@ export default function Projects(): JSX.Element {
       <h1>Projects</h1>
       <h2>Coding</h2>
       <div className="columns is-multiline">
-        <div className="column is-one-third-desktop is-half-tablet">
-          <BSACard className="project-card">
-            <BSACardImage src="/images/projects/siba.png" />
-            <BSACardContent>
-              <p className="is-size-4 mb-0">
-                Simulation International Basketball Association
-              </p>
-              <p>
-                Website
-                <br />
-                React, Bootstrap, AWS Lamda, PHP, mysql
-              </p>
-            </BSACardContent>
-            <BSACardFooter items={footerLinks.siba} />
-          </BSACard>
-        </div>
-        <div className="column is-one-third-desktop is-half-tablet">
-          <BSACard className="project-card">
-            <BSACardImage src="/images/projects/dcldb.png" />
-            <BSACardContent>
-              <p className="is-size-4 mb-0">Dragon Cave Lineage Database</p>
-              <p>
-                Database
-                <br />
-                Next.js, Bulma, mongoDB
-              </p>
-            </BSACardContent>
-            <BSACardFooter items={footerLinks.dcldb} />
-          </BSACard>
-        </div>
-        <div className="column is-one-third-desktop is-half-tablet">
-          <BSACard className="project-card">
-            <BSACardImage src="/images/projects/bsa.png" />
-            <BSACardContent>
-              <p className="is-size-4 mb-0">
-                Official Site for Brittani S Avery
-              </p>
-              <p>
-                Website
-                <br />
-                Next.js, Typescript, Bulma, Markdown-It
-              </p>
-            </BSACardContent>
-            <BSACardFooter items={footerLinks.bsa} />
-          </BSACard>
-        </div>
+        <Project
+          title="Simulation International Basketball Association"
+          image="siba-card.png"
+          type="Website"
+          details="React, Bootstrap, AWS Lamda, PHP, MySQL"
+          footerItems={footerLinks.siba}
+        />
+        <Project
+          title="Dragon Cave Lineage Database"
+          image="dcldb-card.png"
+          type="Database"
+          details="Next.js, Bulma CSS Framework, MongoDB"
+          footerItems={footerLinks.dcldb}
+        />
+        <Project
+          title="Official Site for Brittani S Avery"
+          image="bsa.png"
+          type="Website"
+          details="Next.js, Typescript, Bulma CSS Framework, Markdown-It"
+          footerItems={footerLinks.bsa}
+        />
       </div>
       <h2>Writing</h2>
       <div className="columns">
-        <div className="column is-one-third-desktop is-half-tablet">
-          <BSACard className="project-card">
-            <BSACardImage src="/images/projects/element-unknown.jpg" />
-            <BSACardContent>
-              <p className="is-size-4 is-italic mb-0">Element Unknown</p>
-              <p>
-                Novel
-                <br />
-                Young Adult, Fantasy, Science-Fiction
-              </p>
-            </BSACardContent>
-            <BSACardFooter items={footerLinks.elementUnknown} />
-          </BSACard>
-        </div>
-        <div className="column is-one-third-desktop is-half-tablet">
-          <BSACard className="project-card">
-            <BSACardImage src="/images/projects/coming-soon.png" />
-            <BSACardContent>
-              <p className="is-size-4 mb-0">
-                <span className="is-italic">Element Unknown</span> Sequel
-              </p>
-              <p>
-                Novel
-                <br />
-                Young Adult, Fantasy, Science-Fiction
-              </p>
-            </BSACardContent>
-            <BSACardFooter items={footerLinks.euSequel} />
-          </BSACard>
-        </div>
+        <Project
+          title="Element Unknown"
+          image="element-unknown-card.jpg"
+          type="Novel"
+          details="Young Adult, Fantasy, Science-Fiction"
+          footerItems={footerLinks.elementUnknown}
+        />
+        <Project
+          title="Element Unknown Sequel"
+          image="coming-soon.png"
+          type="Novel"
+          details="Young Adult, Fantasy, Science-Fiction"
+          footerItems={footerLinks.euSequel}
+        />
       </div>
     </Layout>
   );

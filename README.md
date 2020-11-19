@@ -19,11 +19,11 @@ This is the code for my personal website, [brittanisavery.com](https://brittanis
 
 - Resume Skills (Images)
 - Autographed copies order form
+- Fix BSA site and coming soon cards on projects page
 - Newsletter sign-up
+- Add RSS to site
+- Add "Enjoyed? Newsletter sign-up" and Next/Previous posts at end of blog
 - Contact page
-- Footer (Also Find Me)
-  - Black Meredith Press
-  - Social Media
 - Blog Tags Pages (similar to regular blog page)
 - Meta Data
   - Main Pages

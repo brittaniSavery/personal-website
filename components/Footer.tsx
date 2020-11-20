@@ -17,7 +17,7 @@ export default function Footer(): JSX.Element {
           <div className="column is-7-widescreen is-9-desktop is-11-tablet">
             <div className="columns has-text-centered">
               <div className="column is-narrow">
-                <p className="is-size-3-tablet is-size-2-mobile">
+                <p className="is-size-3-tablet is-size-2">
                   <BSAFullLogo className="bsa-full-logo" />
                   Brittani S Avery
                 </p>

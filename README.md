@@ -17,14 +17,13 @@ This is the code for my personal website, [brittanisavery.com](https://brittanis
 
 ## 📃 TODO List
 
-- Resume Skills (Images)
-- Autographed copies order form
-- Fix BSA site and coming soon cards on projects page
-- Newsletter sign-up
 - Add RSS to site
-- Add "Enjoyed? Newsletter sign-up" and Next/Previous posts at end of blog
-- Contact page
 - Blog Tags Pages (similar to regular blog page)
+- Add "Enjoyed? Newsletter sign-up" and Next/Previous posts at end of blog
+- Autographed copies order form
+- Newsletter sign-up
+- Contact page
+- Resume Skills (Images)
 - Meta Data
   - Main Pages
   - Posts

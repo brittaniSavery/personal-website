@@ -79,7 +79,7 @@ export default function Projects(): JSX.Element {
         />
         <Project
           title="Official Site for Brittani S Avery"
-          image="bsa.png"
+          image="website-card.png"
           type="Website"
           details="Next.js, Typescript, Bulma CSS Framework, Markdown-It"
           footerItems={footerLinks.bsa}
@@ -96,7 +96,7 @@ export default function Projects(): JSX.Element {
         />
         <Project
           title="Element Unknown Sequel"
-          image="coming-soon.png"
+          image="coming-soon-card.png"
           type="Novel"
           details="Young Adult, Fantasy, Science-Fiction"
           footerItems={footerLinks.euSequel}

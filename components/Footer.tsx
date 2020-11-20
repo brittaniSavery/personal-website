@@ -1,12 +1,12 @@
 import React from "react";
 import ExternalLink from "./ExternalLink";
 import BSAFullLogo from "../public/images/logo-initials.svg";
-import FacebookLogo from "../public/images/social/facebook-logo.svg";
-import TwitterLogo from "../public/images/social/twitter-logo.svg";
-import GithubLogo from "../public/images/social/github-logo.svg";
-import GoodreadsLogo from "../public/images/social/goodreads-logo.svg";
-import InstagramLogo from "../public/images/social/instagram-logo.svg";
-import LinkedInLogo from "../public/images/social/linkedin-logo.svg";
+import FacebookLogo from "../public/images/social/facebook-grey.svg";
+import TwitterLogo from "../public/images/social/twitter-grey.svg";
+import GithubLogo from "../public/images/social/github-grey.svg";
+import GoodreadsLogo from "../public/images/social/goodreads-grey.svg";
+import InstagramLogo from "../public/images/social/instagram-grey.svg";
+import LinkedInLogo from "../public/images/social/linkedin-grey.svg";
 
 export default function Footer(): JSX.Element {
   const currentYear = new Date().getFullYear();

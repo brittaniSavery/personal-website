@@ -1,10 +1,10 @@
-import React from "react";
 import fs from "fs";
 import { GetStaticProps } from "next";
 import Link from "next/link";
+import React from "react";
 import Layout from "../components/Layout";
 import PostCard from "../components/PostCard";
-import { getPosts, MAIN_DIRECTORY, sortPostsByDate } from "../lib/post";
+import { FULL_PATH, getPostsByDate } from "../lib/post";
 
 type Props = {
   posts: PostDetails[];
@@ -30,9 +30,6 @@ export default function BlogList({ posts }: Props): JSX.Element {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const files = fs.readdirSync(MAIN_DIRECTORY);
-  const posts = await getPosts(files);
-  posts.sort((a, b) => sortPostsByDate(a, b));
-
-  return { props: { posts: posts } };
+  const files = fs.readdirSync(FULL_PATH);
+  return { props: { posts: await getPostsByDate(files) } };
 };

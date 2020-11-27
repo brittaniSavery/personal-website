@@ -4,7 +4,12 @@ import fs from "fs";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Layout from "../../components/Layout";
 import MarkdownParser from "../../components/MarkdownParser";
-import { getPublishDateDisplay, IMG_DIRECTORY } from "../../lib/post";
+import {
+  FULL_PATH,
+  getPostBySlug,
+  getPublishDateDisplay,
+  IMG_PATH,
+} from "../../lib/post";
 import TagGroup from "../../components/TagGroup";
 
 export default function Post({
@@ -19,7 +24,7 @@ export default function Post({
     <Layout>
       <img
         className="bsa-post-img"
-        src={`${IMG_DIRECTORY}/${thumbnail}`}
+        src={`${IMG_PATH}/${thumbnail}`}
         alt={thumbnailAlt}
       />
       <h1 className="mb-2">{title}</h1>
@@ -35,7 +40,7 @@ export default function Post({
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const files = fs.readdirSync(`${process.cwd()}/content/posts`);
+  const files = fs.readdirSync(FULL_PATH);
 
   const paths = files.map((filename) => ({
     params: {
@@ -50,14 +55,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params: { slug } }) => {
-  const { attributes, html } = await import(
-    "../../content/posts/" + slug + ".md"
-  );
+  const post = await getPostBySlug(Array.isArray(slug) ? slug[0] : slug);
 
   return {
-    props: {
-      ...attributes,
-      content: html,
-    },
+    props: post,
   };
 };

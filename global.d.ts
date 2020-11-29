@@ -7,11 +7,12 @@ type BasicProps = {
   className?: string;
 };
 
-type PostDetails = {
+type Post = {
   slug: string;
   title: string;
   summary: string;
   publishDate: Date;
+  formattedDate?: string;
   tags: string[];
   thumbnail: string;
   thumbnailAlt: string;

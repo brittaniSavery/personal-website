@@ -7,9 +7,9 @@ import GithubLogo from "../public/images/social/github-grey.svg";
 import GoodreadsLogo from "../public/images/social/goodreads-grey.svg";
 import InstagramLogo from "../public/images/social/instagram-grey.svg";
 import LinkedInLogo from "../public/images/social/linkedin-grey.svg";
+import copyright from "../lib/copyright";
 
 export default function Footer(): JSX.Element {
-  const currentYear = new Date().getFullYear();
   return (
     <footer className="bsa-margin footer bsa-footer">
       <div className="container">
@@ -70,7 +70,7 @@ export default function Footer(): JSX.Element {
                   </ExternalLink>
                 </p>
                 <p className="pt-3 is-size-7">
-                  Copyright &copy; {currentYear} Brittani S Avery
+                  Copyright &copy; {copyright} Brittani S Avery
                 </p>
               </div>
             </div>

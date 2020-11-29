@@ -1,16 +1,10 @@
-import React from "react";
 import fs from "fs";
-
 import { GetStaticPaths, GetStaticProps } from "next";
+import React from "react";
 import Layout from "../../components/Layout";
 import MarkdownParser from "../../components/MarkdownParser";
-import {
-  FULL_PATH,
-  getPostBySlug,
-  getPublishDateDisplay,
-  IMG_PATH,
-} from "../../lib/post";
 import TagGroup from "../../components/TagGroup";
+import { FULL_PATH, getPostBySlug } from "../../lib/postsHelper";
 
 export default function Post({
   title,
@@ -18,20 +12,14 @@ export default function Post({
   tags,
   thumbnail,
   thumbnailAlt,
-  publishDate,
-}: PostDetails): JSX.Element {
+  formattedDate,
+}: Post): JSX.Element {
   return (
     <Layout>
-      <img
-        className="bsa-post-img"
-        src={`${IMG_PATH}/${thumbnail}`}
-        alt={thumbnailAlt}
-      />
+      <img className="bsa-post-img" src={thumbnail} alt={thumbnailAlt} />
       <h1 className="mb-2">{title}</h1>
       <div className="pb-4">
-        <p className="mb-2">
-          {getPublishDateDisplay(publishDate)} &middot; Brittani S Avery
-        </p>
+        <p className="mb-2">{formattedDate} &middot; Brittani S Avery</p>
         <TagGroup className="pb-2" tags={tags} />
       </div>
       <MarkdownParser content={content} />

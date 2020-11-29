@@ -18,7 +18,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "lib/markdownConfig.js"
+    "lib/markdownConfig.js",
+    "lib/generate-rss.js"
   ],
   "exclude": ["node_modules"]
 }

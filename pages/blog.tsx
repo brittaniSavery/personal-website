@@ -1,13 +1,15 @@
-import fs from "fs";
 import { GetStaticProps } from "next";
 import Link from "next/link";
 import React from "react";
 import Layout from "../components/Layout";
 import PostCard from "../components/PostCard";
-import { FULL_PATH, getPostsByDate } from "../lib/post";
+import { getPostsByDate } from "../lib/postsHelper";
+import fs from "fs";
+import { Feed } from "feed";
+import copyright from "../lib/copyright";
 
 type Props = {
-  posts: PostDetails[];
+  posts: Post[];
 };
 
 export default function BlogList({ posts }: Props): JSX.Element {
@@ -30,6 +32,30 @@ export default function BlogList({ posts }: Props): JSX.Element {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const files = fs.readdirSync(FULL_PATH);
-  return { props: { posts: await getPostsByDate(files) } };
+  const posts = await getPostsByDate();
+
+  const feed = new Feed({
+    id: process.env.WEBSITE,
+    link: process.env.WEBSITE,
+    title: "Brittani S Avery's Personal Blog",
+    description:
+      "The thoughts and ramblings of Brittani S Avery on her code, writings, and much more.",
+    language: "en-us",
+    copyright: `${copyright} Brittani S Avery, all rights reserved.`,
+  });
+
+  posts.forEach((post) => {
+    feed.addItem({
+      date: new Date(post.publishDate),
+      title: post.title,
+      link: `${process.env.WEBSITE}/post/${post.slug}`,
+      category: post.tags.map((tag) => ({ name: tag })),
+      description: post.summary,
+      content: post.content,
+    });
+  });
+
+  fs.writeFileSync(`${process.cwd()}/public/feed.xml`, feed.rss2());
+
+  return { props: { posts: posts } };
 };

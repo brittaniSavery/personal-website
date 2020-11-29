@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": " cross-env NODE_OPTIONS='--inspect' next dev",
-    "build": "next build && next export",
+    "build": "next build  && next export",
     "start": "next start",
     "lint": "eslint --ext .js,.ts,.tsx --quiet --fix"
   },
@@ -12,6 +12,7 @@
     "@types/react-html-parser": "^2.0.1",
     "bulma": "^0.9.1",
     "clsx": "^1.1.1",
+    "feed": "^4.2.1",
     "next": "9.5.5",
     "nord": "^0.2.1",
     "prismjs": "^1.22.0",

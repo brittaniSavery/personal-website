@@ -1,14 +1,13 @@
-import fs from "fs";
 import { GetStaticProps } from "next";
 import React from "react";
 import Layout from "../components/Layout";
 import MarkdownParser from "../components/MarkdownParser";
 import PostCard from "../components/PostCard";
 import { html as home } from "../content/home.md";
-import { FULL_PATH, getPostsByDate } from "../lib/post";
+import { getPostsByDate } from "../lib/postsHelper";
 
 type HomeProps = {
-  recentPosts: PostDetails[];
+  recentPosts: Post[];
 };
 
 export default function Home({ recentPosts }: HomeProps): JSX.Element {
@@ -27,8 +26,7 @@ export default function Home({ recentPosts }: HomeProps): JSX.Element {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const files = fs.readdirSync(FULL_PATH);
-  const posts = await getPostsByDate(files);
+  const posts = await getPostsByDate();
 
   return { props: { recentPosts: posts.slice(0, 2) } };
 };

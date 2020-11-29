@@ -17,7 +17,7 @@ This is the code for my personal website, [brittanisavery.com](https://brittanis
 
 ## 📃 TODO List
 
-- Add RSS to site
+- Test RSS (figure out absolute url refs)
 - Blog Tags Pages (similar to regular blog page)
 - Add "Enjoyed? Newsletter sign-up" and Next/Previous posts at end of blog
 - Autographed copies order form

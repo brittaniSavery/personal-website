@@ -22,4 +22,4 @@ With the new photo and logo in place, I continued to look for ways to reflect my
 
 So, what can you expect topic-wise? Mostly writing, coding, and the mixture of the two. I might relate some of my personal experiences regarding mental health and being a Black woman in a predominantly male field. This will be a healthy mix of personal and professional.
 
-Sign up for my newsletter to stay up to date on blog posts. There will also be sneak peaks on upcoming projects like the sequel for [_Element Unknown_](/element-unknown). Let me know in the comments below if there is anything specific you would like me to write about. Until next time! :wave:
+Sign up for my [newsletter](/newsletter) to stay up to date on blog posts. There will also be sneak peaks on upcoming projects like the sequel for [_Element Unknown_](/element-unknown). Let me know in the comments below if there is anything specific you would like me to write about. Until next time! :wave:

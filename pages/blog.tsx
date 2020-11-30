@@ -19,11 +19,7 @@ export default function BlogList({ posts }: Props): JSX.Element {
       <div className="columns is-multiline">
         {posts.map((post) => (
           <div key={post.title} className="column is-half">
-            <Link href={`/post/${post.slug}`}>
-              <a>
-                <PostCard post={post} />
-              </a>
-            </Link>
+            <PostCard post={post} />
           </div>
         ))}
       </div>

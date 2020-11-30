@@ -46,3 +46,18 @@ export async function getPostsByDate(): Promise<Post[]> {
 
   return posts;
 }
+
+export async function getRelatedPosts(current: Post): Promise<Post[]> {
+  const posts = await getPostsByDate();
+  return posts
+    .filter((post) => {
+      //must don't be current post
+      if (post.slug === current.slug) return false;
+
+      const tagRelated = post.tags
+        .map((tag) => current.tags.includes(tag))
+        .reduce((allTags, currentTag) => allTags || currentTag);
+      return tagRelated;
+    })
+    .slice(0, 2);
+}

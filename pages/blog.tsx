@@ -1,21 +1,24 @@
+import { Feed } from "feed";
+import fs from "fs";
 import { GetStaticProps } from "next";
-import Link from "next/link";
 import React from "react";
 import Layout from "../components/Layout";
 import PostCard from "../components/PostCard";
-import { getPostsByDate } from "../lib/postsHelper";
-import fs from "fs";
-import { Feed } from "feed";
+import TagGroup from "../components/TagGroup";
 import copyright from "../lib/copyright";
+import { getPostsByDate } from "../lib/postsHelper";
 
-type Props = {
+type BlogProps = {
   posts: Post[];
+  tags: string[];
 };
 
-export default function BlogList({ posts }: Props): JSX.Element {
+export default function Blog({ posts, tags }: BlogProps): JSX.Element {
   return (
     <Layout>
       <h1>Blog</h1>
+      <TagGroup tags={tags} />
+
       <div className="columns is-multiline">
         {posts.map((post) => (
           <div key={post.title} className="column is-half">
@@ -40,6 +43,7 @@ export const getStaticProps: GetStaticProps = async () => {
     copyright: `${copyright} Brittani S Avery, all rights reserved.`,
   });
 
+  const tags = new Set();
   posts.forEach((post) => {
     feed.addItem({
       date: new Date(post.publishDate),
@@ -49,9 +53,11 @@ export const getStaticProps: GetStaticProps = async () => {
       description: post.summary,
       content: post.content,
     });
+
+    post.tags.forEach((tag) => tags.add(tag));
   });
 
   fs.writeFileSync(`${process.cwd()}/public/feed.xml`, feed.rss2());
 
-  return { props: { posts: posts } };
+  return { props: { posts: posts, tags: [...tags].sort() } };
 };

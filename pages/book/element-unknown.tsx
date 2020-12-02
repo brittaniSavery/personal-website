@@ -10,9 +10,12 @@ export default function ElementUnknown(): JSX.Element {
       <div className="columns is-reversed">
         <div className="column">
           <p className="is-size-5-tablet">
-            A young man tries to find his place in society while learning to
-            control new elemental powers after &quot;freeing&quot;—i.e. buying—a
-            strange looking slave with a unique connection to him.
+            Fifteen-year-old Rex Marshall, son of a high government official,
+            doesn&apos;t seem to belong to the upper class society of the
+            affluent country, Maventa. While trying to prove his maturity to
+            take over the family inheritance, life takes an unexpected turn as
+            he frees a strange looking slave with a unique connection to him and
+            begins to develop new elemental powers.
           </p>
 
           <h2>Quotes from Readers</h2>

@@ -213,6 +213,8 @@ $tag-colors: $colors !default;
 
 a.bulma-tag {
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    background-color: $primary;
+    color: $primary-invert;
   }
 }

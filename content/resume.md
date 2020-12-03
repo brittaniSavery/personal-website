@@ -13,15 +13,7 @@ Renowned for a short learning curve, a wide range of knowledge on various techno
 
 ## Skills
 
-| Skill                  | Rating |
-| ---------------------- | ------ |
-| Javascript             | 95     |
-| React/Redux            | 80     |
-| Node.js                | 75     |
-| Java                   | 90     |
-| C#/.NET                | 75     |
-| RESTful APIs           | 95     |
-| SQL (SQL Server,mySQL) | 95     |
+Javascript :separator: React (+ Redux) :separator: Node.js :separator: Java :separator: C# / .NET :separator: RESTful APIs :separator: SQL :separator: MongoDB :separator: AWS Lamda
 
 ## Professional Experience
 
@@ -126,5 +118,5 @@ University of Nebraska at Omaha | Omaha, NE
 
 2017-Present
 
-- Designed website for a simulation basketball league, [SIBA](http://siba.averyincorporated.com), using React, Node.js, PHP, and AWS. Learn more about the SIBA project [here](/code/siba).
-- Created database with authentication for users to manage their lineages for the collection game [Dragon Cave](http://dragcave.net) using Next.js, Bulma CSS framework, and MongoDB. Learn more about the Dragon Cave Lineage Database or DCLDB [here](/code/dcldb).
+- Designed website for a simulation basketball league, [SIBA](/code/siba), using React, Node.js, PHP, and AWS.
+- Created [database](/code/dcldb) with authentication for users to manage their lineages for the collection game [Dragon Cave](http://dragcave.net) using Next.js, Bulma CSS framework, and MongoDB.

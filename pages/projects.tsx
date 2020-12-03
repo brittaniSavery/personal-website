@@ -61,6 +61,11 @@ export default function Projects(): JSX.Element {
   return (
     <Layout>
       <h1>Projects</h1>
+      <p>
+        Being that I am both a coder and a writer with an imaginative mind that
+        just won&apos;t stop, I usually have multiple projects going on at the
+        same time in various states of completion.
+      </p>
       <h2>Coding</h2>
       <div className="columns is-multiline">
         <Project

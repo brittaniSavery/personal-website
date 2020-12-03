@@ -18,10 +18,8 @@ This is the code for my personal website, [brittanisavery.com](https://brittanis
 ## 📃 TODO List
 
 - Test RSS (figure out absolute url refs)
-- Autographed copies order form (Mailchimp ordering page?)
-- Newsletter sign-up (use same API as Wix site)
-- Contact page _Should I keep this?_
-- Resume Skills (Images)
+- Autographed copies order form (Mailchimp API and AWS SES combo)
+- Newsletter sign-up page and footer (use same API as Wix site)
 - Meta Data
   - Main Pages
   - Posts

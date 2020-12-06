@@ -3,16 +3,25 @@ import React from "react";
 import Layout from "../components/Layout";
 import MarkdownParser from "../components/MarkdownParser";
 import PostCard from "../components/PostCard";
-import { html as home } from "../content/home.md";
+import { attributes, html as home } from "../content/home.md";
 import { getPostsByDate } from "../lib/postsHelper";
 
 type HomeProps = {
+  url: string;
   recentPosts: Post[];
 };
 
-export default function Home({ recentPosts }: HomeProps): JSX.Element {
+export default function Home({ url, recentPosts }: HomeProps): JSX.Element {
+  const meta: GeneralMeta = {
+    url: url,
+    type: "website",
+    fullTitle: `Brittani S Avery. ${attributes.title}`,
+    title: attributes.title,
+    description: attributes.description,
+    thumbnail: `${url}/images/${attributes.thumbnail}`,
+  };
   return (
-    <Layout>
+    <Layout meta={meta}>
       <MarkdownParser content={home} />
       <div className="columns">
         {recentPosts.map((post) => (
@@ -28,5 +37,7 @@ export default function Home({ recentPosts }: HomeProps): JSX.Element {
 export const getStaticProps: GetStaticProps = async () => {
   const posts = await getPostsByDate();
 
-  return { props: { recentPosts: posts.slice(0, 2) } };
+  return {
+    props: { url: process.env.WEBSITE, recentPosts: posts.slice(0, 2) },
+  };
 };

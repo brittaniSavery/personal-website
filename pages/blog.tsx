@@ -113,7 +113,7 @@ export const getStaticProps: GetStaticProps = async () => {
       title: post.title,
       link: `${process.env.WEBSITE}/post/${post.slug}`,
       category: post.tags.map((tag) => ({ name: tag })),
-      description: post.summary,
+      description: post.description,
       content: post.content,
       //image: post.thumbnail,
     });

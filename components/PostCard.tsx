@@ -19,7 +19,7 @@ export default function PostCard({ post }: PostCardProps): JSX.Element {
         </h2>
         <p className="mb-0">{post.formattedDate}</p>
         <TagGroup tags={post.tags} />
-        <p>{post.summary}</p>
+        <p>{post.description}</p>
       </BSACardContent>
     </BSACard>
   );

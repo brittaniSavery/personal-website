@@ -1,16 +1,19 @@
 import Head from "next/head";
 import React from "react";
 import Footer from "./Footer";
+import MetaTags from "./MetaTags";
 import Navigation from "./Navigation";
 
-export default function Layout({ children }: BasicProps): JSX.Element {
+type LayoutProps = BasicProps & {
+  meta?: AllMeta;
+};
+
+export default function Layout({ meta, children }: LayoutProps): JSX.Element {
   return (
     <>
+      {meta && <MetaTags {...meta} />}
+
       <Head>
-        <title>Brittani S Avery</title>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#fff" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"

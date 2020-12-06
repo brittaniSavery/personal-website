@@ -4,7 +4,7 @@ publishDate: 2020-07-15
 tags:
   - introduction
   - gamer
-summary: In Part 3 of the Introduction of Me Series, I talk about growing up with video and computer games and seeing the changes in the industry.
+description: In Part 3 of the Introduction of Me Series, I talk about growing up with video and computer games and seeing the changes in the industry.
 thumbnail: intro-gamer.jpg
 ---
 

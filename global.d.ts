@@ -7,10 +7,29 @@ type BasicProps = {
   className?: string;
 };
 
+type AllMeta = GeneralMeta | PostMeta;
+
+type PostMeta = Meta & {
+  type: "article";
+  publishDate: string;
+};
+
+type GeneralMeta = Meta & {
+  type: "website";
+};
+
+type Meta = {
+  title: string;
+  fullTitle?: string;
+  description: string;
+  thumbnail: string;
+  url: string;
+};
+
 type Post = {
   slug: string;
   title: string;
-  summary: string;
+  description: string;
   publishDate: Date;
   formattedDate?: string;
   tags: string[];

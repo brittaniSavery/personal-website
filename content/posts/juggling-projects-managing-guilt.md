@@ -4,7 +4,7 @@ publishDate: 2020-09-17
 tags:
   - coder
   - writer
-summary: While my inspiration for coding has been free-flowing, my writing muse has disappeared. A comic perfectly portrays my feelings on my lack of writing.
+description: While my inspiration for coding has been free-flowing, my writing muse has disappeared. A comic perfectly portrays my feelings on my lack of writing.
 thumbnail: big-project-comic.png
 ---
 

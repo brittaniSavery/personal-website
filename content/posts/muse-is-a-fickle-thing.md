@@ -3,7 +3,7 @@ title: Muse is a Fickle Thing
 publishDate: 2020-06-03
 tags:
   - writer
-summary: Sometimes the motivation of a creative person disappears out of nowhere. Here is a recent personal experience and how none should worry if inspiration is a little unreliable.
+description: Sometimes the motivation of a creative person disappears out of nowhere. Here is a recent personal experience and how none should worry if inspiration is a little unreliable.
 thumbnail: no-muse.jpg
 ---
 

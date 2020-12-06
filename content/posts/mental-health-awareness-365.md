@@ -3,7 +3,7 @@ title: Mental Health Awareness 365
 publishDate: 2020-05-26
 tags:
   - personal
-summary: May is Mental Health Awareness Month and while I am glad that mental health gains some more exposure during the month, it is important throughout the entire year. I detail how common mental illness is and how simple actions can help those who suffer.
+description: May is Mental Health Awareness Month and while I am glad that mental health gains some more exposure during the month, it is important throughout the entire year. I detail how common mental illness is and how simple actions can help those who suffer.
 thumbnail: how-are-you.jpg
 ---
 

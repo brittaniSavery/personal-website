@@ -3,7 +3,7 @@ title: Past Poet vs Present Poet
 publishDate: 2020-09-30
 tags:
   - writer
-summary: Having written poetry for 18 years, my skills as a poet have improved greatly. I compare some of my work with earlier versions of itself.
+description: Having written poetry for 18 years, my skills as a poet have improved greatly. I compare some of my work with earlier versions of itself.
 thumbnail: jackets.jpg
 ---
 

@@ -3,7 +3,7 @@ title: My First Author Interview
 publishDate: 2020-07-01
 tags:
   - writer
-summary: In March, I had my first author interview, which was hosted by VS Holmes from the Amphibian Press Podcast! It was a fun conversation.
+description: In March, I had my first author interview, which was hosted by VS Holmes from the Amphibian Press Podcast! It was a fun conversation.
 thumbnail: author-interview.jpg
 ---
 

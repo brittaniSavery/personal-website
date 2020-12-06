@@ -3,7 +3,7 @@ title: A Definition of Creativity
 publishDate: 2020-06-17
 tags:
   - coder
-summary: Can creativity be more than drawing and singing? This post explores how imagination and its limits affect what's considered a creative work.
+description: Can creativity be more than drawing and singing? This post explores how imagination and its limits affect what's considered a creative work.
 thumbnail: creative.jpg
 ---
 

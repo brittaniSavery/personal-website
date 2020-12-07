@@ -12,12 +12,12 @@ import {
   getRelatedPosts,
 } from "../../lib/postsHelper";
 
-type SlugProps = {
+type PostProps = {
   main: Post;
   related: Post[];
 };
 
-export default function Post({ main, related }: SlugProps): JSX.Element {
+export default function Post({ main, related }: PostProps): JSX.Element {
   return (
     <Layout>
       <img

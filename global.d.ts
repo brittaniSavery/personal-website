@@ -7,11 +7,16 @@ type BasicProps = {
   className?: string;
 };
 
-type AllMeta = GeneralMeta | PostMeta;
+type AllMeta = GeneralMeta | PostMeta | BookMeta;
 
 type PostMeta = Meta & {
   type: "article";
   publishDate: string;
+};
+
+type BookMeta = Meta & {
+  type: "books.book";
+  isbn: string;
 };
 
 type GeneralMeta = Meta & {

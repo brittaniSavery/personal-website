@@ -10,7 +10,7 @@ export default function MetaTags({
   fullTitle,
   ...rest
 }: AllMeta): JSX.Element {
-  const AuthorMetaTags = () => {
+  const ArticleMetaTags = () => {
     if (type !== "article") return null;
 
     const authorTags = rest as { publishDate: string };
@@ -23,6 +23,21 @@ export default function MetaTags({
         <meta
           property="article:published_time"
           content={authorTags.publishDate}
+        />
+      </>
+    );
+  };
+
+  const BookMetaTags = () => {
+    if (type !== "books.book") return null;
+
+    const bookTags = rest as { isbn: string };
+    return (
+      <>
+        <meta property="books:isbn" content={bookTags.isbn} />
+        <meta
+          property="books:author"
+          content="https://www.goodreads.com/author/show/17074316.Brittani_S_Avery"
         />
       </>
     );
@@ -41,7 +56,8 @@ export default function MetaTags({
       <meta property="og:image" content={thumbnail} />
       <meta property="og:site_name" content="Brittani S Avery" />
 
-      {AuthorMetaTags()}
+      {ArticleMetaTags()}
+      {BookMetaTags()}
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content="@brittanisavery" />

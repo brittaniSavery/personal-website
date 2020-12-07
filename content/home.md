@@ -1,6 +1,6 @@
 ---
 title: "Coder. Writer. Gamer. Nerd."
-fullTitle: "Brittani S Avery : Coder. Writer. Gamer. Nerd."
+fullTitle: "Brittani S Avery: Coder. Writer. Gamer. Nerd."
 description: "Official Website of Brittani S Avery: writer, coder, gamer, nerd."
 thumbnail: meta/homepage.jpg
 ---

@@ -1,0 +1,40 @@
+[
+  {
+    "slug": "element-unknown",
+    "title": "Element Unknown",
+    "image": "books/element-unknown.jpg",
+    "alt": "The novel, Element Unknown, in its paperback form.",
+    "isbn": "0997133619",
+    "blurb": [
+      "Fifteen-year-old Rex is right at the cusp of officially gaining the title of heir to the Marshall family's inheritance. There are just a few complications: his scandalous reputation, his conniving cousin, his lacking studies, and finally—the big one considering his abolitionist father—his impulsive purchase and short-sighted freeing of the slave Meenal, a girl with strange blue skin and an even stranger connection to him.",
+      "Will Rex be able to manage the social and political challenges to earn his birthright? Or will his rash decision-making and ferocious anger cause him to lose everything?"
+    ],
+    "amazonLink": "http://amzn.to/2vSpcxR",
+    "reviews": [
+      {
+        "name": "Selbi",
+        "location": "Amazon",
+        "text": "It was the kind of book that grabbed your attention and didn't let go until the last page."
+      },
+      {
+        "name": "Lisa Buford",
+        "location": "Amazon",
+        "text": "I was drawn into the world by the end of the first chapter. It was hard to put the book down!"
+      },
+      {
+        "name": "Kate Fox",
+        "location": "Amazon",
+        "text": "Engaging plot and irresistible characters."
+      },
+      {
+        "name": "Shannon Rohrer",
+        "location": "Goodreads",
+        "text": "Environmental details were well-written, the sub-plots involving Meenal and Rex trying to learn about their backgrounds was intriguing."
+      }
+    ],
+    "meta": {
+      "description": "Fifteen-year-old Rex Marshall is the destined heir to his family's inheritance, but claiming his birthright comes with complications.",
+      "image": "meta/element-unknown.jpg"
+    }
+  }
+]

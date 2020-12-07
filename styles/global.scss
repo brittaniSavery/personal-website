@@ -42,6 +42,12 @@ $card-footer-border-top: 1px solid $bsa-light-blue;
 $code: $bsa-dark-blue;
 $pre-background: none;
 
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/helpers/_all.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
+
 strong {
   color: $bsa-dark-blue !important;
 }
@@ -151,6 +157,14 @@ strong {
   width: 100%;
 }
 
+.bsa-project-img {
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    float: right !important;
+    padding-left: 0.25rem;
+  }
+}
+
 //iconify
 
 .iconify {
@@ -160,11 +174,6 @@ strong {
 }
 
 @import "./prism-nord.css"; //css for syntax highlighting
-@import "../node_modules/bulma/sass/utilities/_all.sass";
-@import "../node_modules/bulma/sass/base/_all.sass";
-@import "../node_modules/bulma/sass/grid/_all.sass";
-@import "../node_modules/bulma/sass/helpers/_all.sass";
-@import "../node_modules/bulma/sass/layout/_all.sass";
 @import "./bulma-tags.scss"; //same logic as bulma tags just separated to avoid conflict with prism classes
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/components/card.sass";

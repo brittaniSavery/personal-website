@@ -6,7 +6,7 @@
     "alt": "The novel, Element Unknown, in its paperback form.",
     "isbn": "0997133619",
     "blurb": [
-      "Fifteen-year-old Rex is right at the cusp of officially gaining the title of heir to the Marshall family's inheritance. There are just a few complications: his scandalous reputation, his conniving cousin, his lacking studies, and finally—the big one considering his abolitionist father—his impulsive purchase and short-sighted freeing of the slave Meenal, a girl with strange blue skin and an even stranger connection to him.",
+      "Fifteen-year-old Rex is right at the cusp of officially gaining the title of heir to the Marshall family's inheritance. There are just a few complications: his scandalous reputation, his conniving cousin, his lackluster studies, and finally—the big one considering his abolitionist father—his impulsive purchase and short-sighted freeing of the slave Meenal, a girl with strange blue skin and an even stranger connection to him.",
       "Will Rex be able to manage the social and political challenges to earn his birthright? Or will his rash decision-making and ferocious anger cause him to lose everything?"
     ],
     "amazonLink": "http://amzn.to/2vSpcxR",
@@ -35,6 +35,22 @@
     "meta": {
       "description": "Fifteen-year-old Rex Marshall is the destined heir to his family's inheritance, but claiming his birthright comes with complications.",
       "image": "meta/element-unknown.jpg"
+    },
+    "card": {
+      "type": "Novel",
+      "genres": ["Young Adult", "Science-Fiction", "Fantasy"],
+      "image": "projects/element-unknown-card.jpg",
+      "links": [{ "text": "Learn More", "url": "/book/element-unknown" }]
+    }
+  },
+  {
+    "slug": "",
+    "title": "Element Unknown #2",
+    "card": {
+      "type": "Novel",
+      "genres": ["Fantasy", "Science-Fiction", "Young Adult"],
+      "image": "projects/coming-soon-card.jpg",
+      "links": [{ "text": "Coming Soon" }]
     }
   }
 ]

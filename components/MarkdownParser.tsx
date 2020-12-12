@@ -1,7 +1,12 @@
 import React from "react";
 
-type Props = { content: string };
+type Props = { content: string; className?: string };
 
-export default function MarkdownParser({ content }: Props): JSX.Element {
-  return <div dangerouslySetInnerHTML={{ __html: content }} />;
+export default function MarkdownParser({
+  content,
+  className,
+}: Props): JSX.Element {
+  return (
+    <div className={className} dangerouslySetInnerHTML={{ __html: content }} />
+  );
 }

@@ -142,13 +142,11 @@ strong {
   height: 100%;
 
   &.project-card {
-    .card-content {
-      @media screen and (min-width: $desktop) {
-        height: 13rem;
-      }
-      @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
-        height: 10rem;
-      }
+    display: flex;
+    flex-direction: column;
+
+    .card-footer {
+      margin-top: auto;
     }
   }
 }
@@ -157,11 +155,19 @@ strong {
   width: 100%;
 }
 
-.bsa-project-img {
-  text-align: center;
-  @media screen and (min-width: $tablet) {
-    float: right !important;
-    padding-left: 0.25rem;
+.bsa-project {
+  p:first-of-type {
+    @media screen and (min-width: $tablet) {
+      font-size: $size-5;
+    }
+  }
+
+  &-img {
+    text-align: center;
+    @media screen and (min-width: $tablet) {
+      float: right !important;
+      padding-left: 0.25rem;
+    }
   }
 }
 

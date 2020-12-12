@@ -50,8 +50,9 @@ export default function MetaTags({
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="#fff" />
 
-      <meta property="og:title" content={title} />
       <meta property="og:type" content={type} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
       <meta property="og:image" content={thumbnail} />
       <meta property="og:site_name" content="Brittani S Avery" />

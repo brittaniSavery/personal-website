@@ -3,7 +3,7 @@ import React from "react";
 import ExternalLink from "../../components/ExternalLink";
 import Layout from "../../components/Layout";
 import ReviewQuote from "../../components/ReviewQuote";
-import books from "../../content/books.json";
+import books from "../../content/projects/books.json";
 
 type BookProps = {
   meta: BookMeta;

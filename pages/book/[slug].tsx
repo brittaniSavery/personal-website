@@ -66,11 +66,13 @@ export default function Book({
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = books.map((book) => ({
-    params: {
-      slug: book.slug,
-    },
-  }));
+  const paths = books
+    .filter((book) => book.slug !== "")
+    .map((book) => ({
+      params: {
+        slug: book.slug,
+      },
+    }));
 
   return {
     paths,

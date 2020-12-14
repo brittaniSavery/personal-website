@@ -1,7 +1,7 @@
 ---
 slug: dcldb
 title: Dragon Cave Lineage Database
-type: Website
+type: Database
 image: books/element-unknown.jpg
 tech:
   - Next.js

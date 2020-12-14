@@ -1,65 +1,69 @@
 import React from "react";
-import {
-  BSACard,
-  BSACardContent,
-  BSACardFooter,
-  BSACardImage,
-  CardFooterItem,
-} from "../components/BSACard";
+import { GetStaticProps } from "next";
+import { BSACard, BSACardContent, BSACardImage } from "../components/BSACard";
 import Layout from "../components/Layout";
+import Link from "next/link";
+import TagGroup from "../components/TagGroup";
+import fs from "fs";
+import books from "../content/projects/books.json";
 
-type ProjectProps = {
+type Project = {
+  slug?: string;
   title: string;
   image: string;
+  alt?: string;
   type: string;
-  details: string;
-  footerItems: CardFooterItem[];
+  subType: string;
+  tags: string[];
+};
+
+type ProjectsProps = {
+  meta: GeneralMeta;
+  coding: Project[];
+  writing: Project[];
 };
 
 function Project({
   title,
   image,
+  slug,
   type,
-  details,
-  footerItems,
-}: ProjectProps): JSX.Element {
+  subType,
+  tags,
+  alt,
+}: Project): JSX.Element {
   return (
     <div className="column is-one-third-desktop is-half-tablet">
       <BSACard className="project-card">
-        <BSACardImage src={`/images/projects/${image}`} />
+        <BSACardImage src={`/images/${image}`} alt={alt || ""} />
         <BSACardContent>
-          <p className="is-size-4 mb-0">{title}</p>
-          <p>
-            {type}
-            <br />
-            {details}
-          </p>
+          {slug ? (
+            <Link href={`/${type}/${slug}`}>
+              <a className="is-size-4 mb-0 has-text-weight-semibold has-text-primary">
+                {title}
+              </a>
+            </Link>
+          ) : (
+            <p className="is-size-4 mb-0 has-text-weight-semibold has-text-primary">
+              {title}
+            </p>
+          )}
+
+          <p className="mb-1">{subType}</p>
+          <TagGroup tags={tags} />
         </BSACardContent>
-        <BSACardFooter items={footerItems} />
       </BSACard>
     </div>
   );
 }
 
-export default function Projects(): JSX.Element {
-  const footerLinks = {
-    //coding
-    siba: [
-      { label: "Learn More", link: "/code/siba" },
-      { label: "See it Live!", link: "https://siba.averyincorporated.com/" },
-    ],
-    dcldb: [
-      { label: "Learn More", link: "/code/dcldb" },
-      { label: "See it Live!", link: "https://dc-lineage-db.vercel.app/" },
-    ],
-    bsa: [{ label: "Learn More", link: "/code/bsa-site" }],
-    //writing
-    elementUnknown: [{ label: "Learn More", link: "/book/element-unknown" }],
-    euSequel: [{ label: "Coming Soon!" }],
-  };
-
+export default function Projects({
+  meta,
+  coding,
+  writing,
+}: ProjectsProps): JSX.Element {
   return (
-    <Layout>
+    <Layout meta={meta}>
       <h1>Projects</h1>
       <p>
         Being that I am both a coder and a writer with an imaginative mind that
@@ -68,45 +72,79 @@ export default function Projects(): JSX.Element {
       </p>
       <h2>Coding</h2>
       <div className="columns is-multiline">
-        <Project
-          title="Simulation International Basketball Association"
-          image="siba-card.png"
-          type="Website"
-          details="React, Bootstrap, AWS Lamda, PHP, MySQL"
-          footerItems={footerLinks.siba}
-        />
-        <Project
-          title="Dragon Cave Lineage Database"
-          image="dcldb-card.png"
-          type="Database"
-          details="Next.js, Bulma CSS Framework, MongoDB"
-          footerItems={footerLinks.dcldb}
-        />
-        <Project
-          title="Official Site for Brittani S Avery"
-          image="website-card.png"
-          type="Website"
-          details="Next.js, Typescript, Bulma CSS Framework, Markdown-It"
-          footerItems={footerLinks.bsa}
-        />
+        {coding.map((code) => (
+          <Project
+            key={code.title}
+            slug={code.slug}
+            title={code.title}
+            alt={code.alt}
+            image={code.image}
+            type={code.type}
+            subType={code.subType}
+            tags={code.tags}
+          />
+        ))}
       </div>
       <h2>Writing</h2>
       <div className="columns">
-        <Project
-          title="Element Unknown"
-          image="element-unknown-card.jpg"
-          type="Novel"
-          details="Young Adult, Fantasy, Science-Fiction"
-          footerItems={footerLinks.elementUnknown}
-        />
-        <Project
-          title="Element Unknown Sequel"
-          image="coming-soon-card.png"
-          type="Novel"
-          details="Young Adult, Fantasy, Science-Fiction"
-          footerItems={footerLinks.euSequel}
-        />
+        {writing.map((write) => (
+          <Project
+            key={write.title}
+            slug={write.slug}
+            title={write.title}
+            alt={write.alt}
+            image={write.image}
+            type={write.type}
+            subType={write.subType}
+            tags={write.tags}
+          />
+        ))}
       </div>
     </Layout>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const meta: GeneralMeta = {
+    title: "Projects",
+    type: "website",
+    url: `${process.env.WEBSITE}/projects`,
+    description:
+      "A list of projects in various states of completion by Brittani S. Avery, a coder and writer with an imaginative mind that just won't stop.",
+    thumbnail: `${process.env.WEBSITE}/images/meta/homepage.jpg`,
+  };
+
+  const files = fs.readdirSync(`${process.cwd()}/content/projects/code`);
+  const imports = files.map(
+    async (file): Promise<Project> => {
+      const filename = file.replace(".md", "");
+      const { attributes } = await import(
+        "../content/projects/code/" + filename + ".md"
+      );
+      const project: Project = {
+        slug: attributes.slug,
+        title: attributes.title,
+        image: `projects/${attributes.cardImage}`,
+        type: "code",
+        subType: attributes.type,
+        tags: attributes.tech,
+      };
+      return project;
+    }
+  );
+
+  const codeProjects: Project[] = await Promise.all(imports);
+
+  const writingProjects: Project[] = books.map((book) => ({
+    slug: book.slug,
+    title: book.title,
+    image: book.card.image,
+    type: "book",
+    subType: book.card.type,
+    tags: book.card.genres,
+  }));
+
+  return {
+    props: { meta: meta, coding: codeProjects, writing: writingProjects },
+  };
+};

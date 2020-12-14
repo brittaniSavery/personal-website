@@ -39,8 +39,7 @@
     "card": {
       "type": "Novel",
       "genres": ["Young Adult", "Science-Fiction", "Fantasy"],
-      "image": "projects/element-unknown-card.jpg",
-      "links": [{ "text": "Learn More", "url": "/book/element-unknown" }]
+      "image": "projects/element-unknown-card.jpg"
     }
   },
   {
@@ -49,8 +48,8 @@
     "card": {
       "type": "Novel",
       "genres": ["Fantasy", "Science-Fiction", "Young Adult"],
-      "image": "projects/coming-soon-card.jpg",
-      "links": [{ "text": "Coming Soon" }]
+      "image": "projects/coming-soon-card.png",
+      "alt": "Coming Soon!"
     }
   }
 ]

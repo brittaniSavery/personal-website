@@ -15,6 +15,7 @@ type Project = {
   type: string;
   subType: string;
   tags: string[];
+  description: string;
 };
 
 type ProjectsProps = {
@@ -31,25 +32,25 @@ function Project({
   subType,
   tags,
   alt,
+  description,
 }: Project): JSX.Element {
+  const titleClasses = "has-text-weight-semibold";
   return (
     <div className="column is-one-third-desktop is-half-tablet">
       <BSACard className="project-card">
         <BSACardImage src={`/images/${image}`} alt={alt || ""} />
         <BSACardContent>
+          <p className="bulma-tag is-primary">{subType}</p>
           {slug ? (
-            <Link href={`/${type}/${slug}`}>
-              <a className="is-size-4 mb-0 has-text-weight-semibold has-text-primary">
-                {title}
-              </a>
-            </Link>
-          ) : (
-            <p className="is-size-4 mb-0 has-text-weight-semibold has-text-primary">
-              {title}
+            <p>
+              <Link href={`/${type}/${slug}`}>
+                <a className={titleClasses}>{title}</a>
+              </Link>
             </p>
+          ) : (
+            <p className={titleClasses}>{title}</p>
           )}
-
-          <p className="mb-1">{subType}</p>
+          <p>{description}</p>
           <TagGroup tags={tags} />
         </BSACardContent>
       </BSACard>
@@ -82,6 +83,7 @@ export default function Projects({
             type={code.type}
             subType={code.subType}
             tags={code.tags}
+            description={code.description}
           />
         ))}
       </div>
@@ -97,6 +99,7 @@ export default function Projects({
             type={write.type}
             subType={write.subType}
             tags={write.tags}
+            description={write.description}
           />
         ))}
       </div>
@@ -124,10 +127,11 @@ export const getStaticProps: GetStaticProps = async () => {
       const project: Project = {
         slug: attributes.slug,
         title: attributes.title,
-        image: `projects/${attributes.cardImage}`,
+        image: `projects/${attributes.card.image}`,
         type: "code",
         subType: attributes.type,
         tags: attributes.tech,
+        description: attributes.card.description,
       };
       return project;
     }
@@ -142,6 +146,7 @@ export const getStaticProps: GetStaticProps = async () => {
     type: "book",
     subType: book.card.type,
     tags: book.card.genres,
+    description: book.meta.description,
   }));
 
   return {

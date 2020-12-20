@@ -9,7 +9,9 @@ tech:
   - Typescript
   - Bulma CSS Framework
   - Markdown-It
-cardImage: website-card.png
+card:
+  image: website-card.png
+  description: The website you're currently viewing that contains information on my coding projects and books and blog
 links:
   - text: View Code
     url: https://github.com/brittaniSavery/personal-website

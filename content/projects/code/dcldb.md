@@ -7,7 +7,9 @@ tech:
   - Next.js
   - Bulma CSS Framework
   - MongoDB
-cardImage: dcldb-card.png
+card:
+  image: dcldb-card.png
+  description: An online database of lineages of the digital dragons from the creature collection game, Dragon Cave.
 links:
   - text: Visit DCLDB
     url: https://dc-lineage-db.vercel.app
@@ -18,7 +20,7 @@ meta:
   image: meta/dcldb.png
 ---
 
-The Dragon Cave Lineage Database (DCLDB) is an online database of lineages (and breedings coming soon!) of the digital dragons from the creature collection game, [Dragon Cave](https://dragcave.net).
+The Dragon Cave Lineage Database (DCLDB) is an online database of lineages of the digital dragons from the creature collection game, [Dragon Cave](https://dragcave.net).
 
 ## Background
 

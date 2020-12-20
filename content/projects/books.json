@@ -45,6 +45,9 @@
   {
     "slug": "",
     "title": "Element Unknown #2",
+    "meta": {
+      "description": "Rex Marshall and his friends are on a new adventure, exploring different lands, cultures, and sides of themselves."
+    },
     "card": {
       "type": "Novel",
       "genres": ["Fantasy", "Science-Fiction", "Young Adult"],

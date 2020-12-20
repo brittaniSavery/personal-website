@@ -7,19 +7,11 @@ import { attributes, html as home } from "../content/home.md";
 import { getPostsByDate } from "../lib/postsHelper";
 
 type HomeProps = {
-  url: string;
+  meta: GeneralMeta;
   recentPosts: Post[];
 };
 
-export default function Home({ url, recentPosts }: HomeProps): JSX.Element {
-  const meta: GeneralMeta = {
-    url: url,
-    type: "website",
-    fullTitle: `Brittani S Avery. ${attributes.title}`,
-    title: attributes.title,
-    description: attributes.description,
-    thumbnail: `${url}/images/${attributes.thumbnail}`,
-  };
+export default function Home({ meta, recentPosts }: HomeProps): JSX.Element {
   return (
     <Layout meta={meta}>
       <MarkdownParser content={home} />
@@ -35,9 +27,20 @@ export default function Home({ url, recentPosts }: HomeProps): JSX.Element {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
+  const url = process.env.WEBSITE;
+
+  const meta: GeneralMeta = {
+    url: url,
+    type: "website",
+    fullTitle: `Brittani S Avery. ${attributes.title}`,
+    title: attributes.title,
+    description: attributes.description,
+    thumbnail: `${url}/images/${attributes.thumbnail}`,
+  };
+
   const posts = await getPostsByDate();
 
   return {
-    props: { url: process.env.WEBSITE, recentPosts: posts.slice(0, 2) },
+    props: { meta: meta, recentPosts: posts.slice(0, 2) },
   };
 };

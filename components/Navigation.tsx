@@ -46,9 +46,6 @@ export default function Navigation(): JSX.Element {
           <Link href="/newsletter">
             <a className="navbar-item">Newsletter</a>
           </Link>
-          <Link href="/contact">
-            <a className="navbar-item">Contact</a>
-          </Link>
         </div>
         <div className="navbar-end" />
       </div>

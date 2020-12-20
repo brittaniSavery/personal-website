@@ -13,9 +13,10 @@ import { getPostsByDate } from "../lib/postsHelper";
 type BlogProps = {
   posts: Post[];
   tags: string[];
+  meta: GeneralMeta;
 };
 
-export default function Blog({ posts, tags }: BlogProps): JSX.Element {
+export default function Blog({ posts, tags, meta }: BlogProps): JSX.Element {
   const router = useRouter();
   const { tag, page } = router.query;
 
@@ -30,7 +31,7 @@ export default function Blog({ posts, tags }: BlogProps): JSX.Element {
   const pageSection = totalSection.slice(postStart, postEnd);
 
   return (
-    <Layout>
+    <Layout meta={meta}>
       <h1>Blog</h1>
       <div className="bulma-tags are-medium">
         <Link href="/blog">
@@ -94,6 +95,14 @@ export default function Blog({ posts, tags }: BlogProps): JSX.Element {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
+  const meta: GeneralMeta = {
+    title: "Blog",
+    url: `${process.env.WEBSITE}/blog`,
+    type: "website",
+    description:
+      "The thoughts and ramblings of Brittani S Avery on her code, writings, and much more.",
+  };
+
   const posts = await getPostsByDate();
 
   const feed = new Feed({
@@ -123,5 +132,5 @@ export const getStaticProps: GetStaticProps = async () => {
 
   fs.writeFileSync(`${process.cwd()}/public/feed.xml`, feed.rss2());
 
-  return { props: { posts: posts, tags: [...tags].sort() } };
+  return { props: { posts: posts, tags: [...tags].sort(), meta: meta } };
 };

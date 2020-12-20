@@ -1,10 +1,15 @@
+import { GetStaticProps } from "next";
 import React from "react";
 import Layout from "../components/Layout";
 
-export default function Newsletter(): JSX.Element {
+type NewsletterProps = {
+  meta: GeneralMeta;
+};
+
+export default function Newsletter({ meta }: NewsletterProps): JSX.Element {
   return (
-    <Layout>
-      <h1>Join My Newsletter</h1>
+    <Layout meta={meta}>
+      <h1>Join the Newsletter</h1>
       <div className="field is-grouped">
         <p className="control is-expanded">
           <input
@@ -20,3 +25,21 @@ export default function Newsletter(): JSX.Element {
     </Layout>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const url = process.env.WEBSITE;
+
+  const meta: GeneralMeta = {
+    url: url + "/newsletter",
+    type: "website",
+    title: "Join the Newsletter",
+    fullTitle: "Brittani S Avery's Newsletter",
+    description:
+      "Join the newsletter to have backstage access to her writing process, coding projects, sneak peaks, and much more!",
+    //thumbnail: `${url}/images/${attributes.thumbnail}`,
+  };
+
+  return {
+    props: { meta: meta },
+  };
+};

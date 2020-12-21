@@ -13,13 +13,14 @@ import {
 } from "../../lib/postsHelper";
 
 type PostProps = {
+  meta: PostMeta;
   main: Post;
   related: Post[];
 };
 
-export default function Post({ main, related }: PostProps): JSX.Element {
+export default function Post({ meta, main, related }: PostProps): JSX.Element {
   return (
-    <Layout>
+    <Layout meta={meta}>
       <img
         className="bsa-post-img"
         src={main.thumbnail}
@@ -36,7 +37,7 @@ export default function Post({ main, related }: PostProps): JSX.Element {
         If you enjoyed this post, check these related posts. Or better yet, join
         my{" "}
         <Link href="/newsletter">
-          <a>newsletter</a>
+          <a className="has-text-weight-semibold">newsletter</a>
         </Link>{" "}
         to get updates right to your inbox!
       </p>
@@ -68,9 +69,17 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params: { slug } }) => {
   const post = await getPostBySlug(Array.isArray(slug) ? slug[0] : slug);
+  const meta: PostMeta = {
+    title: post.title,
+    description: post.meta?.description || post.description,
+    publishDate: post.publishDate,
+    type: "article",
+    url: `${process.env.WEBSITE}/post/${post.slug}`,
+    thumbnail: process.env.WEBSITE + post.thumbnail,
+  };
   const related = await getRelatedPosts(post);
 
   return {
-    props: { main: post, related: related },
+    props: { meta: meta, main: post, related: related },
   };
 };

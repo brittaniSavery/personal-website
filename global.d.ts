@@ -11,7 +11,7 @@ type AllMeta = GeneralMeta | PostMeta | BookMeta;
 
 type PostMeta = Meta & {
   type: "article";
-  publishDate: string;
+  publishDate: Date;
 };
 
 type BookMeta = Meta & {
@@ -37,6 +37,9 @@ type Post = {
   description: string;
   publishDate: Date;
   formattedDate?: string;
+  meta?: {
+    description: string;
+  };
   tags: string[];
   thumbnail: string;
   thumbnailAlt: string;

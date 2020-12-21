@@ -20,10 +20,6 @@ This is the code for my personal website, [brittanisavery.com](https://brittanis
 - Test RSS (figure out absolute url refs)
 - Autographed copies order form (Mailchimp API and AWS SES combo)
 - Newsletter sign-up page and footer (use same API as Wix site)
-- Meta Data
-  - Main Pages
-  - Posts
-  - Individual Projects
 
 _Nice To Have's_
 

@@ -27,16 +27,14 @@ export default function Newsletter({ meta }: NewsletterProps): JSX.Element {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const url = process.env.WEBSITE;
-
   const meta: GeneralMeta = {
-    url: url + "/newsletter",
+    url: process.env.WEBSITE + "/newsletter",
     type: "website",
     title: "Join the Newsletter",
     fullTitle: "Brittani S Avery's Newsletter",
     description:
       "Join the newsletter to have backstage access to her writing process, coding projects, sneak peaks, and much more!",
-    //thumbnail: `${url}/images/${attributes.thumbnail}`,
+    thumbnail: `${process.env.WEBSITE}/images/meta/newsletter.png`,
   };
 
   return {

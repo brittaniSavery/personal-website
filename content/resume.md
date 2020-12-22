@@ -1,6 +1,7 @@
 ---
 title: "Resume"
 description: "The professional software developer resume of Brittani S Avery, detailing her 10+ years experience with a wide variety of languages."
+thumbnail: meta/resume.png
 ---
 
 # Resume

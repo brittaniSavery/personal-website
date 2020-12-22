@@ -101,6 +101,7 @@ export const getStaticProps: GetStaticProps = async () => {
     type: "website",
     description:
       "The thoughts and ramblings of Brittani S Avery on her code, writings, and much more.",
+    thumbnail: `${process.env.WEBSITE}/images/meta/blog.jpg`,
   };
 
   const posts = await getPostsByDate();

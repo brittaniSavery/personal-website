@@ -114,7 +114,7 @@ export const getStaticProps: GetStaticProps = async () => {
     url: `${process.env.WEBSITE}/projects`,
     description:
       "A list of projects in various states of completion by Brittani S. Avery, a coder and writer with an imaginative mind that just won't stop.",
-    thumbnail: `${process.env.WEBSITE}/images/meta/homepage.jpg`,
+    thumbnail: `${process.env.WEBSITE}/images/meta/projects.png`,
   };
 
   const files = fs.readdirSync(`${process.cwd()}/content/projects/code`);

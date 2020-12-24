@@ -87,6 +87,7 @@ export const getStaticProps: GetStaticProps = async ({ params: { slug } }) => {
     description: book.meta.description,
     isbn: book.isbn,
     thumbnail: `${process.env.WEBSITE}/images/${book.meta.image}`,
+    thumbnailAlt: book.meta.alt,
     title: book.title,
     type: "books.book",
     url: `${process.env.WEBSITE}/book/${book.slug}`,

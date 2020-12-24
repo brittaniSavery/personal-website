@@ -24,7 +24,8 @@ export const getStaticProps: GetStaticProps = async () => {
     type: "website",
     title: attributes.title,
     description: attributes.description,
-    //thumbnail: `${url}/images/${attributes.thumbnail}`,
+    thumbnail: `${url}/images/${attributes.thumbnail}`,
+    thumbnailAlt: attributes.thumbnailAlt,
   };
 
   return {

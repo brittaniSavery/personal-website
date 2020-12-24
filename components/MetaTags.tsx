@@ -6,6 +6,7 @@ export default function MetaTags({
   description,
   type,
   thumbnail,
+  thumbnailAlt,
   url,
   fullTitle,
   ...rest
@@ -51,10 +52,11 @@ export default function MetaTags({
       <meta name="theme-color" content="#fff" />
 
       <meta property="og:type" content={type} />
-      <meta property="og:title" content={title} />
+      <meta property="og:title" content={fullTitle || title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
-      <meta property="og:image" content={thumbnail} />
+      {thumbnail && <meta property="og:image" content={thumbnail} />}
+      {thumbnailAlt && <meta property="og:image:alt" content={thumbnailAlt} />}
       <meta property="og:site_name" content="Brittani S Avery" />
 
       {ArticleMetaTags()}
@@ -64,7 +66,7 @@ export default function MetaTags({
       <meta name="twitter:creator" content="@brittanisavery" />
       <meta name="twitter:title" content={fullTitle || title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={thumbnail} />
+      {thumbnail && <meta name="twitter:image" content={thumbnail} />}
     </Head>
   );
 }

@@ -28,6 +28,7 @@ type Meta = {
   fullTitle?: string;
   description: string;
   thumbnail?: string;
+  thumbnailAlt?: string;
   url: string;
 };
 

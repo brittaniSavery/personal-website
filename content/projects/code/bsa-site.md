@@ -18,6 +18,7 @@ links:
 meta:
   description: The background and coding details of how the official site for Brittani S Avery was made.
   image: meta/website.png
+  alt: Next.js, Typescript, Bulma CSS Framework, and Markdown-It were used to create brittanisavery.com.
 ---
 
 This site, brittanisavery.com, is the official website for all things me. Books, code projects, blog posts, and other updates will be here first and foremost.

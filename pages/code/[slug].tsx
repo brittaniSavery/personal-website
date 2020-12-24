@@ -68,6 +68,7 @@ export const getStaticProps: GetStaticProps = async ({ params: { slug } }) => {
   const meta: GeneralMeta = {
     description: attributes.meta.description,
     thumbnail: `${process.env.WEBSITE}/images/${attributes.meta.image}`,
+    thumbnailAlt: attributes.meta.alt,
     title: attributes.title,
     fullTitle: attributes.fullTitle || null,
     type: "website",

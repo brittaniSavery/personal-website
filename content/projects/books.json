@@ -34,7 +34,8 @@
     ],
     "meta": {
       "description": "Fifteen-year-old Rex Marshall is the destined heir to his family's inheritance, but claiming his birthright comes with complications.",
-      "image": "meta/eubook.jpg"
+      "image": "meta/eubook.jpg",
+      "alt": "Cover of Element Unknown showing Rex and Meenal looking out at bridge in the center of a giant red eye. Element Unknown is a fantasy, science fiction, and young adult novel filled with elemental powers and rich world-building."
     },
     "card": {
       "type": "Novel",

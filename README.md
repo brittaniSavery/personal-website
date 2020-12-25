@@ -17,12 +17,13 @@ This is the code for my personal website, [brittanisavery.com](https://brittanis
 
 ## 📃 TODO List
 
-- Test RSS (figure out absolute url refs)
-- Autographed copies order form (Mailchimp API and AWS SES combo)
 - Newsletter sign-up page and footer (use same API as Wix site)
+- Autographed copies order form (Mailchimp API and AWS SES combo)
+- Double check for missing images on project pages
 
 _Nice To Have's_
 
+- Test RSS (figure out absolute url refs)
 - Commenting for individual posts
   - Ability to reply as myself
   - Alert commenter of reply (send email?)

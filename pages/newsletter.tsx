@@ -14,20 +14,61 @@ type Topic = {
   name: string;
 };
 
-function joinSubmit(event: React.ChangeEvent<HTMLFormElement>) {
-  event.preventDefault();
-  const form = event.target;
-  const formData = new FormData(form);
-
-  console.log(...formData);
-}
-
 export default function Newsletter({
   meta,
   topics,
 }: NewsletterProps): JSX.Element {
-  const [fnameError, setFnameError] = React.useState(null);
-  const [emailError, setEmailError] = React.useState(null);
+  const [fnameError, setFnameError] = React.useState("");
+  const [emailError, setEmailError] = React.useState("");
+
+  async function joinSubmit(event: React.ChangeEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    const form = event.target;
+    const validity = form.checkValidity();
+
+    if (!validity) {
+      const fnameElement = document.getElementById("fname") as HTMLInputElement;
+      const emailElement = document.getElementById("email") as HTMLInputElement;
+
+      setFnameError(
+        fnameElement.validity.valueMissing ? "Please enter your first name" : ""
+      );
+
+      setEmailError(
+        emailElement.validity.valueMissing
+          ? "Please enter your email address"
+          : emailElement.validity.typeMismatch
+          ? "This email address is not valid. Please enter a valid email address."
+          : ""
+      );
+
+      return;
+    }
+
+    const formJson: Record<string, unknown> = {};
+    const formData = new FormData(form);
+    for (const [name, value] of formData) {
+      formJson[name] = value.toString();
+    }
+
+    const newsletterResponse = await fetch("/api/newsletter", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formJson),
+    });
+
+    if (newsletterResponse.ok) {
+      setFnameError("");
+      setEmailError("");
+      form.reset();
+    } else {
+      setEmailError(await newsletterResponse.text());
+    }
+  }
+
   return (
     <Layout meta={meta}>
       <h1>Join the Newsletter</h1>
@@ -48,7 +89,7 @@ export default function Newsletter({
             <input
               id="fname"
               name="fname"
-              className="input"
+              className={clsx("input", { "is-danger": emailError })}
               type="text"
               required
               autoFocus
@@ -67,7 +108,7 @@ export default function Newsletter({
             <input
               id="email"
               name="email"
-              className="input"
+              className={clsx("input", { "is-danger": emailError })}
               type="email"
               required
             />

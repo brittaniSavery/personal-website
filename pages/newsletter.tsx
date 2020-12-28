@@ -20,6 +20,7 @@ export default function Newsletter({
 }: NewsletterProps): JSX.Element {
   const [fnameError, setFnameError] = React.useState("");
   const [emailError, setEmailError] = React.useState("");
+  const [successMessage, setSuccessMessage] = React.useState("");
 
   async function joinSubmit(event: React.ChangeEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -61,11 +62,22 @@ export default function Newsletter({
     });
 
     if (newsletterResponse.ok) {
+      const member = await newsletterResponse.json();
+      console.log(member);
+
       setFnameError("");
       setEmailError("");
+      setSuccessMessage(
+        `Thanks ${member.firstName}! ${
+          member.isNew
+            ? "Be on the lookout for your welcome email."
+            : "Your information has been updated."
+        }`
+      );
       form.reset();
     } else {
       setEmailError(await newsletterResponse.text());
+      document.getElementById("email").focus();
     }
   }
 
@@ -80,6 +92,15 @@ export default function Newsletter({
         on the fun! <Emoji name="smile" />
       </p>
 
+      <div
+        className={clsx("notification is-success", {
+          "is-hidden": !successMessage,
+        })}
+        aria-live="polite"
+      >
+        {successMessage}
+      </div>
+
       <form noValidate onSubmit={joinSubmit}>
         <div className="field">
           <label htmlFor="fname" className="label has-text-primary">
@@ -89,7 +110,7 @@ export default function Newsletter({
             <input
               id="fname"
               name="fname"
-              className={clsx("input", { "is-danger": emailError })}
+              className={clsx("input", { "is-danger": fnameError })}
               type="text"
               required
               autoFocus

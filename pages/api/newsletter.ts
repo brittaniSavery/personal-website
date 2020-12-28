@@ -40,7 +40,7 @@ export default async function handler(
       const diff = now.getTime() - signup.getTime();
 
       const member = {
-        firstName: response.merge_fields.fname,
+        name: response.merge_fields.FNAME,
         isNew: diff < 60000, //sign up time is less than a minute, meaning the person is a new member
       };
 

@@ -18,7 +18,7 @@ export default function Newsletter({
   meta,
   topics,
 }: NewsletterProps): JSX.Element {
-  const [fnameError, setFnameError] = React.useState("");
+  const [nameError, setNameError] = React.useState("");
   const [emailError, setEmailError] = React.useState("");
   const [successMessage, setSuccessMessage] = React.useState("");
 
@@ -32,7 +32,7 @@ export default function Newsletter({
       const fnameElement = document.getElementById("fname") as HTMLInputElement;
       const emailElement = document.getElementById("email") as HTMLInputElement;
 
-      setFnameError(
+      setNameError(
         fnameElement.validity.valueMissing ? "Please enter your first name" : ""
       );
 
@@ -65,10 +65,10 @@ export default function Newsletter({
       const member = await newsletterResponse.json();
       console.log(member);
 
-      setFnameError("");
+      setNameError("");
       setEmailError("");
       setSuccessMessage(
-        `Thanks ${member.firstName}! ${
+        `Thanks ${member.name}! ${
           member.isNew
             ? "Be on the lookout for your welcome email."
             : "Your information has been updated."
@@ -93,12 +93,11 @@ export default function Newsletter({
       </p>
 
       <div
-        className={clsx("notification is-success", {
-          "is-hidden": !successMessage,
-        })}
-        aria-live="polite"
+        className={clsx("message is-success", { "is-hidden": !successMessage })}
       >
-        {successMessage}
+        <div className="message-body" aria-live="polite">
+          {successMessage}
+        </div>
       </div>
 
       <form noValidate onSubmit={joinSubmit}>
@@ -110,14 +109,14 @@ export default function Newsletter({
             <input
               id="fname"
               name="fname"
-              className={clsx("input", { "is-danger": fnameError })}
+              className={clsx("input", { "is-danger": nameError })}
               type="text"
               required
               autoFocus
             />
           </div>
           <p className={clsx("help is-danger")} aria-live="polite">
-            {fnameError}
+            {nameError}
           </p>
         </div>
 

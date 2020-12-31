@@ -7,6 +7,17 @@ type BasicProps = {
   className?: string;
 };
 
+type FieldProps = {
+  id: string;
+  label: string;
+  error?: string;
+};
+
+type Topic = {
+  id: string;
+  name: string;
+};
+
 type AllMeta = GeneralMeta | PostMeta | BookMeta;
 
 type PostMeta = Meta & {

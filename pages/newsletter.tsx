@@ -2,16 +2,12 @@ import clsx from "clsx";
 import { GetStaticProps } from "next";
 import React from "react";
 import Emoji from "../components/Emoji";
+import TextField from "../components/fields/TextField";
 import Layout from "../components/Layout";
 
 type NewsletterProps = {
   meta: GeneralMeta;
   topics: Topic[];
-};
-
-type Topic = {
-  id: string;
-  name: string;
 };
 
 export default function Newsletter({
@@ -29,7 +25,7 @@ export default function Newsletter({
     const validity = form.checkValidity();
 
     if (!validity) {
-      const fnameElement = document.getElementById("fname") as HTMLInputElement;
+      const fnameElement = document.getElementById("name") as HTMLInputElement;
       const emailElement = document.getElementById("email") as HTMLInputElement;
 
       setNameError(
@@ -38,9 +34,9 @@ export default function Newsletter({
 
       setEmailError(
         emailElement.validity.valueMissing
-          ? "Please enter your email address"
+          ? "Your email address is required."
           : emailElement.validity.typeMismatch
-          ? "This email address is not valid. Please enter a valid email address."
+          ? "This email address is not valid."
           : ""
       );
 
@@ -101,42 +97,21 @@ export default function Newsletter({
       </div>
 
       <form noValidate onSubmit={joinSubmit}>
-        <div className="field">
-          <label htmlFor="fname" className="label has-text-primary">
-            First Name *
-          </label>
-          <div className="control">
-            <input
-              id="fname"
-              name="fname"
-              className={clsx("input", { "is-danger": nameError })}
-              type="text"
-              required
-              autoFocus
-            />
-          </div>
-          <p className={clsx("help is-danger")} aria-live="polite">
-            {nameError}
-          </p>
-        </div>
-
-        <div className="field">
-          <label htmlFor="email" className="label has-text-primary">
-            Email *
-          </label>
-          <div className="control">
-            <input
-              id="email"
-              name="email"
-              className={clsx("input", { "is-danger": emailError })}
-              type="email"
-              required
-            />
-          </div>
-          <p className={clsx("help is-danger")} aria-live="polite">
-            {emailError}
-          </p>
-        </div>
+        <TextField
+          id="name"
+          label="First Name *"
+          type="text"
+          error={nameError}
+          required
+          autoFocus
+        />
+        <TextField
+          id="email"
+          label="Email *"
+          type="email"
+          error={emailError}
+          required
+        />
 
         <div className="field">
           <span className="label has-text-primary">

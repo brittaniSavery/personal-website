@@ -29,12 +29,12 @@ export default function Newsletter({
       const emailElement = document.getElementById("email") as HTMLInputElement;
 
       setNameError(
-        fnameElement.validity.valueMissing ? "Please enter your first name" : ""
+        fnameElement.validity.valueMissing ? "A first name is required." : ""
       );
 
       setEmailError(
         emailElement.validity.valueMissing
-          ? "Your email address is required."
+          ? "An email address is required."
           : emailElement.validity.typeMismatch
           ? "This email address is not valid."
           : ""

@@ -101,7 +101,7 @@ export default function OrderBooks({
     noErrors
   );
 
-  function orderSubmit(event: React.ChangeEvent<HTMLFormElement>) {
+  async function orderSubmit(event: React.ChangeEvent<HTMLFormElement>) {
     event.preventDefault();
 
     const form = event.target;
@@ -130,10 +130,24 @@ export default function OrderBooks({
     }
     setFormErrors(noErrors);
     console.log(formJson);
+
+    const orderResponse = await fetch("/api/order", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formJson),
+    });
+
+    if (orderResponse.ok) {
+      console.log("Success!");
+    } else {
+      console.log(await orderResponse.text());
+    }
   }
 
   return (
-    <div className={clsx("modal is-clipped", { "is-active": open })}>
+    <div className={clsx("modal", { "is-active": open })}>
       <div className="modal-background" onClick={onClose} />
       <form noValidate onSubmit={orderSubmit}>
         <div className="modal-card">
@@ -272,7 +286,7 @@ export default function OrderBooks({
                   </p>
                   {topics.map((topic) => (
                     <div key={topic.name} className="control">
-                      <label htmlFor="writing" className="checkbox">
+                      <label htmlFor={topic.name} className="checkbox">
                         <input
                           name={topic.name}
                           id={topic.name}

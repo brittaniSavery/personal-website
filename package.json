@@ -11,6 +11,7 @@
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.27",
     "@types/react-html-parser": "^2.0.1",
+    "aws-sdk": "^2.820.0",
     "bulma": "^0.9.1",
     "clsx": "^1.1.1",
     "feed": "^4.2.1",

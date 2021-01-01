@@ -119,7 +119,7 @@ export default function Newsletter({
           </span>
           {topics.map((topic) => (
             <div key={topic.name} className="control">
-              <label htmlFor="writing" className="checkbox">
+              <label htmlFor={topic.name} className="checkbox">
                 <input
                   name={topic.name}
                   id={topic.name}

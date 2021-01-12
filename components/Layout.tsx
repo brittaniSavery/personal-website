@@ -34,7 +34,7 @@ export default function Layout({ meta, children }: LayoutProps): JSX.Element {
         <link rel="manifest" href="/site.webmanifest" />
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-WQCF0JB188"
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_ANALYTICS_ID}`}
         />
         <script src="/my-gtag.js" />
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js" />

@@ -7,60 +7,14 @@ export default async function handler(
   res: NextApiResponse
 ): Promise<void> {
   if (req.method === "POST") {
-    const awsCred = new AWS.Credentials({
-      accessKeyId: process.env.EMAIL_AWS_ACCESS_KEY,
-      secretAccessKey: process.env.EMAIL_AWS_SECRET_KEY,
-    });
+    const buyer: Record<string, unknown> = {};
+    buyer.name = req.body.firstName;
 
-    const awsConfig = new AWS.Config({
-      credentials: awsCred,
-      region: process.env.EMAIL_AWS_REGION,
-    });
-
-    AWS.config.update(awsConfig);
-    const emailDetails = {
-      Destination: {
-        ToAddresses: [process.env.TO_EMAIL],
-      },
-      Message: {
-        Body: {
-          Html: {
-            Charset: "UTF-8",
-            Data: "Order details will go here!",
-          },
-        },
-        Subject: {
-          Charset: "UTF-8",
-          Data: `${req.body.firstName} ${req.body.lastName} has ordered ${
-            req.body.count
-          } ${req.body.count > 1 ? "books" : "book"}`,
-        },
-      },
-      Source: process.env.FROM_EMAIL,
-    };
-
-    const ses = new AWS.SES();
-    ses.sendEmail(emailDetails, (data, error) => {
-      if (error) {
-        console.log(error);
-      } else {
-        console.log("Email sent!");
-        console.log(data);
-      }
-    });
-
+    //Adding the person to the database (and selected newsletters if applicable)
     const interests: Record<string, boolean> = {};
     if (req.body.writing) interests[req.body.writing] = true;
     if (req.body.coding) interests[req.body.coding] = true;
     if (req.body.lifestyle) interests[req.body.lifestyle] = true;
-
-    /* Skip newsletter if user doesn't select any topic */
-    if (Object.keys(interests).length === 0) {
-      res.status(200).end();
-      return;
-    }
-
-    /* add the person to the newsletter if they selected any topic */
 
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const mailchimp = require("@mailchimp/mailchimp_marketing");
@@ -71,7 +25,7 @@ export default async function handler(
     });
 
     try {
-      const emailHash = md5(req.body.email);
+      const emailHash = md5(req.body.email.toLowerCase());
       const response = await mailchimp.lists.setListMember(
         process.env.MAILCHIMP_LIST_ID,
         emailHash,
@@ -94,11 +48,67 @@ export default async function handler(
           tags: ["Buyer"],
         }
       );
-      res.status(200).end();
+
+      const now = new Date();
+      const signup = new Date(response.timestamp_signup);
+      const diff = now.getTime() - signup.getTime();
+
+      //sign up time is less than a minute, meaning the person is a new member
+      buyer.isNewsletterNew = diff < 60000;
     } catch (e) {
+      console.log(e);
       const status = e.status;
       const mailchimpError = JSON.parse(e.response.text);
       res.status(status).send(mailchimpError.detail);
+      return;
+    }
+
+    const awsCred = new AWS.Credentials({
+      accessKeyId: process.env.EMAIL_AWS_ACCESS_KEY,
+      secretAccessKey: process.env.EMAIL_AWS_SECRET_KEY,
+    });
+
+    const awsConfig = new AWS.Config({
+      credentials: awsCred,
+      region: process.env.EMAIL_AWS_REGION,
+    });
+
+    AWS.config.update(awsConfig);
+    const emailDetails = {
+      Destination: {
+        ToAddresses: [process.env.TO_EMAIL],
+      },
+      Message: {
+        Body: {
+          Html: {
+            Charset: "UTF-8",
+            Data: Object.keys(req.body)
+              .map((item) => `<b>${item}:</b> ${req.body[item]}<br/>`)
+              .join(""),
+          },
+        },
+        Subject: {
+          Charset: "UTF-8",
+          Data: `${req.body.firstName} ${req.body.lastName} has ordered ${
+            req.body.count
+          } ${req.body.count > 1 ? "books" : "book"}`,
+        },
+      },
+      Source: process.env.FROM_EMAIL,
+    };
+
+    const ses = new AWS.SES();
+    let hasEmailError: boolean;
+    ses.sendEmail(emailDetails, (error) => {
+      hasEmailError = Boolean(error);
+    });
+
+    if (hasEmailError) {
+      res
+        .status(400)
+        .send("Oops! Something went wrong. Please try again later.");
+    } else {
+      res.status(200).json(buyer);
     }
   } else {
     res.status(405).end();

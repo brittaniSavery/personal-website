@@ -59,7 +59,6 @@ export default function Newsletter({
 
     if (newsletterResponse.ok) {
       const member = await newsletterResponse.json();
-      console.log(member);
 
       setNameError("");
       setEmailError("");

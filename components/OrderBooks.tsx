@@ -100,6 +100,7 @@ export default function OrderBooks({
   const [formErrors, setFormErrors] = React.useState<OrderBooksErrors>(
     noErrors
   );
+  const [successMessage, setSuccessMessage] = React.useState("");
 
   async function orderSubmit(event: React.ChangeEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -129,7 +130,6 @@ export default function OrderBooks({
       formJson[name] = value.toString();
     }
     setFormErrors(noErrors);
-    console.log(formJson);
 
     const orderResponse = await fetch("/api/order", {
       method: "POST",
@@ -140,22 +140,67 @@ export default function OrderBooks({
     });
 
     if (orderResponse.ok) {
-      console.log("Success!");
+      const buyer = await orderResponse.json();
+      setSuccessMessage(
+        `Thanks so much for your order, ${
+          buyer.name
+        }! You will receive an invoice email within a couple business days. ${
+          buyer.isNewsletterNew
+            ? "A newsletter welcome email is also on its way. Stayed tuned for updates!"
+            : ""
+        }`
+      );
+      form.reset();
     } else {
-      console.log(await orderResponse.text());
+      const emailElement = document.getElementById("email") as HTMLInputElement;
+      const error = await orderResponse.text();
+      setFormErrors({ ...formErrors, email: error });
+      emailElement.focus();
     }
   }
 
+  function closeModal() {
+    const form = document.getElementById("orderForm") as HTMLFormElement;
+    form.reset();
+    setFormErrors(noErrors);
+    setSuccessMessage("");
+    onClose();
+  }
+
   return (
-    <div className={clsx("modal", { "is-active": open })}>
-      <div className="modal-background" onClick={onClose} />
-      <form noValidate onSubmit={orderSubmit}>
+    <div className={clsx("modal is-clipped", { "is-active": open })}>
+      <div className="modal-background" onClick={closeModal} />
+
+      <div className={clsx("modal-content", { "is-hidden": !successMessage })}>
+        <div className="message is-success">
+          <div className="message-header">
+            <p>Order Received</p>
+            <button
+              className="delete"
+              aria-label="delete"
+              onClick={closeModal}
+            />
+          </div>
+          <div className="message-body">{successMessage}</div>
+        </div>
+      </div>
+
+      <form
+        noValidate
+        id="orderForm"
+        onSubmit={orderSubmit}
+        className={clsx({ "is-hidden": successMessage })}
+      >
         <div className="modal-card">
           <header className="modal-card-head">
             <p className="modal-card-title has-text-primary">
               Order Autographed Copies
             </p>
-            <button className="delete" aria-label="close" onClick={onClose} />
+            <button
+              className="delete"
+              aria-label="close"
+              onClick={closeModal}
+            />
           </header>
           <section className="modal-card-body">
             <p className="mb-3">
@@ -281,8 +326,8 @@ export default function OrderBooks({
                   </span>
                   <p className="mb-2">
                     If you would like to receive updates on my various projects
-                    or ramblings, select the topics that interest you the most.{" "}
-                    <Emoji name="smile" />
+                    or ramblings and never any spam, select the topics that
+                    interest you the most. <Emoji name="smile" />
                   </p>
                   {topics.map((topic) => (
                     <div key={topic.name} className="control">
@@ -291,7 +336,7 @@ export default function OrderBooks({
                           name={topic.name}
                           id={topic.name}
                           type="checkbox"
-                          value={topic.id}
+                          value={topic.id.toLowerCase()}
                         />
                         &nbsp; {topic.name}
                       </label>
@@ -305,7 +350,7 @@ export default function OrderBooks({
             <button type="submit" className="button is-primary">
               Order
             </button>
-            <button onClick={onClose} className="button">
+            <button type="button" onClick={closeModal} className="button">
               Cancel
             </button>
           </footer>

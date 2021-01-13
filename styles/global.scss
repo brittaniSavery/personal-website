@@ -166,7 +166,8 @@ strong {
     text-align: center;
     @media screen and (min-width: $tablet) {
       float: right !important;
-      padding-left: 0.25rem;
+      padding-left: 0.75rem;
+      padding-bottom: 0.75rem;
     }
   }
 }

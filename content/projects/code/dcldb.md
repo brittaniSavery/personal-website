@@ -2,7 +2,8 @@
 slug: dcldb
 title: Dragon Cave Lineage Database
 type: Database
-image: books/element-unknown.jpg
+image: projects/dcldb-results.png
+alt: A sample results page from the Lineage Database
 tech:
   - Next.js
   - Bulma CSS Framework

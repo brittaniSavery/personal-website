@@ -3,7 +3,8 @@ slug: bsa-site
 title: Official Site for Brittani S Avery
 fullTitle: Details on Official Site for Brittani S Avery
 type: Website
-image: books/element-unknown.jpg
+image: projects/bsa-website-versions.png
+alt: The homepages of the different versions of my website
 tech:
   - Next.js
   - Typescript

@@ -32,11 +32,13 @@ export default function Layout({ meta, children }: LayoutProps): JSX.Element {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_ANALYTICS_ID_V2}`}
-        />
-        <script src="/my-gtag.js" />
+        {process.env.NODE_ENV === "production" && (
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-85651768-1"
+          />
+        )}
+        {process.env.NODE_ENV === "production" && <script src="/my-gtag.js" />}
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js" />
       </Head>
       <div className="container is-max-desktop bsa-container">

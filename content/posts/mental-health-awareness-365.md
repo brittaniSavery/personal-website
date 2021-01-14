@@ -5,7 +5,7 @@ tags:
   - personal
 description: May is Mental Health Awareness Month and while I am glad that mental health gains some more exposure during the month, it is important throughout the entire year. I detail how common mental illness is and how simple actions can help those who suffer.
 meta:
-  description: Even May is Mental Health Awareness Month, mental illness is a rather common and thus, mental health should be discussed and cared for throughout the year.
+  description: Mental illness commonly affects people throughout the year and should be discussed more than just in Mental Health Awareness Month.
 thumbnail: how-are-you.jpg
 ---
 

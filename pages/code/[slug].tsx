@@ -2,7 +2,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import React from "react";
 import ExternalLink from "../../components/ExternalLink";
 import fs from "fs";
-import Layout from "../../components/Layout";
+import Layout from "../../components/layout/Layout";
 import MarkdownParser from "../../components/MarkdownParser";
 import clsx from "clsx";
 

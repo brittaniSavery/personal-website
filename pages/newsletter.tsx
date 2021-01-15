@@ -3,7 +3,7 @@ import { GetStaticProps } from "next";
 import React from "react";
 import Emoji from "../components/Emoji";
 import TextField from "../components/fields/TextField";
-import Layout from "../components/Layout";
+import Layout from "../components/layout/Layout";
 
 type NewsletterProps = {
   meta: GeneralMeta;

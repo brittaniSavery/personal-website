@@ -1,9 +1,9 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import React from "react";
 import ExternalLink from "../../components/ExternalLink";
-import Layout from "../../components/Layout";
-import OrderBooks from "../../components/OrderBooks";
-import ReviewQuote from "../../components/ReviewQuote";
+import Layout from "../../components/layout/Layout";
+import OrderBooks from "../../components/projects/OrderBooks";
+import ReviewQuote from "../../components/projects/ReviewQuote";
 import books from "../../content/projects/books.json";
 
 type BookProps = {

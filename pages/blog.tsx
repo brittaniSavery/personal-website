@@ -5,8 +5,8 @@ import { GetStaticProps } from "next";
 import { useRouter } from "next/dist/client/router";
 import Link from "next/link";
 import React from "react";
-import Layout from "../components/Layout";
-import PostCard from "../components/PostCard";
+import Layout from "../components/layout/Layout";
+import PostCard from "../components/posts/PostCard";
 import copyright from "../lib/copyright";
 import { getPostsByDate } from "../lib/postsHelper";
 

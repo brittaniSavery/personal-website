@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import Link from "next/link";
 import React from "react";
-import ExternalLink from "./ExternalLink";
+import ExternalLink from "../ExternalLink";
 
 export type CardFooterItem = {
   label: string;

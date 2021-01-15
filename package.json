@@ -9,6 +9,7 @@
     "lint": "eslint --ext .js,.ts,.tsx --quiet --fix"
   },
   "dependencies": {
+    "@datapunt/matomo-tracker-react": "^0.3.1",
     "@mailchimp/mailchimp_marketing": "^3.0.27",
     "@types/react-html-parser": "^2.0.1",
     "aws-sdk": "^2.820.0",

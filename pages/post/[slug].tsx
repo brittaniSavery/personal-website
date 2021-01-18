@@ -2,10 +2,10 @@ import fs from "fs";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Link from "next/link";
 import React from "react";
-import Layout from "../../components/Layout";
+import Layout from "../../components/layout/Layout";
 import MarkdownParser from "../../components/MarkdownParser";
-import PostCard from "../../components/PostCard";
-import TagGroup from "../../components/TagGroup";
+import PostCard from "../../components/posts/PostCard";
+import TagGroup from "../../components/posts/TagGroup";
 import {
   FULL_PATH,
   getPostBySlug,

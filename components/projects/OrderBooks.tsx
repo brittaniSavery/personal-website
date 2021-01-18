@@ -1,8 +1,8 @@
 import clsx from "clsx";
 import React from "react";
-import Emoji from "./Emoji";
-import SelectField from "./fields/SelectField";
-import TextField from "./fields/TextField";
+import Emoji from "../Emoji";
+import SelectField from "../fields/SelectField";
+import TextField from "../fields/TextField";
 
 type OrderBooksProps = {
   open: boolean;

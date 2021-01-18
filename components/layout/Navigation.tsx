@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import BSALogo from "../public/images/logo-no-initials.svg";
+import BSALogo from "../../public/images/logo-no-initials.svg";
 import clsx from "clsx";
 
 export default function Navigation(): JSX.Element {

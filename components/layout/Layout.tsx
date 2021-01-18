@@ -1,3 +1,4 @@
+import { useMatomo } from "@datapunt/matomo-tracker-react";
 import Head from "next/head";
 import React from "react";
 import Footer from "./Footer";
@@ -9,6 +10,12 @@ type LayoutProps = BasicProps & {
 };
 
 export default function Layout({ meta, children }: LayoutProps): JSX.Element {
+  const { trackPageView } = useMatomo();
+
+  React.useEffect(() => {
+    if (process.env.NODE_ENV === "production") trackPageView({});
+  }, []);
+
   return (
     <>
       {meta && <MetaTags {...meta} />}
@@ -32,14 +39,6 @@ export default function Layout({ meta, children }: LayoutProps): JSX.Element {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        {process.env.NODE_ENV === "production" && (
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-85651768-1"
-          />
-        )}
-        {process.env.NODE_ENV === "production" && <script src="/my-gtag.js" />}
-        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js" />
       </Head>
       <div className="container is-max-desktop bsa-container">
         <Navigation />

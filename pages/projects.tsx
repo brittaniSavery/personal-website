@@ -1,9 +1,13 @@
 import React from "react";
 import { GetStaticProps } from "next";
-import { BSACard, BSACardContent, BSACardImage } from "../components/BSACard";
-import Layout from "../components/Layout";
+import {
+  BSACard,
+  BSACardContent,
+  BSACardImage,
+} from "../components/projects/BSACard";
+import Layout from "../components/layout/Layout";
 import Link from "next/link";
-import TagGroup from "../components/TagGroup";
+import TagGroup from "../components/posts/TagGroup";
 import fs from "fs";
 import books from "../content/projects/books.json";
 

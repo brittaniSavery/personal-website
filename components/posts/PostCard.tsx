@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { BSACard, BSACardContent, BSACardImage } from "./BSACard";
+import { BSACard, BSACardContent, BSACardImage } from "../projects/BSACard";
 import TagGroup from "./TagGroup";
 
 type PostCardProps = {

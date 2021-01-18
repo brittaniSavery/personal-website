@@ -125,9 +125,7 @@ export const getStaticProps: GetStaticProps = async () => {
       category: post.tags.map((tag) => ({ name: tag })),
       description: post.description,
       content: post.content,
-      image: /^http/.test(post.thumbnail)
-        ? post.thumbnail
-        : process.env.WEBSITE + post.thumbnail,
+      image: `${process.env.WEBSITE}/images/posts/${post.thumbnail}`,
     });
 
     post.tags.forEach((tag) => tags.add(tag));

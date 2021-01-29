@@ -31,7 +31,7 @@ export default function Post({ meta, main, related }: PostProps): JSX.Element {
         <p className="mb-2">{main.formattedDate} &middot; Brittani S Avery</p>
         <TagGroup className="pb-2" tags={main.tags} />
       </div>
-      <MarkdownParser content={main.content} />
+      <MarkdownParser className="bsa-post-content" content={main.content} />
       <h2>Related Posts</h2>
       <p>
         If you enjoyed this post, check these related posts. Or better yet, join

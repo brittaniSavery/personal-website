@@ -22,7 +22,9 @@ export async function getPostBySlug(slug: string): Promise<Post> {
 
   const post: Post = { ...attributes, content: html, slug: slug };
   post.formattedDate = getPublishDateDisplay(post.publishDate);
-  post.thumbnail = `${IMG_PATH}/${post.thumbnail}`;
+  post.thumbnail = post.thumbnail
+    ? `${IMG_PATH}/${post.thumbnail}`
+    : "https://via.placeholder.com/940x534.jpg";
 
   return post;
 }

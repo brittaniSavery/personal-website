@@ -23,7 +23,7 @@ export default function Post({ meta, main, related }: PostProps): JSX.Element {
     <Layout meta={meta}>
       <img
         className="bsa-post-img"
-        src={main.thumbnail}
+        src={main.thumbnail || "https://via.placeholder.com/940x534.jpg"}
         alt={main.thumbnailAlt}
       />
       <h1 className="mb-2">{main.title}</h1>

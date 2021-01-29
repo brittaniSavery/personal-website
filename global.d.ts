@@ -53,7 +53,7 @@ type Post = {
     description: string;
   };
   tags: string[];
-  thumbnail: string;
-  thumbnailAlt: string;
+  thumbnail?: string;
+  thumbnailAlt?: string;
   content: string;
 };

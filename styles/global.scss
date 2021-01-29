@@ -151,8 +151,23 @@ strong {
   }
 }
 
-.bsa-post-img {
-  width: 100%;
+.bsa-post {
+  &-img {
+    width: 100%;
+  }
+
+  &-content > p:last-child::after {
+    background-image: url("../public/images/post-signoff.svg");
+    background-size: 100% 100%;
+    background-position: right bottom;
+    display: inline-block;
+    height: 1.5rem;
+    width: 8rem;
+    position: relative;
+    top: 0.35rem;
+    right: 1.5rem;
+    content: "";
+  }
 }
 
 .bsa-project {

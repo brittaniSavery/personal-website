@@ -16,24 +16,26 @@ Renowned for a short learning curve, a wide range of knowledge on various techno
 
 ## Skills
 
-Javascript :separator: React (+ Redux) :separator: Node.js :separator: Java :separator: C# / .NET :separator: RESTful APIs :separator: SQL :separator: MongoDB :separator: AWS Lamda
+Javascript :separator: React (+ Redux) :separator: Node.js :separator: Java :separator: C# / .NET :separator: RESTful APIs :separator: SQL :separator: MongoDB :separator: AWS Lambda
 
 ## Professional Experience
 
 ### Software Development Engineer
 
 Plain Concepts | Seattle, WA (Remote)  
-September 2020–Present
+2020–Present
 
 Maintained and created React websites for various Microsoft projects such as [Microsoft Innovation](https://innovation.microsoft.com/en-us) with an emphasis on internationalization and accessibility.
 
 - Implemented a new experience for the Microsoft Ignite 2020 conference within the first three weeks of hire
+- Created a complex mobile gallery component for [Microsoft Worklab](https://www.microsoft.com/en-us/worklab)'s Work Trend Index Reports
+- Translated intricate and rapidly changing designs into working websites
 - Tools: Javascript, React, Bootstrap, HTML, CSS, Git
 
 ### React Developer
 
 Jet Linx | Omaha, NE  
-May 2020–September 2020
+2020
 
 Aided immature Information Technology department to develop efficient software development processes, including
 outlining new work and writing developer-friendly stories. Brought experience of React and API design to fast track new development projects and quick turnover on regular maintenance.

@@ -1,11 +1,11 @@
 ---
 title: Elementology 101
-publishDate: 2021-02-20
+publishDate: 2021-02-25
 tags:
   - writer
   - nerd
 description: Elementology, the main science and plot driver within my Element Unknown series, was born from a love of psychology, personality tests, and mood rings.
-thumbnail: elementology-101-lines.jpg
+thumbnail: elementology-101.jpg
 ---
 
 In the world of [_Element Unknown_](/book/element-unknown) and its upcoming sequel, elementology is the science that brings sense to the fact that people can shot fire balls out of their hands, read the thoughts of others, shift into shadows, and even fly. The best definition of this science is found at the beginning of chapter nine of _Element Unknown_:
@@ -31,7 +31,7 @@ During my youth, a frequent pastime of mine was taking quizzes on the old site, 
 
 Mood jewelry, e.g. mood rings, were all the rage during my late elementary and junior high years. It wasn't until much later that I realized the jewelry went by the body temperature of a person rather than the actual mood. Despite that, I loved looking at the different colors and moods relationships, such as blue for calm, red for anger, and green for curiosity.
 
-The final influence from my school years was True Colors, not the song by Cyndi Lauper or its various samples (my personal favorite being [Fredro Starrr and Jill Scott's](https://www.youtube.com/watch?v=UZz7hy9AmJY) rendition), but the personality typing program that my high school introduced. Taking the assessment was part of the class called Pathways, an introductory class required for all ninth graders. The Pathways class was split into two different curriculum. One focused on soft skills and was held in a traditional classroom. The other focused on more technical skills like typing and computer aided design (CAD). I believe that the True Colors assessment was taken during one of the special lab days for the soft side of Pathways. It was mainly used to determine what sort of occupations would best suit us. I loved taking the test and seeing my results, getting a better sense of me. I remember being a mix of blue and green, usually more blue than green. The suggested careers for me involved science, medicine, or the arts. It was an unusual mix since most of my classmates only had one dominate color. Gold and Orange were the most popular, so even back then, I realized that I was a little different. However, it wasn't until I really grew interested in the Myers-Briggs Type Indicator that I realized just how rare I was.
+The final influence from my school years was True Colors, not the song by Cyndi Lauper or its various samples (my personal favorite being [Fredro Starrr and Jill Scott's](https://www.youtube.com/watch?v=hnvr5HQjp5o) rendition), but the personality typing program that my high school introduced. Taking the assessment was part of the class called Pathways, an introductory class required for all ninth graders. The Pathways class was split into two different curriculum. One focused on soft skills and was held in a traditional classroom. The other focused on more technical skills like typing and computer aided design (CAD). I believe that the True Colors assessment was taken during one of the special lab days for the soft side of Pathways. It was mainly used to determine what sort of occupations would best suit us. I loved taking the test and seeing my results, getting a better sense of me. I remember being a mix of blue and green, usually more blue than green. The suggested careers for me involved science, medicine, or the arts. It was an unusual mix since most of my classmates only had one dominate color. Gold and Orange were the most popular, so even back then, I realized that I was a little different. However, it wasn't until I really grew interested in the Myers-Briggs Type Indicator that I realized just how rare I was.
 
 ## MBTI
 

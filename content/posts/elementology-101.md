@@ -4,7 +4,8 @@ publishDate: 2021-02-20
 tags:
   - writer
   - nerd
-description: Elementology, the main science and plot driver within my Element Unknown series, was born from a love of psychology, personality tests, and the classic elements.
+description: Elementology, the main science and plot driver within my Element Unknown series, was born from a love of psychology, personality tests, and mood rings.
+thumbnail: elementology-101-lines.jpg
 ---
 
 In the world of [_Element Unknown_](/book/element-unknown) and its upcoming sequel, elementology is the science that brings sense to the fact that people can shot fire balls out of their hands, read the thoughts of others, shift into shadows, and even fly. The best definition of this science is found at the beginning of chapter nine of _Element Unknown_:
@@ -15,9 +16,9 @@ In the world of [_Element Unknown_](/book/element-unknown) and its upcoming sequ
 
 Breaking down the four main elements into their corresponding personality traits is pretty simple.
 
+- :water: **Water:** Just like a river flowing peacefully, Waters are calm, soft-spoken people. They tend to pick artistic occupations (usually in the visual or literary arts) or selfless and giving occupations. Emotions are both their strength and their weakness, allowing themselves to be easily hurt or taken advantage of. When hurt, they turn cold-blooded and hold some of the harshest grudges.
 - :earth: **Earth:** There is a common saying among various cultures of _Element Unknown_: "If you want the truth, ask an Earth." Earths are the rational, impartial deep thinkers, always standing with truth. They are naturally shy and only are placed in leadership positions when no one else will step up. Yet, they do not make the best leaders, usually being indecisive and socially awkward. They also aren't the quickest to make changes. Rather, they tend to resist change, especially if they deem it unnecessary.
 - :fire: **Fire:** The line between lover and fighter is pretty thin for Fires. They love hard and are full of passion, which can sometimes get them into trouble by being too flirtatious. They're natural leaders and physically and mentally durable, making them perfect for politics or the military. Yet, they can be quick-tempered, impulsive, and rather blunt. There isn't a lot of checks and balances with Fires.
-- :water: **Water:** Just like a river flowing peacefully, Waters are calm, soft-spoken people. They are drawn toward the arts, especially the visual or literary arts, or the occupations that help others. Emotions are both their strength and their weakness, allowing themselves to be easily hurt or taken advantage of. When hurt, they turn cold-blooded and hold some of the harshest grudges.
 - :air: **Air:** These are the social butterflies of the four, loving to be the center of attention. They tend to be natural performers and often seek occupations that allow them to interact with others. In friend groups, they are almost always the bubbly, energetic friend. Some of their negative qualities are their flightiness and narcissistic nature. With an Air around, there is rarely a dull moment.
 
 The process in creating this system took time, research, and feedback from close friends and family. It went through some iterations through the first draft of _Element Unknown_ and has only evolved further during the writing of its sequel. I hope to shed a little bit of light onto the inspiration and creation of elementology.
@@ -34,6 +35,20 @@ The final influence from my school years was True Colors, not the song by Cyndi 
 
 ## MBTI
 
-Around 2014, I had found some new friends that were
+Around 2013, I had found some new friends who shared my love of theoretical discussions and detailed analysis. They introduced me to the Myers-Briggs Type Indicator (MBTI) and reignited my interest in personality typing. I found a free test to determine my type. At first, I got INTJ (Introvert-Intuitive-Thinking-Judging). Reading the description of the type, I found that it sounded very similar to me and had accepted it as my type. However, a friend of mine suggested that I found another test and retake it. He said that he couldn't see me as an INTJ, which he had intensely studied (it was his type after all).
+
+I decided to take up his suggestion and found a new site that had a free assessment, [16 Personalities](https://www.16personalities.com/). I was drawn to the cute illustrations of people representing types and the friendly and educational tone the website had. With this new assessment, I learned that I was an INTP (Introvert-Intuitive-Thinking-Perceiving/Prospecting), a type making up only three percent of the population. The more I read, the more convinced I was that this was my correct type. The strengths of being imaginative, original, honest, and open-minded definitely matched what my friends enjoyed about me. Yet, their complaints of my very private and withdrawn nature also matched the weaknesses of INTPs from 16 Personalities.
+
+Once I typed myself, I studied the rest of the types to try to find my parents, my siblings, and other friends who weren't too interested in MBTI. Eventually, I became well studied in the subject, which I am sure, aided in my creation of the science of elementology.
 
 ## Complications of Creation
+
+There was a part in the draft of _Element Unknown_ where I knew that I needed to fully flesh out elementology. Meenal was doing a bunch of research on the topic and it wouldn't be very informative for the reader if I as the author didn't really know the science.
+
+The beginning of the development was pretty easy. Thinking about it now, I am sure I pulled from the ideas of my youth for the colors/elements and their corresponding traits. The ocean is filled with soothing blue waves. Fire is bright, energetic, and potentially dangerous. Mountains are unmoving and consistent. Wind is unpredictable. However, I did run into some trouble, even contradictions, when getting the fine details together about the elements.
+
+One example of this was when I was finishing up Earth. I originally had Earths being family-oriented as well as very introverted. I couldn't put my finger on it, but something didn't add up. While one can be family-oriented with a shy nature, that wasn't what I attended for Earths. Fires were already strongly attached to their friends and family and I didn't want characteristics to repeat too much between the elements. After discussing the Earth element with some friends, we finally figured out that Earths were just assumed to have strong family bonds because they seriously took the responsibility of caring for their own. So while some may have had strong familial bonds, most were around their family only because of obligation.
+
+Elementology has gone through many different versions and with the sequel nearing its completion, this will be the most researched it has ever been. Will I add to it later once Book II is complete? Maybe. I have a very, _very_ loose plot for a Book III (that may not happen once I officially finish Book II) and a somewhat more defined plot for a book in the same universe. I might even code a "What's your element?" quiz on the website as a callback to my past and current loves of personality typing.
+
+Have you figured out your MBTI type or even your element? I'm curious to know! Until next time.

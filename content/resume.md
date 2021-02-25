@@ -34,7 +34,7 @@ Maintained and created React websites for various Microsoft projects such as [Mi
 
 ### React Developer
 
-Jet Linx | Omaha, NE  
+Jet Linx | Omaha, NE (Remote)
 2020
 
 Aided immature Information Technology department to develop efficient software development processes, including

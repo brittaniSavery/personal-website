@@ -25,11 +25,11 @@ Javascript :separator: React (+ Redux) :separator: Node.js :separator: Java :sep
 Plain Concepts | Seattle, WA (Remote)  
 2020–Present
 
-Maintained and created React websites for various Microsoft projects such as [Microsoft Innovation](https://innovation.microsoft.com/en-us) with an emphasis on internationalization and accessibility.
+Maintained and created React websites for various Microsoft projects such as [Microsoft Innovation](https://innovation.microsoft.com/en-us) with an emphasis on internationalization and accessibility as well as frequently changing designs.
 
 - Implemented a new experience for the Microsoft Ignite 2020 conference within the first three weeks of hire
 - Created a complex mobile gallery component for [Microsoft Worklab](https://www.microsoft.com/en-us/worklab)'s Work Trend Index Reports
-- Translated intricate and rapidly changing designs into working websites
+- Enhanced user experience for accessing medical articles by creating a newly designed [Microsoft Biomedical Search](https://biomedsearch.microsoft.com/en-us/)
 - Tools: Javascript, React, Bootstrap, HTML, CSS, Git
 
 ### React Developer
@@ -100,6 +100,23 @@ Originally hired as an intern and quickly extended a full-time position before g
 - Optimized complex database schema and queries to reduce processing time by several seconds
 - Tools: Java, Spring, Hibernate, JDBC, ColdFusion, Oracle SQL, Javascript, RESTful, CSS, HTML, SVN
 
+## Projects
+
+### Freelance Web and Social Media Manager
+
+2012–Present
+
+- Created websites for [HALLINS Corporation](https://www.hallinscorp.com), a non-profit organization with limited technical expertise
+- Managed domains and web hosting for HALLINS
+- Designed promo cards and related call-to-action graphics for various events
+
+### Open Source Contributor
+
+2017-Present
+
+- Designed website for a simulation basketball league, [SIBA](/code/siba), using React, Node.js, PHP, and AWS
+- Created [database](/code/dcldb) with authentication for users to manage their lineages for the collection game [Dragon Cave](http://dragcave.net) using Next.js, Bulma CSS framework, and MongoDB.
+
 ## Education
 
 ### Bachelors of Science in Computer Science
@@ -110,18 +127,3 @@ University of Nebraska at Omaha | Omaha, NE
 - Honor Graduate (Cum Laude)
 - Concentration: Internet Technologies
 - Tools: Java, C, PHP, Perl, Javascript, HTML, MySQL, UNIX, TFS
-
-## Projects
-
-### Freelance Developer
-
-2012–Present
-
-- Created websites for [HALLINS Corporation](https://www.hallinscorp.com), a non-profit organization with limited technical expertise
-
-### Open Source Contributor
-
-2017-Present
-
-- Designed website for a simulation basketball league, [SIBA](/code/siba), using React, Node.js, PHP, and AWS
-- Created [database](/code/dcldb) with authentication for users to manage their lineages for the collection game [Dragon Cave](http://dragcave.net) using Next.js, Bulma CSS framework, and MongoDB.

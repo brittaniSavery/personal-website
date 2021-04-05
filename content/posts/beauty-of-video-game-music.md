@@ -5,7 +5,7 @@ tags:
   - gamer
 description: Exploring the vast library of Spotify, I found songs from games of my childhood and it reignited my love for video game music. So I took a trip down memory lane, rediscovering songs and opening myself up to some new favorites.
 meta:
-  description: Exploring the vast library of Spotify allowed me to reignite my love for video game, causing me to discover and rediscover favorites.
+  description: Exploring Spotify allowed me to reignite my love for video game music, causing me to discover and rediscover favorites.
 thumbnail: beauty-video-game-music.jpg
 ---
 

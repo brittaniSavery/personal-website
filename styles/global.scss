@@ -66,10 +66,10 @@ strong {
   p.is-pulled-left {
     img {
       padding-right: 1rem;
-      width: 37vw;
+      width: 100vw;
 
-      @media screen and (max-width: $tablet) {
-        width: 100vw;
+      @media screen and (min-width: $tablet) {
+        width: 37vw;
       }
     }
   }
@@ -77,19 +77,12 @@ strong {
   p.is-pulled-right {
     img {
       padding-left: 1rem;
-      width: 37vw;
-    }
-
-    @media screen and (max-width: $tablet) {
       width: 100vw;
     }
-  }
-}
 
-.columns.is-reversed {
-  @media screen and (max-width: $tablet) {
-    display: flex;
-    flex-direction: column-reverse;
+    @media screen and (min-width: $tablet) {
+      width: 37vw;
+    }
   }
 }
 
@@ -105,10 +98,10 @@ strong {
 .bsa-full-logo {
   display: block;
   margin: 0 auto;
-  width: 12rem;
+  width: 70vw;
 
-  @media screen and (max-width: $tablet) {
-    width: 80vw;
+  @media screen and (min-width: $tablet) {
+    width: 12rem;
   }
 }
 
@@ -120,6 +113,11 @@ strong {
     @media screen and (min-width: $desktop) {
       width: 2rem;
     }
+  }
+
+  &.ko-fi {
+    margin-top: 0.25rem;
+    width: 15rem;
   }
 }
 

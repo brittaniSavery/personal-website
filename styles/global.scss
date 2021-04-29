@@ -63,25 +63,15 @@ strong {
     color: $text !important;
   }
 
-  p.is-pulled-left {
-    img {
-      padding-right: 1rem;
-      width: 100vw;
-
-      @media screen and (min-width: $tablet) {
-        width: 37vw;
-      }
-    }
-  }
-
+  p.is-pulled-left,
   p.is-pulled-right {
     img {
-      padding-left: 1rem;
+      padding: 0 1rem;
       width: 100vw;
-    }
 
-    @media screen and (min-width: $tablet) {
-      width: 37vw;
+      @media screen and (min-width: $desktop) {
+        width: 37vw;
+      }
     }
   }
 }

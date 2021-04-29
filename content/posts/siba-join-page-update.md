@@ -12,7 +12,7 @@ The Simulation International Basketball Association ([SIBA](/code/siba)) had rea
 
 ## The Problem
 
-During our recent growth, I noticed a problem when new people expressed interest in joining the pro or college leagues. The join form was short, only asking the bare minimum information: name of the interested person, their email, their team choices in a text box, their reason for joining (optionally), and how they found the SIBA. From there, an email was sent to the commissioner, my dad, and he would email the person back for the information needed to be added to the Draft Day Sports program. Some of that was the name, looks, and outfit of their coach or general manager, skill points, and sometimes even a specific team. Some would say something like "Doesn't matter" or "Anything Virginia" in the team textbox, so it was necessary for my dad to list all the available teams that met the criteria.
+During our recent growth, I noticed a problem when new people expressed interest in joining the pro or college leagues. The join form was short, only asking the bare minimum information: name of the interested person, their email, their team choices in a text box, their reason for joining (optionally), and how they found the SIBA. From there, an email was sent to the commissioner, my dad, and he would email the person back for the team and coach information that would go into the Draft Day Sports program. Some of that was the name, looks, and outfit of their coach, skill points, and sometimes even a specific team. Some would say something like "Doesn't matter" or "Anything Virginia" in the team textbox, so it was necessary for my dad to list all the available teams that met the criteria.
 
 It was a lot of email back-and-forth between Dad and the potential new member. And sometimes, the email would get lost in the person's spam or junk folder or the person would not reply at all. We couldn't add the person to the league since we didn't have everything we needed. The current join process was not working.
 
@@ -32,7 +32,17 @@ While a member in the college league is able to manage up to three teams, each t
 
 There were two major struggles during the update. The first one was handling the validation of the entire form: the required fields, the college validation, the at-least-one-team rule, and the skill points validation. All of these needed to work together. When I first started, I did not realize exactly how complicated the logic was going to be. The more I created, the more I had to break up the code into smaller, more manageable pieces.
 
-- **Join Form:** This contains the entire form and is the source of truth for the data that the interested person has entered. That would include their own information as well as the team information. This source of truth would be the data used for when doing the college tier/region validation as well as the one-team rule check.
-- **Teams Selection:** The Teams Selection is where the currently selected teams and their information live. This component is more of a display component rather than actively changing and maintaining the data. There are two sections, one for pro and one for college, and each has their own "Add Team" button. However, if a pro team or three college teams are already, the add button will disappear.
-- **Team Card:** Another component that does more displaying than changing of the data. This actually takes a team's individual data and creates a simple info card of the team and its coach. Each Team Card has the option to edit or delete the team, just in case someone makes a mistakes or changes their mind. Multiple Teams Cards can resides inside the Teams Selection component, depending on the number of teams that the person creates.
-- **Add/Edit Team Form:**
+![The hierarchy of the Join Page: Join Form contains Teams Selection and multiple team cards and communicates with the popup Add/Edit Team Form.](/images/posts/join-page-structure.svg) {.is-pulled-right}
+
+- **Join Form:** This contains the entire form and is the source of truth for the data that the interested person has entered. That would include their own information as well as the team information. This source of truth would be used in the college tier/region validation as well as the at-least-one-team rule check.
+- **Teams Selection:** The Teams Selection component is where the currently selected teams and their information live. This component is more of a display component rather than actively changing and maintaining the data. There are two sections, one for pro and one for college, and each has their own "Add Team" button. However, if a pro team or three college teams are already selected, the add button will disappear.
+- **Team Card:** This is another component that does more displaying than changing of the data. This actually takes a team's individual data and creates a simple info card of the team and its coach. Each Team Card has the option to edit or delete the team, just in case someone makes a mistake or changes their mind. Multiple Teams Cards can reside inside the Teams Selection component, depending on the number of teams that the person creates.
+- **Add/Edit Team Form:** This form is where majority of the changing of the data occurs. A team can be added or an existing team can be edited. The ability points validation also happens here. Communication between the Join Form and Add/Edit Team Form is the main way the source of truth data stays updated and accurate. This data is also updated when a team is deleted, which is handled by the Team Card component.
+
+// Show picture of three college teams selected
+
+By breaking up the join form into smaller parts, I was able to handle the data much easier and could validate everything before sending off the data to the backend, where the second major challenge showed itself.
+
+//Talk about email formatting
+
+## The Results

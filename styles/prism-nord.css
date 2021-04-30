@@ -46,80 +46,80 @@ pre[class*="language-"] {
   white-space: normal;
 }
 
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
+.prism__token.prism__comment,
+.prism__token.prism__prolog,
+.prism__token.prism__doctype,
+.prism__token.prism__cdata {
   color: #636f88;
 }
 
-.token.punctuation {
+.prism__token.prism__punctuation {
   color: #81a1c1;
 }
 
-.namespace {
+.prism__namespace {
   opacity: 0.7;
 }
 
-.token.property,
-.token.tag,
-.token.constant,
-.token.symbol,
-.token.deleted {
+.prism__token.prism__property,
+.prism__token.prism__tag,
+.prism__token.prism__constant,
+.prism__token.prism__symbol,
+.prism__token.prism__deleted {
   color: #81a1c1;
 }
 
-.token.number {
+.prism__token.prism__number {
   color: #b48ead;
 }
 
-.token.boolean {
+.prism__token.prism__boolean {
   color: #81a1c1;
 }
 
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
+.prism__token.prism__selector,
+.token.prism__attr-name,
+.prism__token.prism__string,
+.prism__token.prism__char,
+.prism__token.prism__builtin,
+.prism__token.prism__inserted {
   color: #a3be8c;
 }
 
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string,
-.token.variable {
+.prism__token.prism__operator,
+.token.prism__entity,
+.prism__token.prism__url,
+.language-css .prism__token.prism__string,
+.prism__style .prism__token.prism__string,
+.prism__token.prism__variable {
   color: #81a1c1;
 }
 
-.token.atrule,
-.token.attr-value,
-.token.function,
-.token.class-name {
+.prism__token.prism__atrule,
+.prism__token.prism__attr-value,
+.prism__token.prism__function,
+.prism__token.prism__class-name {
   color: #88c0d0;
 }
 
-.token.keyword {
+.prism__token.prism__keyword {
   color: #81a1c1;
 }
 
-.token.regex,
-.token.important {
+.prism__token.prism__regex,
+.prism__token.prism__important {
   color: #ebcb8b;
 }
 
-.token.important,
-.token.bold {
+.prism__token.prism__important,
+.prism__token.prism__bold {
   font-weight: bold;
 }
 
-.token.italic {
+.prism__token.prism__italic {
   font-style: italic;
 }
 
-.token.entity {
+.prism__token.prism__entity {
   cursor: help;
 }

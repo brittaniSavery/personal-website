@@ -1,14 +1,15 @@
 ---
-title: "SIBA Join Page Update"
-publishDate: 2021-04-30
+title: "Code Fix: The SIBA Join Page Update"
+publishDate: 2021-05-07
 tags:
   - coder
-description: TBD
+description: The simulation basketball league created by my dad and I had grown significantly in popularity, revealing a problem in our join-up process. This post describes that problem as well as the struggles and results of the fix.
 meta:
-  description: TBD
+  description: SIBA had grown a lot in popularity, revealing a problem in our join-up process. Learn of that problem and the results of the fix.
+thumbnail: siba-join-update-cover.jpg
 ---
 
-The Simulation International Basketball Association ([SIBA](/code/siba)) had really taken of since its official launch in August 2020. It started out as a simple hobby for family and friends but has grown to 14 members in the professional league and 12 members and 21 teams (a member can manage up to three teams) in the college league. As our second season is coming to a close, we're gearing up to transition to the latest version of the Draft Day Sport Basketball programs by Wolverine Studios and to the influx of newcomers looking for an active multiplayer league.
+The Simulation Internet Basketball Association ([SIBA](/code/siba)) had really taken of since its official launch in August 2020. It started out as a simple hobby for family and friends but has grown to 14 members in the professional league and 12 members and 21 teams (a member can manage up to three teams) in the college league. As our second season is coming to a close, we're gearing up to transition to the latest version of the Draft Day Sport Basketball programs by [Wolverine Studios](https://www.wolverinestudios.com/) and to the influx of newcomers looking for an active multiplayer league.
 
 ## The Problem
 
@@ -80,14 +81,14 @@ There were two major struggles during the update. The first one was handling the
   };
   ```
 
-By breaking up the join form into smaller parts, I was able to handle the data much easier before sending it off to the backend, where the next major challenge of the confirmation emails lied. Two emails would be sent, one to the commissioner and one to the new member. Both emails needed to show the entered information but the one for the new member had to include some tips on the best way to get started in the league.
+By breaking up the join form into smaller parts, I was able to handle the data much easier before sending it off to the backend, where the next major challenge lied, the confirmation emails. Two emails would be sent, one to the commissioner and one to the new member. Both emails needed to show the entered information but the one for the new member had to include some tips on the best way to get started in the league.
 
 At first, I thought creating an HTML email would be very simple. Yeah, that was not the case. :side_eye: All the modern CSS and HTML was thrown out the window. Divs, nah! CSS stylesheet, nope! Instead, tables and inline styles are king when it comes to HTML emails. Apparently, different email clients support different amounts of HTML and CSS, so the safest way to make sure that your email appears the same no matter the client is to use the most basic HTML and styling. There are a lot of posts and articles available on creating HTML emails, but [this post by Nicole Merlin](https://webdesign.tutsplus.com/articles/build-an-html-email-template-from-scratch--webdesign-12770) had an easy step-by-step. I also looked at the source code of the marketing emails or newsletters that I get myself. I won't show you the code since it's an organized mess—emphasis on the mess—but I'm pretty proud of the end result.
 
 ## The Results
 
 ![Three college teams and coaches selected on the join page and a test confirmation email that a new member receives when joining the SIBA and its college league, the SICBA.](/images/posts/join-page-final-result.jpg)  
-From the join form on the website and the member's email, the join process is better streamlined. {.has-text-centered .is-size-7}
+From the join form on the website to the member's email, the join process is better streamlined. {.has-text-centered .is-size-7}
 
 After some testing, I pushed the new changes to the live site and waited for people to start using it. I didn't have to wait too long since Dad had recently advertised our league on the Wolverine Studio forums. The email back-and-forth had significantly decreased. People found our Slack, got the correct files, and had nearly all the information that they needed to get started. One hiccup was that the Slack link would timeout after awhile. Thankfully, I was able to find a solution that kept the link valid for basically forever (like 1000 years or something).
 

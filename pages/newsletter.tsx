@@ -80,7 +80,7 @@ export default function Newsletter({
     <Layout meta={meta}>
       <h1>Join the Newsletter</h1>
       <p>
-        By joining the monthly newsletter, you will be one of the first to
+        By joining the monthly(-ish) newsletter, you will be one of the first to
         receive updates on all of my on-going projects, from code to novels to
         poetry. There will also be sneak peaks on upcoming releases as well as
         an exclusive backstage pass to my creative process. Sign up and get in

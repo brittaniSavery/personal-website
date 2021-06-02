@@ -12,7 +12,7 @@ Welcome to the new and improved website of Brittani S Avery! :tada: With this co
 
 You may be wondering why I decided to make all these changes in the first place. After all, my previous design and layout accomplished its goal of informing people of my books and myself as an author. But that's just the thing, I am more than an author. I'm also a software engineer and graphic designer. A website bearing my name should show all the different hats that I wear and that's what I did with these new changes.
 
-The catalyst for the changes was a photo, specifically a selfie from a special (and virtual due to COVID-19) event, [the annual commemoration of Jesus Christ’s sacrifice](https://www.jw.org/en/jehovahs-witnesses/memorial/). My sister had done my makeup, creating a beautiful sunset effect around my eyes, and my new glasses gave me quite the sophisticated look. This latest photo was much more reflective of my appearance and personality than my current professional photo. This got me thinking if my website could give a more accurate picture of me.
+The catalyst for the changes was a photo, specifically a selfie from a special (and virtual due to COVID-19) event, [the annual commemoration of Jesus Christ's sacrifice](https://www.jw.org/en/jehovahs-witnesses/memorial/). My sister had done my makeup, creating a beautiful sunset effect around my eyes, and my new glasses gave me quite the sophisticated look. This latest photo was much more reflective of my appearance and personality than my current professional photo. This got me thinking if my website could give a more accurate picture of me.
 
 ![A feather and the initials 'BSA' between greater-than and less-than symbols, the Brittani S Avery logo](/images/logo-initials.svg) {.is-pulled-left}
 

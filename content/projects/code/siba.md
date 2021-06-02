@@ -1,8 +1,8 @@
 ---
 slug: siba
-title: Simulation International Basketball Association
+title: Simulation Internet Basketball Association
 type: Website
-image: projects/siba-logos.png
+image: projects/siba-logos.jpg
 alt: The professional and college logos for our fictional leagues.
 tech:
   - React

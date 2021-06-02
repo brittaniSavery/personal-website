@@ -20,28 +20,28 @@ Javascript :separator: React (+ Redux) :separator: Node.js :separator: Java :sep
 
 ## Professional Experience
 
-### Software Development Engineer
+### Full-Stack Engineer (Frontend Focus)
+
+Science 37 | Los Angeles, CA (Remote)
+2021–Present
+Built the user interface to flagship product platform and deliver scalable solutions for new features that have the power
+to positively impact millions.
+
+- Developed creative, efficient and scalable technical solutions for given business problems
+- Reviewed code and pull requests to ensure architectural standards and code quality
+- Tools: Javascript, React, NodeJS
+
+### Web Developer
 
 Plain Concepts | Seattle, WA (Remote)  
-2020–Present
+2020–2021
 
 Maintained and created React websites for various Microsoft projects such as [Microsoft Innovation](https://innovation.microsoft.com/en-us) with an emphasis on internationalization and accessibility as well as frequently changing designs.
 
 - Implemented a new experience for the Microsoft Ignite 2020 conference within the first three weeks of hire
 - Created a complex mobile gallery component for [Microsoft Worklab](https://www.microsoft.com/en-us/worklab)'s Work Trend Index Reports
 - Enhanced user experience for accessing medical articles by creating a newly designed [Microsoft Biomedical Search](https://biomedsearch.microsoft.com/en-us/)
-- Tools: Javascript, React, Bootstrap, HTML, CSS, Git
-
-### React Developer
-
-Jet Linx | Omaha, NE (Remote)  
-2020
-
-Aided immature Information Technology department to develop efficient software development processes, including
-outlining new work and writing developer-friendly stories. Brought experience of React and API design to fast track new development projects and quick turnover on regular maintenance.
-
-- Led design of UI and API on project to gather feedback from employees and clients
-- Tools: Javascript, React, Redux, Material UI, CSS, HTML, Git
+- Tools: Javascript, React, Bootstrap
 
 ### Software Developer
 
@@ -55,7 +55,7 @@ AgilityHealth Radar, the most popular application sold by ATI, from ASP.NET to R
 - Provided expert knowledge of redux-form, acquired through on-the-job research, to help team overcome
   complex form issues
 - Completed frequent design updates with limited turnaround
-- Tools: Javascript, React, Redux, Redux-Saga, Material UI, C#, SQL Server, CSS, HTML, Git
+- Tools: Javascript, React, Redux, Redux-Saga, Material UI, C#, SQL Server
 
 ### Full Stack Developer
 
@@ -72,7 +72,7 @@ Recruited for vast knowledge of languages, frameworks and expertise in Atlassian
   enriched data to validate changes
 - Initiated, led, and implemented software solutions for critical business processes increasing productivity
   throughout the engineering department
-- Tools: Java/Groovy, SQL Server, Javascript, RESTful, Jira, CSS, HTML, Git
+- Tools: Java/Groovy, SQL Server, Javascript, RESTful, Jira
 
 ### Software Development Engineer
 
@@ -87,7 +87,7 @@ Designed and implemented several small applications to help migrate or manage in
   save \$80K in third-party licensing fees
 - Analyzed and implemented customized solutions to code plugin defects for Atlassian Jira upgrades
 - Became the peer-elected trainer for on-boarding new hires due to excellent communication and teaching skills
-- Tools: Java, C#.NET, ASP.NET (MVC), SQL Server, Javascript, RESTful, CSS, HTML, SVN
+- Tools: Java, C#.NET, ASP.NET (MVC), SQL Server, Javascript
 
 ### Application Developer
 
@@ -98,7 +98,7 @@ Originally hired as an intern and quickly extended a full-time position before g
 
 - Constructed dynamic reports with graphs for direct access to previously obscure sale/production data
 - Optimized complex database schema and queries to reduce processing time by several seconds
-- Tools: Java, Spring, Hibernate, JDBC, ColdFusion, Oracle SQL, Javascript, RESTful, CSS, HTML, SVN
+- Tools: Java, Spring, Hibernate, JDBC, ColdFusion, Oracle SQL, Javascript
 
 ## Projects
 
@@ -126,4 +126,4 @@ University of Nebraska at Omaha | Omaha, NE
 
 - Honor Graduate (Cum Laude)
 - Concentration: Internet Technologies
-- Tools: Java, C, PHP, Perl, Javascript, HTML, MySQL, UNIX, TFS
+- Tools: Java, C, PHP, Perl, Javascript, HTML, MySQL, UNIX

@@ -120,13 +120,13 @@ export default function Newsletter({
             <div key={topic.name} className="control">
               <label htmlFor={topic.name} className="checkbox">
                 <input
-                  name={topic.name}
-                  id={topic.name}
+                  name={topic.name.toLowerCase()}
+                  id={topic.name.toLowerCase()}
                   type="checkbox"
                   value={topic.id}
                   defaultChecked
                 />
-                &nbsp; {topic.name}
+                &nbsp; {topic.name.toLowerCase()}
               </label>
             </div>
           ))}

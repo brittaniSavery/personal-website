@@ -21,7 +21,7 @@ export default async function handler(
 
     try {
       const email = req.body.email.toLowerCase();
-      const firstName = req.body.fname;
+      const firstName = req.body.name;
       const emailHash = md5(email);
 
       const response = await mailchimp.lists.setListMember(

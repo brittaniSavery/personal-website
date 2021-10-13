@@ -3,8 +3,7 @@ title: "New Year, New Look: Round 2"
 publishDate: 2021-01-18
 tags:
   - coder
-newsletter:
-  - coder
+newsletter: coder
 description: Wix.com is a great tool for creating websites without any coding knowledge, but as I tried to make changes and add to my site, I noticed a growing list of limitations. So, I decided to redesign and rebuild it from scratch.
 meta:
   description: After running into many limitations with updates on Wix.com, I decided to use my coding skills to redesign and rebuild my website.

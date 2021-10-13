@@ -4,9 +4,7 @@ publishDate: 2020-09-17
 tags:
   - coder
   - writer
-newsletter:
-  - coder
-  - writer
+newsletter: writer
 description: While my inspiration for coding has been free-flowing, my writing muse vanished. A comic from Chris Hallbeck perfectly portrays my feelings on my lack of writing.
 thumbnail: big-project-comic.png
 ---

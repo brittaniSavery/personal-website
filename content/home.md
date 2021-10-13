@@ -5,7 +5,7 @@ description: "Official Website of Brittani S Avery: writer, coder, gamer, nerd."
 thumbnail: meta/homepage.jpg
 ---
 
-![Brittani S Avery, Coder, Writer, Gamer, Nerd.](images/home-header.jpg)
+![Brittani S Avery, Coder, Writer, Gamer, Nerd.](/images/home-header.jpg)
 
 # The Many Sides of Brittani S Avery
 

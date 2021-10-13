@@ -4,8 +4,7 @@ publishDate: 2020-06-10
 tags:
   - introduction
   - writer
-newsletter:
-  - writer
+newsletter: writer
 description: My imagination has played a huge part in my growth as a writer. In Part 2 of the Introduction of Me Series, I'll describe how the stories in my head found an exit.
 thumbnail: intro-writer.jpg
 thumbnailAlt: A portion of my poem "From the Shulammite’s Eyes" written as part of National Poetry Month 2019.

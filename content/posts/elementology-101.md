@@ -4,8 +4,7 @@ publishDate: 2021-02-25
 tags:
   - writer
   - nerd
-newsletter:
-  - writer
+newsletter: writer
 description: Elementology, the main science and plot driver within my Element Unknown series, was born from a love of psychology, personality tests, and mood rings.
 thumbnail: elementology-101.jpg
 ---

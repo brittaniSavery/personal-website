@@ -3,8 +3,7 @@ title: New Year, New Look, Same Me
 publishDate: 2020-05-12
 tags:
   - introduction
-newsletter:
-  - lifestyle
+newsletter: lifestyle
 description: I am a multifaceted woman, yet my website only reflected one side of me. I decided to change that. Here's the why and how of that process.
 thumbnail: new-me.jpg
 thumbnailAlt: A comparison of my old profile picture with long braids and no glasses to my new profile picture with short locs and glasses

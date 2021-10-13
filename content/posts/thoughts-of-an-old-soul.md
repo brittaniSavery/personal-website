@@ -4,8 +4,7 @@ publishDate: 2021-09-20
 tags:
   - writer
   - personal
-newsletter:
-  - writer
+newsletter: writer
 description: I've always enjoyed creative works from times past, validating my identity as an "old soul." Here I compare the differences I've noticed in the creative works of today.
 meta:
   description: As an "old soul", I enjoy creative works from times past. Recently, I've noticed a difference between those and the works of today.

@@ -164,15 +164,15 @@ export const getStaticProps: GetStaticProps = async () => {
 
     mainFeed.addItem(postDetails);
 
-    if (post.newsletter.includes("coder")) {
+    if (post.newsletter === "coder") {
       coderFeed.addItem(postDetails);
     }
 
-    if (post.newsletter.includes("writer")) {
+    if (post.newsletter === "writer") {
       writerFeed.addItem(postDetails);
     }
 
-    if (post.newsletter.includes("lifestyle")) {
+    if (post.newsletter === "lifestyle") {
       lifestyleFeed.addItem(postDetails);
     }
   });

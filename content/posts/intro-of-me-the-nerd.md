@@ -4,6 +4,8 @@ publishDate: 2020-09-02
 tags:
   - introduction
   - nerd
+newsletter:
+  - lifestyle
 description: I've been a nerd for years, despite me not embracing the title for awhile, and this post gives a brief introduction to that side of my personality.
 thumbnail: flair-pens.jpg
 thumbnailAlt: The set of Paper Mate Flair Felt Tip Pens I own.

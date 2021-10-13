@@ -4,6 +4,8 @@ publishDate: 2020-05-19
 tags:
   - introduction
   - coder
+newsletter:
+  - coder
 description: "In the Introduction of Me Series—Part 1: The Coder, I will discuss how my background led me to become a software engineer, i.e. a coder."
 thumbnail: intro-code.jpg
 ---

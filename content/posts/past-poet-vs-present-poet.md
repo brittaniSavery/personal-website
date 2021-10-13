@@ -3,6 +3,8 @@ title: Past Poet vs Present Poet
 publishDate: 2020-09-30
 tags:
   - writer
+newsletter:
+  - writer
 description: Having written poetry for 18 years, my skills as a poet have improved greatly. I take a trip down memory lane discussing some of my poems from the past.
 thumbnail: jackets.jpg
 ---

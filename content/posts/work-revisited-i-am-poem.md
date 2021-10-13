@@ -4,6 +4,8 @@ publishDate: 2021-07-27
 tags:
   - personal
   - writer
+newsletter:
+  - writer
 description: I found an old autobiography assignment from eighth grade with predictions and poetry from 13-year-old me. Let's take a trip down memory lane.
 thumbnail: i-am-poem.jpg
 thumbnailAlt: The original "I Am" poem with classic Microsoft rainbow Word Art and pink construction papers on the corners

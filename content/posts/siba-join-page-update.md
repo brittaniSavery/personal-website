@@ -3,6 +3,8 @@ title: "Code Fix: The SIBA Join Page Update"
 publishDate: 2021-05-07
 tags:
   - coder
+newsletter:
+  - coder
 description: The simulation basketball league created by my dad and I had grown significantly in popularity, revealing a problem in our join-up process. This post describes that problem as well as the struggles and results of the fix.
 meta:
   description: SIBA had grown a lot in popularity, revealing a problem in our join-up process. Learn of that problem and the results of the fix.

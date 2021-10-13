@@ -106,7 +106,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
   const posts = await getPostsByDate();
 
-  const feed = new Feed({
+  const mainFeed = new Feed({
     id: process.env.WEBSITE,
     link: process.env.WEBSITE,
     title: "Brittani S Avery's Personal Blog",
@@ -116,9 +116,41 @@ export const getStaticProps: GetStaticProps = async () => {
     copyright: `${copyright} Brittani S Avery, all rights reserved.`,
   });
 
+  const coderFeed = new Feed({
+    id: process.env.WEBSITE,
+    link: process.env.WEBSITE,
+    title: "Brittani S Avery's Coding Blog",
+    description:
+      "The thoughts and ramblings of Brittani S Avery on her coding projects and the software engineering field.",
+    language: "en-us",
+    copyright: `${copyright} Brittani S Avery, all rights reserved.`,
+  });
+
+  const writerFeed = new Feed({
+    id: process.env.WEBSITE,
+    link: process.env.WEBSITE,
+    title: "Brittani S Avery's Writing Blog",
+    description:
+      "The thoughts and ramblings of Brittani S Avery on her novels, poetry, and other writings.",
+    language: "en-us",
+    copyright: `${copyright} Brittani S Avery, all rights reserved.`,
+  });
+
+  const lifestyleFeed = new Feed({
+    id: process.env.WEBSITE,
+    link: process.env.WEBSITE,
+    title: "Brittani S Avery's Lifestyle Blog",
+    description:
+      "The thoughts and ramblings of Brittani S Avery on her life outside of coding and writing.",
+    language: "en-us",
+    copyright: `${copyright} Brittani S Avery, all rights reserved.`,
+  });
+
   const tags = new Set();
   posts.forEach((post) => {
-    feed.addItem({
+    post.tags.forEach((tag) => tags.add(tag));
+
+    const postDetails = {
       date: new Date(post.publishDate),
       title: post.title,
       link: `${process.env.WEBSITE}/post/${post.slug}`,
@@ -128,12 +160,30 @@ export const getStaticProps: GetStaticProps = async () => {
       image: /^http/.test(post.thumbnail)
         ? post.thumbnail
         : process.env.WEBSITE + post.thumbnail,
-    });
+    };
 
-    post.tags.forEach((tag) => tags.add(tag));
+    mainFeed.addItem(postDetails);
+
+    if (post.newsletter.includes("coder")) {
+      coderFeed.addItem(postDetails);
+    }
+
+    if (post.newsletter.includes("writer")) {
+      writerFeed.addItem(postDetails);
+    }
+
+    if (post.newsletter.includes("lifestyle")) {
+      lifestyleFeed.addItem(postDetails);
+    }
   });
 
-  fs.writeFileSync(`${process.cwd()}/public/feed.xml`, feed.rss2());
+  fs.writeFileSync(`${process.cwd()}/public/feed.xml`, mainFeed.rss2());
+  fs.writeFileSync(`${process.cwd()}/public/coderFeed.xml`, coderFeed.rss2());
+  fs.writeFileSync(`${process.cwd()}/public/writerFeed.xml`, writerFeed.rss2());
+  fs.writeFileSync(
+    `${process.cwd()}/public/lifestyleFeed.xml`,
+    lifestyleFeed.rss2()
+  );
 
   return { props: { posts: posts, tags: [...tags].sort(), meta: meta } };
 };

@@ -3,6 +3,8 @@ title: "Next.js & Material UI: A Disagreeable Pair"
 publishDate: 2020-07-22
 tags:
   - coder
+newsletter:
+  - coder
 description: I've been working on a new coding project and ran into some issues when using Next.js and Material UI but thankfully found another solution using the CSS framework, Bulma.
 meta:
   description: I've been working on a new coding project and ran into some issues when using Next.js and Material UI but another framework came to the rescue, Bulma.

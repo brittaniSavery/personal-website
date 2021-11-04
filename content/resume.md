@@ -16,22 +16,22 @@ Renowned for a short learning curve, a wide range of knowledge on various techno
 
 ## Skills
 
-Javascript :separator: React (+ Redux) :separator: Node.js :separator: Java :separator: C# / .NET :separator: RESTful APIs :separator: SQL :separator: MongoDB :separator: AWS Lambda
+Javascript :separator: React (+ Redux) :separator: Next.js :separator: Node.js :separator: RESTful APIs :separator: MongoDB :separator: SQL :separator: AWS Lambda :separator: C#.NET :separator: Java
 
 ## Professional Experience
 
-### Full-Stack Engineer (Frontend Focus)
+### Full-Stack Software Engineer
 
 Science 37 | Los Angeles, CA (Remote)
 2021–Present
 Built the user interface to flagship product platform and deliver scalable solutions for new features that have the power
 to positively impact millions.
 
-- Developed creative, efficient and scalable technical solutions for given business problems
+- Integrated new feature for trial-based privacy policies, creating UI from mock-ups and API from requirements
 - Reviewed code and pull requests to ensure architectural standards and code quality
 - Tools: Javascript, React, NodeJS
 
-### Web Developer
+### Frontend Developer
 
 Plain Concepts | Seattle, WA (Remote)  
 2020–2021

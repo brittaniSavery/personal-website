@@ -22,8 +22,8 @@ Javascript :separator: React (+ Redux) :separator: Next.js :separator: Node.js :
 
 ### Full-Stack Software Engineer
 
-Science 37 | Los Angeles, CA (Remote)
-2021–Present
+Science 37 | Los Angeles, CA (Remote)  
+2021–Present  
 Built the user interface to flagship product platform and deliver scalable solutions for new features that have the power
 to positively impact millions.
 

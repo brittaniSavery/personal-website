@@ -1,6 +1,6 @@
 ---
 title: Recruiters, Please Stop Playing the Guessing Game
-publishDate: 2021-11-30
+publishDate: 2021-11-29
 tags:
   - coder
 newsletter: coder

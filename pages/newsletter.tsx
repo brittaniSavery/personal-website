@@ -4,6 +4,7 @@ import React from "react";
 import Emoji from "../components/Emoji";
 import TextField from "../components/fields/TextField";
 import Layout from "../components/layout/Layout";
+import { useMatomo } from "@datapunt/matomo-tracker-react";
 
 type NewsletterProps = {
   meta: GeneralMeta;
@@ -17,6 +18,7 @@ export default function Newsletter({
   const [nameError, setNameError] = React.useState("");
   const [emailError, setEmailError] = React.useState("");
   const [successMessage, setSuccessMessage] = React.useState("");
+  const { trackEvent } = useMatomo();
 
   async function joinSubmit(event: React.ChangeEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -69,6 +71,7 @@ export default function Newsletter({
             : "Your information has been updated."
         }`
       );
+      trackEvent({ category: "interaction", action: "newsletter-signup" });
       form.reset();
     } else {
       setEmailError(await newsletterResponse.text());

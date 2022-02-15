@@ -68,7 +68,7 @@ export default function Footer(): JSX.Element {
                 </span>
               </ExternalLink>
             </p>
-            <ExternalLink href="https://ko-fi.com/W7W6107FH">
+            <ExternalLink href="https://ko-fi.com/brittanisavery">
               <KofiLogo className="bsa-social ko-fi" />
               <span className="is-sr-only" role="presentation">
                 Support Me on Ko-fi

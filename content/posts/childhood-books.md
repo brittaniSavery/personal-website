@@ -2,11 +2,10 @@
 title: The Influence of Childhood Books
 publishDate: 2022-02-22
 tags:
-  - personal
   - writer
 newsletter: lifestyle
 description:
-thumbnail:
+thumbnail: childhood-books.jpg
 ---
 
 I just discovered [Hardcover](https://hardcover.app/), an application that is looking to become a very compelling alternative to Goodreads. So far, I’m really enjoying using it and the community around it is lovely. Those who are designing and coding the app are taking the time to gather feedback from all sorts of different kinds of readers and authors. It’s still under construction, but feel free to sign up and join the discord if you want to be a part of this progress. It’s been a great ride so far.

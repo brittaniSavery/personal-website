@@ -28,6 +28,8 @@ Along with reading, my mother and grandmother strongly advocate for the learning
 
 As a young teenager who also dealt with ridicule based on her skin color, I found strength from these books. I remember marveling at the illustrations within, showing Addy's courage. I still have both the doll and the books today, though I will admit that Addy herself is a little worse for wear.
 
+![My Addy doll surrounded by the six books in her original box set.](/images/posts/addy-book-set.jpg)
+
 The other major historical fiction series of my childhood was one that I happened to find on my own. Do you remember the Scholastic book orders and book fairs? Honestly, I was one of the weird kids that got super excited for the book fair, begging my parents for enough money for one or two books. I remember squealing with joy as my teacher passed out the book orders.
 
 One time when I was scanning the available titles, I noticed a pack of two books: one with a green cover and a young woman with a skin tone and hair color similar to mine and another with a red cover with a regally dressed princess with pale skin and bright red hair. The two-book pack contained _Cleopatra VII: Daughter of the Nile, Egypt, 57 B.C._ by Kristiana Gregory and _Elizabeth I: Red Rose of the House of Tudor, England, 1544_ by Kathryn Lasky. I remember reading both of the books with a new sort of vigor.

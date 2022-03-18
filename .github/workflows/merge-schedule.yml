@@ -15,7 +15,7 @@ jobs:
       - uses: gr2m/merge-schedule-action@v1
         with:
           merge_method: squash
-          # Added time zone for account for Mailchimp automation
+          # Added time zone to account for Mailchimp automation
           time_zone: "America/Chicago"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

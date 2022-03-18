@@ -65,12 +65,12 @@ export default function MetaTags({
       {ArticleMetaTags()}
       {BookMetaTags()}
 
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content="@brittanisavery" />
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:creator" content="@brittanisavery" />
       <meta property="twitter:url" content={url} />
-      <meta name="twitter:title" content={fullTitle || title} />
-      <meta name="twitter:description" content={description} />
-      {thumbnail && <meta name="twitter:image" content={thumbnail} />}
+      <meta property="twitter:title" content={fullTitle || title} />
+      <meta property="twitter:description" content={description} />
+      {thumbnail && <meta property="twitter:image" content={thumbnail} />}
     </Head>
   );
 }

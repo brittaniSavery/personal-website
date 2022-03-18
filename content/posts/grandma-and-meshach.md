@@ -4,9 +4,9 @@ publishDate: 2022-03-25
 tags:
   - personal
 newsletter: lifestyle
-description: "The last two years have sucked. I have experienced unemployment, sickness, and the death of loved ones. Specifically I lost my grandma and my dog, Meshach, in December 2021. In this post, I talk about the good memories I have of them that help me combat my sorrow. (CW: death, suicide)"
+description: "CW: death, suicide—The last two years have sucked. I have experienced unemployment, sickness, and the death of loved ones. Specifically I lost my grandma and my dog, Meshach, in December 2021. In this post, I talk about the good memories I have of them that help me combat my sorrow."
 meta:
-  description: "In December 2021, I lost my grandma and my dog, Meshach. Here, I count the good memories that help me combat my sorrow. (CW: death, suicide)"
+  description: "CW: death, suicide—In December 2021, I lost my grandma and my dog, Meshach. Here, I count the good memories that help me combat my sorrow."
 thumbnail: grandma-and-meshach.jpg
 ---
 
@@ -19,6 +19,9 @@ For the rest of 2021, I spent time visiting my grandmother on Saturdays and maki
 To say these last couple of years have sucked would be a major understatement. It’s been a challenge to stay engaged mentally with life and my depression has reared its ugly head from time to time. However, the good memories I have of both Grandma and Meshach have kept the worst of it at bay.
 
 ## Grandma
+
+![](/images/posts/grandma-siblings.jpg)  
+From left to right: My brother, my sister, Grandma, and me. We were visiting my aunt in Florida as Grandma's last vacation. It was cool seeing all my cousins again after several years. {.has-text-centered .is-size-7}
 
 My grandmother was the mother of eight children, one daughter and seven sons in that order. My dad was her last child and she had him at the grand age of 45. Strong, caring, and giving are just a few words to describe her. She wasn’t the loudest or the most affectionate. But you knew you were loved by her because of what she gave and did.
 
@@ -40,15 +43,18 @@ I spent a bunch of my childhood at her house. Begging for cookies, learning how 
 
 ## Meshach
 
+![Meshach and me lying next together and looking at the camera.](/images/posts/me-meshach-last-pic.jpg)  
+One of the last pictures I have of me and Meshach together, taken a week before he passed away. We both were tired. Despite his illness, he was always happy to see his favorite humans. {.has-text-centered .is-size-7}
+
 Meshach, the old English bulldogge, was the first dog I purchased myself. He was named after one of the three Hebrews who refused to worship the golden statue King Nebuchadnezzar made (Daniel chapter 3). I remember doing a lot of research on what sort of dog I wanted. I knew that I was going to be living in an apartment, so I needed one that was low-energy and didn’t mind not having a whole bunch of space. Bulldogs are pretty spot on for that.
 
 However, the more I dug into English bulldogs, the more I realized that they have great temperaments but horrible health. Due to their squishy face and stout stature, they have trouble breathing and bad leg joints, hip dysplasia being common among them. The cool thing is that I also found Meshach’s breed, a revival of the original English bulldog to fix all the health issues that resulted from irresponsible breeding. With that all figured out, I knew exactly what kind of dog I wanted.
 
-Actually getting Meshach, though, was a little more complicated. The breed wasn’t very popular in Omaha and so it was tricky to find a breeder. Eventually, I did find this dude off Craig’s List (yes, yes I know) and I met him at some gas station and he showed me Meshach. I put down half and then went on vacation (again, I know). He called me sometime later and said that he had showed me the wrong dog. I was suppose to see this tan one. But I told him that I loved Meshach’s brindle coloring, which was great since the other family liked how big the tan puppy was. Thankfully, things all worked out and once I got back from vacation, I met the dude at a Walmart and finally got my dog. It’s hilarious now, but I’m just happy I didn’t get scammed in the end. :lol:
+Actually getting Meshach, though, was a little more complicated. The breed wasn’t very popular in Omaha and so it was tricky to find a breeder. Eventually, I did find this dude off Craig’s List (yes, yes I know) and I met him at some gas station and he showed me Meshach. I put down half and then went on vacation (again, I know). He called me sometime later and said that he had showed me the wrong dog. I was supposed to see this tan one. But I told him that I loved Meshach’s brindle coloring, which was great since the other family liked how big the tan puppy was. Thankfully, things all worked out and once I got back from vacation, I met the dude at a Walmart and finally got my dog. It’s hilarious now, but I’m just happy I didn’t get scammed in the end. :lol:
 
 Meshach has always had a fun personality. For the most part, he was very lazy and slept most of the day away. However, he would get the zoomies, just random bursts of energy (often times after a good poop), and would just fly all around my apartment/house.
 
-He loved humans but wasn’t the biggest fan of other dogs. I would take him to a dog park and he would run around, greet a bunch of the humans, and then get irritated after about 30 minutes with all the other dogs trying to play with him. It was the same at doggy daycare as well. :shrug: Just more of a human dog than a dog dog. :lol:
+He loved humans but wasn’t the biggest fan of other dogs. I would take him to a dog park and he would run around, greet a bunch of the humans, and then get irritated after about 30 minutes with all the other dogs trying to play with him. It was the same at doggy daycare as well. :shrug: Just more of a people dog than a dogs dog. :lol:
 
 Meshach had humans friends just about everywhere he went. Most were attracted to either his face or his coloring. I usually got two distinct responses to Meshach’s appearance: “Aww!” or “Ugh!” Very rarely did I have a neutral response. Despite that, he was always friendly—sometimes a little too friendly (i.e. frisky)—and they loved him at the vet and daycare.
 

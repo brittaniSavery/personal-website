@@ -51,6 +51,9 @@ export default function MetaTags({
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="#fff" />
 
+      <meta name="title" content={fullTitle || title} />
+      <meta name="description" content={description} />
+
       <meta property="og:type" content={type} />
       <meta property="og:title" content={fullTitle || title} />
       <meta property="og:description" content={description} />
@@ -64,6 +67,7 @@ export default function MetaTags({
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content="@brittanisavery" />
+      <meta property="twitter:url" content={url} />
       <meta name="twitter:title" content={fullTitle || title} />
       <meta name="twitter:description" content={description} />
       {thumbnail && <meta name="twitter:image" content={thumbnail} />}

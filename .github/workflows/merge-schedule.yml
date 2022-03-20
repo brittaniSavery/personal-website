@@ -6,7 +6,8 @@ on:
       - edited
       - synchronize
   schedule:
-    - cron: 45 9 * * *
+    # Will run everyday at 06:00 UTC (00:00 CST / 01:00 CDT)
+    - cron: 0 6 * * *
 
 jobs:
   merge_schedule:

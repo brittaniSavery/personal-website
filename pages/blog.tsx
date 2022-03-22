@@ -4,8 +4,6 @@ import fs from "fs";
 import { GetStaticProps } from "next";
 import { useRouter } from "next/dist/client/router";
 import Link from "next/link";
-import React from "react";
-import Layout from "../components/layout/Layout";
 import PostCard from "../components/posts/PostCard";
 import copyright from "../lib/copyright";
 import { getPostsByDate } from "../lib/postsHelper";
@@ -16,7 +14,7 @@ type BlogProps = {
   meta: GeneralMeta;
 };
 
-export default function Blog({ posts, tags, meta }: BlogProps): JSX.Element {
+export default function Blog({ posts, tags }: BlogProps): JSX.Element {
   const router = useRouter();
   const { tag, page } = router.query;
 
@@ -31,7 +29,7 @@ export default function Blog({ posts, tags, meta }: BlogProps): JSX.Element {
   const pageSection = totalSection.slice(postStart, postEnd);
 
   return (
-    <Layout meta={meta}>
+    <>
       <h1>Blog</h1>
       <div className="bulma-tags are-medium">
         <Link href="/blog">
@@ -90,7 +88,7 @@ export default function Blog({ posts, tags, meta }: BlogProps): JSX.Element {
             })}
         </div>
       </nav>
-    </Layout>
+    </>
   );
 }
 

@@ -39,6 +39,10 @@ export default function Layout({ meta, children }: LayoutProps): JSX.Element {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <div className="container is-max-desktop bsa-container">
         <Navigation />

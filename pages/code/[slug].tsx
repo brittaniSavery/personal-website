@@ -1,10 +1,8 @@
-import { GetStaticPaths, GetStaticProps } from "next";
-import React from "react";
-import ExternalLink from "../../components/ExternalLink";
-import fs from "fs";
-import Layout from "../../components/layout/Layout";
-import MarkdownParser from "../../components/MarkdownParser";
 import clsx from "clsx";
+import fs from "fs";
+import { GetStaticPaths, GetStaticProps } from "next";
+import ExternalLink from "../../components/ExternalLink";
+import MarkdownParser from "../../components/MarkdownParser";
 
 type CodeProps = {
   meta: GeneralMeta;
@@ -16,7 +14,6 @@ type CodeProps = {
 };
 
 export default function Code({
-  meta,
   title,
   image,
   alt,
@@ -24,7 +21,7 @@ export default function Code({
   links,
 }: CodeProps): JSX.Element {
   return (
-    <Layout meta={meta}>
+    <>
       <h1>{title}</h1>
       <div className="bsa-project-img">
         <img src={`/images/${image}`} alt={alt} />
@@ -41,7 +38,7 @@ export default function Code({
           </ExternalLink>
         ))}
       </div>
-    </Layout>
+    </>
   );
 }
 

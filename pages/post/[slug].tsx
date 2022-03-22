@@ -18,9 +18,9 @@ type PostProps = {
   related: Post[];
 };
 
-export default function Post({ meta, main, related }: PostProps): JSX.Element {
+export default function Post({ main, related }: PostProps): JSX.Element {
   return (
-    <Layout meta={meta}>
+    <>
       <img
         className="bsa-post-img"
         src={main.thumbnail || "https://via.placeholder.com/940x534.jpg"}
@@ -48,7 +48,7 @@ export default function Post({ meta, main, related }: PostProps): JSX.Element {
           </div>
         ))}
       </div>
-    </Layout>
+    </>
   );
 }
 

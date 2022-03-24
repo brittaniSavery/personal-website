@@ -9,7 +9,7 @@ import copyright from "../lib/copyright";
 import { getPostsByDate } from "../lib/postsHelper";
 
 type BlogProps = {
-  posts: Post[];
+  posts: PostSummary[];
   tags: string[];
   meta: GeneralMeta;
 };
@@ -183,5 +183,18 @@ export const getStaticProps: GetStaticProps = async () => {
     lifestyleFeed.rss2()
   );
 
-  return { props: { posts: posts, tags: [...tags].sort(), meta: meta } };
+  const postCardDetails = posts.map((p) => ({
+    slug: p.slug,
+    title: p.title,
+    thumbnail: p.thumbnail,
+    thumbnailAlt: p.thumbnailAlt || "",
+    publishDate: p.publishDate,
+    formattedDate: p.formattedDate,
+    description: p.description,
+    tags: p.tags,
+  }));
+
+  return {
+    props: { posts: postCardDetails, tags: [...tags].sort(), meta: meta },
+  };
 };

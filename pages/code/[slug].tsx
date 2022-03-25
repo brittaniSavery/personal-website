@@ -24,6 +24,7 @@ export default function Code({
     <>
       <h1>{title}</h1>
       <div className="bsa-project-img">
+        {/* eslint-disable-next-line @next/next/no-img-element*/}
         <img src={`/images/${image}`} alt={alt} />
       </div>
       <MarkdownParser className="bsa-project" content={content} />

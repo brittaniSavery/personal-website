@@ -1,5 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-import React from "react";
+import Image from "next/image";
+import { useState } from "react";
 import ExternalLink from "../../components/ExternalLink";
 import OrderBooks from "../../components/projects/OrderBooks";
 import ReviewQuote from "../../components/projects/ReviewQuote";
@@ -29,12 +30,13 @@ export default function Book({
   amazonLink,
   newsletterTopics,
 }: BookProps): JSX.Element {
-  const [isOpen, setOpen] = React.useState(false);
+  const [isOpen, setOpen] = useState(false);
 
   return (
     <>
       <h1>{title}</h1>
       <div className="bsa-project-img">
+        {/* eslint-disable-next-line @next/next/no-img-element*/}
         <img src={`/images/${image}`} alt={alt} />
       </div>
       {blurb.map((paragraph, index) => (

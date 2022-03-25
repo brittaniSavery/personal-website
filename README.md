@@ -9,21 +9,9 @@ This is the code for my personal website, [brittanisavery.com](https://brittanis
 - [Next.js](https://nextjs.org/)
 - [Bulma CSS Framework](https://bulma.io/)
 - [Markdown-It](https://markdown-it.github.io/) + several plugins
+- [Iconify](https://iconify.design/) - for the Noto Emojis
 
 ## 📖 References
 
 - [Next.js + Netlify Blog Template](https://github.com/wutali/nextjs-netlify-blog-template)
 - [How to Make a Markdown Blog With Next.js by Jose Felix](https://jfelix.info/blog/how-to-make-a-static-blog-with-next-js)
-
-## 📃 TODO List
-
-- Autographed copies order form (Mailchimp API and AWS SES combo)
-- Double check for missing images on project pages
-
-_Nice To Have's_
-
-- Test RSS (figure out absolute url refs)
-- Add Likes for individual posts
-- Commenting for individual posts
-  - Ability to reply as myself
-  - Alert commenter of reply (send email?)

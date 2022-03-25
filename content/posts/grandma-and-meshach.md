@@ -8,6 +8,7 @@ description: "Content Warning: death, suicide—The last two years have sucked. 
 meta:
   description: "CW: death, suicide—In December 2021, I lost my grandma and my dog, Meshach. Here, I count the good memories that help me combat my sorrow."
 thumbnail: grandma-and-meshach.jpg
+thumbnailAlt: Grandma Avery (January 6, 1924–December 8, 2021) and Meshach Avery (January 20, 2013–December 17, 2021)
 ---
 
 The last couple of years have been hard for a lot of people. We’ve dealt with a pandemic, social injustices, and global tensions. Those are just the universal griefs of living today. Many have had personal struggles: unemployment, sickness, and death. During these last two years, I have dealt with all three.

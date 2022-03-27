@@ -1,7 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-import React from "react";
+import Image from "next/image";
+import { useState } from "react";
 import ExternalLink from "../../components/ExternalLink";
-import Layout from "../../components/layout/Layout";
 import OrderBooks from "../../components/projects/OrderBooks";
 import ReviewQuote from "../../components/projects/ReviewQuote";
 import books from "../../content/projects/books.json";
@@ -22,7 +22,6 @@ type BookProps = {
 };
 
 export default function Book({
-  meta,
   title,
   blurb,
   reviews,
@@ -31,47 +30,45 @@ export default function Book({
   amazonLink,
   newsletterTopics,
 }: BookProps): JSX.Element {
-  const [isOpen, setOpen] = React.useState(false);
+  const [isOpen, setOpen] = useState(false);
 
   return (
     <>
-      <Layout meta={meta}>
-        <h1>{title}</h1>
-        <div className="bsa-project-img">
-          <img src={`/images/${image}`} alt={alt} />
-        </div>
-        {blurb.map((paragraph, index) => (
-          <p key={`${title}-${index}`} className="is-size-5-tablet">
-            {paragraph}
-          </p>
-        ))}
-
-        <h2>Quotes from Readers</h2>
-        {reviews.map((review) => (
-          <ReviewQuote
-            key={review.name}
-            name={review.name}
-            location={review.location}
-          >
-            {review.text}
-          </ReviewQuote>
-        ))}
-
-        <h2>Grab Your Copy</h2>
-        <p>
-          <span className="is-italic">{title}</span> is available as a paperback
-          and an e-book. I have autographed copies for sell if you&apos;re
-          looking for a physical option. If digital is more your style, you can
-          find the e-books on{" "}
-          <ExternalLink href={amazonLink}>Amazon</ExternalLink>.
+      <h1>{title}</h1>
+      <div className="bsa-project-img">
+        {/* eslint-disable-next-line @next/next/no-img-element*/}
+        <img src={`/images/${image}`} alt={alt} />
+      </div>
+      {blurb.map((paragraph, index) => (
+        <p key={`${title}-${index}`} className="is-size-5-tablet">
+          {paragraph}
         </p>
-        <button
-          className="button is-primary has-text-centered"
-          onClick={() => setOpen(true)}
+      ))}
+
+      <h2>Quotes from Readers</h2>
+      {reviews.map((review) => (
+        <ReviewQuote
+          key={review.name}
+          name={review.name}
+          location={review.location}
         >
-          Order Autographed Copies
-        </button>
-      </Layout>
+          {review.text}
+        </ReviewQuote>
+      ))}
+
+      <h2>Grab Your Copy</h2>
+      <p>
+        <span className="is-italic">{title}</span> is available as a paperback
+        and an e-book. I have autographed copies for sell if you&apos;re looking
+        for a physical option. If digital is more your style, you can find the
+        e-books on <ExternalLink href={amazonLink}>Amazon</ExternalLink>.
+      </p>
+      <button
+        className="button is-primary has-text-centered"
+        onClick={() => setOpen(true)}
+      >
+        Order Autographed Copies
+      </button>
       <OrderBooks
         open={isOpen}
         onClose={() => setOpen(false)}

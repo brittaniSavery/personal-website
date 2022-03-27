@@ -43,18 +43,21 @@ type Meta = {
   url: string;
 };
 
-type Post = {
+type PostSummary = {
   slug: string;
   title: string;
+  tags: string[];
   description: string;
   publishDate: Date;
-  formattedDate?: string;
+  formattedDate: string;
+  thumbnail?: string;
+  thumbnailAlt?: string;
+};
+
+type Post = PostSummary & {
   meta?: {
     description: string;
   };
-  tags: string[];
   newsletter: string;
-  thumbnail?: string;
-  thumbnailAlt?: string;
   content: string;
 };

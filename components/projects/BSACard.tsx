@@ -1,6 +1,6 @@
 import clsx from "clsx";
+import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import ExternalLink from "../ExternalLink";
 
 export type CardFooterItem = {
@@ -24,7 +24,7 @@ export function BSACard({ children, className }: BasicProps): JSX.Element {
 export function BSACardImage({ src, alt }: CardImageProps): JSX.Element {
   return (
     <div className="card-image">
-      <img src={src} alt={alt} />
+      <Image width={960} height={540} src={src} alt={alt} />
     </div>
   );
 }

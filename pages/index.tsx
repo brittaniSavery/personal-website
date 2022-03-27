@@ -1,6 +1,4 @@
 import { GetStaticProps } from "next";
-import React from "react";
-import Layout from "../components/layout/Layout";
 import MarkdownParser from "../components/MarkdownParser";
 import PostCard from "../components/posts/PostCard";
 import { attributes, html as home } from "../content/home.md";
@@ -11,9 +9,9 @@ type HomeProps = {
   recentPosts: Post[];
 };
 
-export default function Home({ meta, recentPosts }: HomeProps): JSX.Element {
+export default function Home({ recentPosts }: HomeProps): JSX.Element {
   return (
-    <Layout meta={meta}>
+    <>
       <MarkdownParser content={home} />
       <div className="columns">
         {recentPosts.map((post) => (
@@ -22,7 +20,7 @@ export default function Home({ meta, recentPosts }: HomeProps): JSX.Element {
           </div>
         ))}
       </div>
-    </Layout>
+    </>
   );
 }
 

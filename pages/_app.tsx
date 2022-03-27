@@ -4,7 +4,7 @@ import Iconify, {
 } from "@iconify/iconify/dist/iconify.without-api";
 import notoIcons from "@iconify/json/json/noto.json";
 import type { AppProps } from "next/app";
-import React from "react";
+import Layout from "../components/layout/Layout";
 import "../styles/global.scss";
 
 export default function App({ Component, pageProps }: AppProps): JSX.Element {
@@ -18,7 +18,9 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
 
   return (
     <MatomoProvider value={instance}>
-      <Component {...pageProps} />
+      <Layout meta={pageProps.meta}>
+        <Component {...pageProps} />
+      </Layout>
     </MatomoProvider>
   );
 }

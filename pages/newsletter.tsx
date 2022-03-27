@@ -1,20 +1,16 @@
+import { useMatomo } from "@datapunt/matomo-tracker-react";
 import clsx from "clsx";
 import { GetStaticProps } from "next";
 import React from "react";
 import Emoji from "../components/Emoji";
 import TextField from "../components/fields/TextField";
-import Layout from "../components/layout/Layout";
-import { useMatomo } from "@datapunt/matomo-tracker-react";
 
 type NewsletterProps = {
   meta: GeneralMeta;
   topics: Topic[];
 };
 
-export default function Newsletter({
-  meta,
-  topics,
-}: NewsletterProps): JSX.Element {
+export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
   const [nameError, setNameError] = React.useState("");
   const [emailError, setEmailError] = React.useState("");
   const [successMessage, setSuccessMessage] = React.useState("");
@@ -80,7 +76,7 @@ export default function Newsletter({
   }
 
   return (
-    <Layout meta={meta}>
+    <>
       <h1>Join the Newsletter</h1>
       <p>
         By joining the monthly(-ish) newsletter, you will be one of the first to
@@ -143,7 +139,7 @@ export default function Newsletter({
           </div>
         </div>
       </form>
-    </Layout>
+    </>
   );
 }
 

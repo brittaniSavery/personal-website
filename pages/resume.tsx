@@ -1,18 +1,12 @@
 import { GetStaticProps } from "next";
-import React from "react";
-import Layout from "../components/layout/Layout";
 import MarkdownParser from "../components/MarkdownParser";
 import { attributes, html as resume } from "../content/resume.md";
 
-type ResumeProps = {
-  meta: GeneralMeta;
-};
-
-export default function Resume({ meta }: ResumeProps): JSX.Element {
+export default function Resume(): JSX.Element {
   return (
-    <Layout meta={meta}>
+    <>
       <MarkdownParser content={resume} />
-    </Layout>
+    </>
   );
 }
 

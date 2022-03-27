@@ -1,14 +1,12 @@
-import React from "react";
+import fs from "fs";
 import { GetStaticProps } from "next";
+import Link from "next/link";
+import TagGroup from "../components/posts/TagGroup";
 import {
   BSACard,
   BSACardContent,
   BSACardImage,
 } from "../components/projects/BSACard";
-import Layout from "../components/layout/Layout";
-import Link from "next/link";
-import TagGroup from "../components/posts/TagGroup";
-import fs from "fs";
 import books from "../content/projects/books.json";
 
 type Project = {
@@ -63,12 +61,11 @@ function Project({
 }
 
 export default function Projects({
-  meta,
   coding,
   writing,
 }: ProjectsProps): JSX.Element {
   return (
-    <Layout meta={meta}>
+    <>
       <h1>Projects</h1>
       <p>
         Being that I am both a coder and a writer with an imaginative mind that
@@ -107,7 +104,7 @@ export default function Projects({
           />
         ))}
       </div>
-    </Layout>
+    </>
   );
 }
 

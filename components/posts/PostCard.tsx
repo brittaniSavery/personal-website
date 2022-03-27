@@ -1,10 +1,9 @@
 import Link from "next/link";
-import React from "react";
 import { BSACard, BSACardContent, BSACardImage } from "../projects/BSACard";
 import TagGroup from "./TagGroup";
 
 type PostCardProps = {
-  post: Post;
+  post: PostSummary;
 };
 
 export default function PostCard({ post }: PostCardProps): JSX.Element {

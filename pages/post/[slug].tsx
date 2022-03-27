@@ -1,5 +1,6 @@
 import fs from "fs";
 import { GetStaticPaths, GetStaticProps } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Layout from "../../components/layout/Layout";
@@ -18,10 +19,12 @@ type PostProps = {
   related: Post[];
 };
 
-export default function Post({ meta, main, related }: PostProps): JSX.Element {
+export default function Post({ main, related }: PostProps): JSX.Element {
   return (
-    <Layout meta={meta}>
-      <img
+    <>
+      <Image
+        width={960}
+        height={540}
         className="bsa-post-img"
         src={main.thumbnail || "https://via.placeholder.com/940x534.jpg"}
         alt={main.thumbnailAlt}
@@ -48,7 +51,7 @@ export default function Post({ meta, main, related }: PostProps): JSX.Element {
           </div>
         ))}
       </div>
-    </Layout>
+    </>
   );
 }
 

@@ -2,10 +2,9 @@ import fs from "fs";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import Layout from "../../components/layout/Layout";
 import MarkdownParser from "../../components/MarkdownParser";
 import PostCard from "../../components/posts/PostCard";
+import SocialShare from "../../components/posts/SocialShare";
 import TagGroup from "../../components/posts/TagGroup";
 import {
   FULL_PATH,
@@ -19,7 +18,7 @@ type PostProps = {
   related: Post[];
 };
 
-export default function Post({ main, related }: PostProps): JSX.Element {
+export default function Post({ meta, main, related }: PostProps): JSX.Element {
   return (
     <>
       <Image
@@ -32,9 +31,13 @@ export default function Post({ main, related }: PostProps): JSX.Element {
       <h1 className="mb-2">{main.title}</h1>
       <div className="pb-4">
         <p className="mb-2">{main.formattedDate} &middot; Brittani S Avery</p>
-        <TagGroup className="pb-2" tags={main.tags} />
+        <TagGroup tags={main.tags} />
+        <SocialShare url={meta.url} title={main.title} />
       </div>
       <MarkdownParser className="bsa-post-content" content={main.content} />
+      <div className="mt-5">
+        <SocialShare url={meta.url} title={main.title} />
+      </div>
       <h2>Related Posts</h2>
       <p>
         If you enjoyed this post, check these related posts. Or better yet, join

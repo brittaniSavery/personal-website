@@ -1,6 +1,6 @@
 ---
 title: The Salary Gap in Real Life
-publishDate: 2022-04-28
+publishDate: 2022-04-29
 tags:
   - coder
 newsletter: coder

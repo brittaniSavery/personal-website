@@ -6,7 +6,7 @@ tags:
 newsletter: coder
 description: In 2020, a woman working in the US made 17% less than a man. When comparing my former salary to that of my male coworker, it seems like the salary pay gap is still alive and well.
 meta:
-  description: The salary gap is alive and well; I experienced it myself.
+  description: The salary gap is alive and well; I have recently experienced it myself.
 thumbnail: salary-gap-irl.png
 ---
 

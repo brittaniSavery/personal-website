@@ -1,9 +1,12 @@
 import { useMatomo } from "@datapunt/matomo-tracker-react";
+import { titleCase } from "title-case";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
 import clsx from "clsx";
 import { GetStaticProps } from "next";
-import React from "react";
+import { useRef, useState } from "react";
 import Emoji from "../components/Emoji";
 import TextField from "../components/fields/TextField";
+import { isNil } from "lodash-es";
 
 type NewsletterProps = {
   meta: GeneralMeta;
@@ -11,9 +14,13 @@ type NewsletterProps = {
 };
 
 export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
-  const [nameError, setNameError] = React.useState("");
-  const [emailError, setEmailError] = React.useState("");
-  const [successMessage, setSuccessMessage] = React.useState("");
+  const [nameError, setNameError] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [captchaError, setCaptchaError] = useState("");
+  const [formValid, setFormValid] = useState(true);
+  const [successMessage, setSuccessMessage] = useState("");
+  const captchaRef = useRef(null);
+
   const { trackEvent } = useMatomo();
 
   async function joinSubmit(event: React.ChangeEvent<HTMLFormElement>) {
@@ -37,8 +44,6 @@ export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
           ? "This email address is not valid."
           : ""
       );
-
-      return;
     }
 
     const formJson: Record<string, unknown> = {};
@@ -47,32 +52,36 @@ export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
       formJson[name] = value.toString();
     }
 
-    const newsletterResponse = await fetch("/api/newsletter", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formJson),
-    });
-
-    if (newsletterResponse.ok) {
-      const member = await newsletterResponse.json();
-
-      setNameError("");
-      setEmailError("");
-      setSuccessMessage(
-        `Thanks ${member.name}! ${
-          member.isNew
-            ? "Be on the lookout for your welcome email."
-            : "Your information has been updated."
-        }`
-      );
-      trackEvent({ category: "interaction", action: "newsletter-signup" });
-      form.reset();
-    } else {
-      setEmailError(await newsletterResponse.text());
-      document.getElementById("email").focus();
+    if (isNil(formJson["h-captcha-response"])) {
+      setCaptchaError("The captcha check is required.");
     }
+
+    // const newsletterResponse = await fetch("/api/newsletter", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(formJson),
+    // });
+
+    // if (newsletterResponse.ok) {
+    //   const member = await newsletterResponse.json();
+
+    //   setNameError("");
+    //   setEmailError("");
+    //   setSuccessMessage(
+    //     `Thanks ${member.name}! ${
+    //       member.isNew
+    //         ? "Be on the lookout for your welcome email."
+    //         : "Your information has been updated."
+    //     }`
+    //   );
+    //   trackEvent({ category: "interaction", action: "newsletter-signup" });
+    //   form.reset();
+    // } else {
+    //   setEmailError(await newsletterResponse.text());
+    //   document.getElementById("email").focus();
+    // }
   }
 
   return (
@@ -97,7 +106,7 @@ export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
       <form noValidate onSubmit={joinSubmit}>
         <TextField
           id="name"
-          label="First Name *"
+          label="First Name"
           type="text"
           error={nameError}
           required
@@ -105,16 +114,14 @@ export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
         />
         <TextField
           id="email"
-          label="Email *"
+          label="Email"
           type="email"
           error={emailError}
           required
         />
 
         <div className="field">
-          <span className="label has-text-primary">
-            What topics do you want to hear from me?
-          </span>
+          <span className="label has-text-primary">Topics Selection</span>
           {topics.map((topic) => (
             <div key={topic.name} className="control">
               <label htmlFor={topic.name} className="checkbox">
@@ -125,10 +132,25 @@ export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
                   value={topic.id}
                   defaultChecked
                 />
-                &nbsp; {topic.name.toLowerCase()}
+                &nbsp; {topic.name} - {topic.description}
               </label>
             </div>
           ))}
+        </div>
+
+        <div className="field">
+          <span className="label has-text-primary">Proof of Humanity</span>
+          <HCaptcha
+            sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY}
+            onVerify={(token, ekey) => {
+              console.log("token", token);
+              console.log("ekey", ekey);
+            }}
+            ref={captchaRef}
+          />
+          <p className={clsx("help is-danger")} aria-live="polite">
+            {captchaError}
+          </p>
         </div>
 
         <div className="field">
@@ -141,6 +163,19 @@ export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
       </form>
     </>
   );
+}
+
+function getTopicDescription(topic: string) {
+  switch (topic) {
+    case "writing":
+      return "Receive novel updates and backstage peaks into my creative writing processes";
+    case "coding":
+      return "Learn about my hobby projects and libraries/frameworks I've found";
+    case "lifestyle":
+      return "See big life events from my point of view or just some ramblings from me";
+    default:
+      return null;
+  }
 }
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -169,7 +204,8 @@ export const getStaticProps: GetStaticProps = async () => {
 
   const topics: Topic[] = interestsResponse.interests.map((interest) => ({
     id: interest.id,
-    name: interest.name,
+    name: interest.name === "Lifestyle" ? "Personal" : interest.name,
+    description: getTopicDescription(interest.name.toLowerCase()),
   }));
 
   return {

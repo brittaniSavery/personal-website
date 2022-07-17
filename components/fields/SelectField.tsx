@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import React, { InputHTMLAttributes } from "react";
+import { InputHTMLAttributes } from "react";
 
 type SelectFieldProps = FieldProps & {
   showEmptyOption?: boolean;

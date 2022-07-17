@@ -16,6 +16,7 @@ type FieldProps = {
 type Topic = {
   id: string;
   name: string;
+  description: string | null;
 };
 
 type AllMeta = GeneralMeta | PostMeta | BookMeta;

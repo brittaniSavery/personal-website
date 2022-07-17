@@ -1,9 +1,12 @@
 import { useMatomo } from "@datapunt/matomo-tracker-react";
+import { titleCase } from "title-case";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
 import clsx from "clsx";
 import { GetStaticProps } from "next";
-import React from "react";
+import { useRef, useState } from "react";
 import Emoji from "../components/Emoji";
 import TextField from "../components/fields/TextField";
+import { isEmpty } from "lodash-es";
 
 type NewsletterProps = {
   meta: GeneralMeta;
@@ -11,9 +14,13 @@ type NewsletterProps = {
 };
 
 export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
-  const [nameError, setNameError] = React.useState("");
-  const [emailError, setEmailError] = React.useState("");
-  const [successMessage, setSuccessMessage] = React.useState("");
+  const [nameError, setNameError] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [captchaError, setCaptchaError] = useState("");
+  const [captchaToken, setCaptchaToken] = useState<string>(null);
+  const [successMessage, setSuccessMessage] = useState("");
+  const captchaRef = useRef<HCaptcha>(null);
+
   const { trackEvent } = useMatomo();
 
   async function joinSubmit(event: React.ChangeEvent<HTMLFormElement>) {
@@ -37,14 +44,34 @@ export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
           ? "This email address is not valid."
           : ""
       );
-
-      return;
     }
 
     const formJson: Record<string, unknown> = {};
     const formData = new FormData(form);
     for (const [name, value] of formData) {
       formJson[name] = value.toString();
+    }
+
+    if (isEmpty(formJson["h-captcha-response"])) {
+      setCaptchaError("The captcha check is required.");
+    } else {
+      // verify the captcha
+      const verified = await fetch("/api/captcha", {
+        method: "POST",
+        body: new URLSearchParams({ token: captchaToken }),
+      });
+
+      if (!verified.ok) {
+        setCaptchaError(
+          "The captcha check was not successful. Please try again."
+        );
+      }
+    }
+
+    // form has some kind of error, so stop here
+    if (nameError || emailError || captchaError) {
+      captchaRef.current.resetCaptcha();
+      return;
     }
 
     const newsletterResponse = await fetch("/api/newsletter", {
@@ -73,6 +100,8 @@ export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
       setEmailError(await newsletterResponse.text());
       document.getElementById("email").focus();
     }
+
+    captchaRef.current.resetCaptcha();
   }
 
   return (
@@ -97,7 +126,7 @@ export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
       <form noValidate onSubmit={joinSubmit}>
         <TextField
           id="name"
-          label="First Name *"
+          label="First Name"
           type="text"
           error={nameError}
           required
@@ -105,16 +134,14 @@ export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
         />
         <TextField
           id="email"
-          label="Email *"
+          label="Email"
           type="email"
           error={emailError}
           required
         />
 
         <div className="field">
-          <span className="label has-text-primary">
-            What topics do you want to hear from me?
-          </span>
+          <span className="label has-text-primary">Topics Selection</span>
           {topics.map((topic) => (
             <div key={topic.name} className="control">
               <label htmlFor={topic.name} className="checkbox">
@@ -125,10 +152,24 @@ export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
                   value={topic.id}
                   defaultChecked
                 />
-                &nbsp; {topic.name.toLowerCase()}
+                &nbsp; {topic.name} - {topic.description}
               </label>
             </div>
           ))}
+        </div>
+
+        <div className="field">
+          <span className="label has-text-primary">Proof of Humanity</span>
+          <HCaptcha
+            sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY}
+            onVerify={(token) => {
+              setCaptchaToken(token);
+            }}
+            ref={captchaRef}
+          />
+          <p className={clsx("help is-danger")} aria-live="polite">
+            {captchaError}
+          </p>
         </div>
 
         <div className="field">
@@ -141,6 +182,19 @@ export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
       </form>
     </>
   );
+}
+
+function getTopicDescription(topic: string) {
+  switch (topic) {
+    case "writing":
+      return "Receive novel updates and backstage passes into my creative writing processes";
+    case "coding":
+      return "Learn about my hobby projects and libraries/frameworks I've found";
+    case "lifestyle":
+      return "See big life events from my point of view or just some ramblings from me";
+    default:
+      return null;
+  }
 }
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -169,7 +223,8 @@ export const getStaticProps: GetStaticProps = async () => {
 
   const topics: Topic[] = interestsResponse.interests.map((interest) => ({
     id: interest.id,
-    name: interest.name,
+    name: interest.name === "Lifestyle" ? "Personal" : interest.name,
+    description: getTopicDescription(interest.name.toLowerCase()),
   }));
 
   return {

@@ -6,7 +6,7 @@ import { GetStaticProps } from "next";
 import { useRef, useState } from "react";
 import Emoji from "../components/Emoji";
 import TextField from "../components/fields/TextField";
-import { isNil } from "lodash-es";
+import { isEmpty } from "lodash-es";
 
 type NewsletterProps = {
   meta: GeneralMeta;
@@ -17,9 +17,9 @@ export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
   const [nameError, setNameError] = useState("");
   const [emailError, setEmailError] = useState("");
   const [captchaError, setCaptchaError] = useState("");
-  const [formValid, setFormValid] = useState(true);
+  const [captchaToken, setCaptchaToken] = useState<string>(null);
   const [successMessage, setSuccessMessage] = useState("");
-  const captchaRef = useRef(null);
+  const captchaRef = useRef<HCaptcha>(null);
 
   const { trackEvent } = useMatomo();
 
@@ -52,36 +52,56 @@ export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
       formJson[name] = value.toString();
     }
 
-    if (isNil(formJson["h-captcha-response"])) {
+    if (isEmpty(formJson["h-captcha-response"])) {
       setCaptchaError("The captcha check is required.");
+    } else {
+      // verify the captcha
+      const verified = await fetch("/api/captcha", {
+        method: "POST",
+        body: new URLSearchParams({ token: captchaToken }),
+      });
+
+      if (!verified.ok) {
+        setCaptchaError(
+          "The captcha check was not successful. Please try again."
+        );
+      }
     }
 
-    // const newsletterResponse = await fetch("/api/newsletter", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(formJson),
-    // });
+    // form has some kind of error, so stop here
+    if (nameError || emailError || captchaError) {
+      captchaRef.current.resetCaptcha();
+      return;
+    }
 
-    // if (newsletterResponse.ok) {
-    //   const member = await newsletterResponse.json();
+    const newsletterResponse = await fetch("/api/newsletter", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formJson),
+    });
 
-    //   setNameError("");
-    //   setEmailError("");
-    //   setSuccessMessage(
-    //     `Thanks ${member.name}! ${
-    //       member.isNew
-    //         ? "Be on the lookout for your welcome email."
-    //         : "Your information has been updated."
-    //     }`
-    //   );
-    //   trackEvent({ category: "interaction", action: "newsletter-signup" });
-    //   form.reset();
-    // } else {
-    //   setEmailError(await newsletterResponse.text());
-    //   document.getElementById("email").focus();
-    // }
+    if (newsletterResponse.ok) {
+      const member = await newsletterResponse.json();
+
+      setNameError("");
+      setEmailError("");
+      setSuccessMessage(
+        `Thanks ${member.name}! ${
+          member.isNew
+            ? "Be on the lookout for your welcome email."
+            : "Your information has been updated."
+        }`
+      );
+      trackEvent({ category: "interaction", action: "newsletter-signup" });
+      form.reset();
+    } else {
+      setEmailError(await newsletterResponse.text());
+      document.getElementById("email").focus();
+    }
+
+    captchaRef.current.resetCaptcha();
   }
 
   return (
@@ -142,9 +162,8 @@ export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
           <span className="label has-text-primary">Proof of Humanity</span>
           <HCaptcha
             sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY}
-            onVerify={(token, ekey) => {
-              console.log("token", token);
-              console.log("ekey", ekey);
+            onVerify={(token) => {
+              setCaptchaToken(token);
             }}
             ref={captchaRef}
           />
@@ -168,7 +187,7 @@ export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
 function getTopicDescription(topic: string) {
   switch (topic) {
     case "writing":
-      return "Receive novel updates and backstage peaks into my creative writing processes";
+      return "Receive novel updates and backstage passes into my creative writing processes";
     case "coding":
       return "Learn about my hobby projects and libraries/frameworks I've found";
     case "lifestyle":

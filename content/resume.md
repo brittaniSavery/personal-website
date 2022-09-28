@@ -11,29 +11,39 @@ thumbnailAlt: "A collage of the various computer languages and web frameworks Br
 
 ## Profile
 
-Self-motivated, full-stack developer with 10+ years of professional experience in software and web development.
-Renowned for a short learning curve, a wide range of knowledge on various technologies and techniques, and quick turnarounds. Effective in communicating ideas clearly to multicultural and distributed teams while working in an Agile environment. Proficient in the French language.
+Self-motivated, full-stack developer with 10+ years of professional experience in software and web development. Renowned for a short learning curve, a wide range of knowledge on various technologies and techniques, and quick turnarounds. Effective in communicating ideas clearly to multicultural and distributed teams while working in an Agile environment. Fluent in French.
 
 ## Skills
 
-Javascript :separator: React (+ Redux) :separator: Next.js :separator: Node.js :separator: RESTful APIs :separator: MongoDB :separator: SQL :separator: AWS Lambda :separator: C#.NET :separator: Java
+Javascript :separator: Typescript :separator: React :separator: Redux/Context API :separator: Next.js :separator: Node.js :separator: RESTful APIs :separator: SQL :separator: MongoDB :separator: Java
 
 ## Professional Experience
 
+### Senior Software Engineer
+
+SimpleHealth | Remote  
+2022–Present
+Integrated the complexity of insurance-based payments for SimpleHealth, allowing more options for women and people with ovaries to get birth control easily.
+
+- Developed a messaging system between the SimpleHealth app and the pharmacy API to simplify the workflow for pharmacists
+- Built an automatic process to re-send previously failed messages (e.g. outages) to prevent the loss of information between SimpleHealth and the pharmacy
+- Intercepted insurance API events and verified insurance copay amounts to charge customers correctly
+- Tools: Javascript, Flow Type, React, Node.js, MySQL, Git
+
 ### Full-Stack Software Engineer
 
-Science 37 | Los Angeles, CA (Remote)  
-2021–Present  
+Science 37 | Remote
+2021–2022  
 Built the user interface to flagship product platform and deliver scalable solutions for new features that have the power
 to positively impact millions.
 
 - Integrated new feature for trial-based privacy policies, creating UI from mock-ups and API from requirements
 - Reviewed code and pull requests to ensure architectural standards and code quality
-- Tools: Javascript, React, NodeJS
+- Tools: Javascript, React, NodeJS, MySQL, Git
 
 ### Frontend Developer
 
-Plain Concepts | Seattle, WA (Remote)  
+Plain Concepts | Remote  
 2020–2021
 
 Maintained and created React websites for various Microsoft projects such as [Microsoft Innovation](https://innovation.microsoft.com/en-us) with an emphasis on internationalization and accessibility as well as frequently changing designs.
@@ -41,17 +51,17 @@ Maintained and created React websites for various Microsoft projects such as [Mi
 - Implemented a new experience for the Microsoft Ignite 2020 conference within the first three weeks of hire
 - Created a complex mobile gallery component for [Microsoft Worklab](https://www.microsoft.com/en-us/worklab)'s Work Trend Index Reports
 - Enhanced user experience for accessing medical articles by creating a newly designed [Microsoft Biomedical Search](https://biomedsearch.microsoft.com/en-us/)
-- Tools: Javascript, React, Bootstrap
+- Tools: Javascript, React, Bootstrap, HTML, CSS, Git
 
 ### Software Developer
 
-AgilityHealth | Omaha, NE (Remote)  
+AgilityHealth | Remote  
 2019–2020
 
-Used knowledge from recreational development in react to help team jump start total application migration of
+Used knowledge from recreational development in React to help team jump start total application migration of
 AgilityHealth Radar, the most popular application sold by ATI, from ASP.NET to React.
 
-- Rebuilt the create and edit functionality for companies in React/Material UI from the older ASP.NET application
+- Rebuilt the create and edit functionalities for companies in React/Material UI from the older ASP.NET application
 - Provided expert knowledge of redux-form, acquired through on-the-job research, to help team overcome
   complex form issues
 - Completed frequent design updates with limited turnaround
@@ -121,8 +131,7 @@ Originally hired as an intern and quickly extended a full-time position before g
 
 ### Bachelors of Science in Computer Science
 
-University of Nebraska at Omaha | Omaha, NE  
-2012
+University of Nebraska at Omaha | Omaha, NE
 
 - Honor Graduate (Cum Laude)
 - Concentration: Internet Technologies

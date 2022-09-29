@@ -1,12 +1,11 @@
 import { useMatomo } from "@datapunt/matomo-tracker-react";
-import { titleCase } from "title-case";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 import clsx from "clsx";
+import { isEmpty } from "lodash-es";
 import { GetStaticProps } from "next";
 import { useRef, useState } from "react";
 import Emoji from "../components/Emoji";
 import TextField from "../components/fields/TextField";
-import { isEmpty } from "lodash-es";
 
 type NewsletterProps = {
   meta: GeneralMeta;

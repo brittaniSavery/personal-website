@@ -7,7 +7,9 @@ thumbnailAlt: "A collage of the various computer languages and web frameworks Br
 
 # Resume
 
-"Coder. Writer. Gamer. Nerd." is the tagline for my website and email signature, identifying the main portions of my personality. "Coder" is listed first due to my childhood spent in front of and surrounded by computers, which I discuss in [Part 1](/post/intro-of-me-the-coder) of my introduction posts. My education and profession as a software developer simply solidified that particular ID. Peruse through my professional resume! If you're looking to hire a freelancer, I am available to work. Please [book time with me](https://app.simplymeet.me/brittanisavery/project-consultation) and let's talk about your project. :smile:
+"Coder. Writer. Gamer. Nerd." is the tagline for my website and email signature, identifying the main portions of my personality. "Coder" is listed first due to my childhood spent in front of and surrounded by computers, which I discuss in [Part 1](/post/intro-of-me-the-coder) of my introduction posts. My education and profession as a software developer simply solidified that particular ID. Peruse through my professional resume! There is a [.pdf version](/brittani-s-avery-resume.pdf){download} as well.
+
+If you're looking to hire a freelancer, I am available to work. Please [book time with me](https://app.simplymeet.me/brittanisavery/project-consultation) and let's talk about your project. :smile:
 
 ## Profile
 
@@ -32,7 +34,7 @@ Integrated the complexity of insurance-based payments for SimpleHealth, allowing
 
 ### Full-Stack Software Engineer
 
-Science 37 | Remote
+Science 37 | Remote  
 2021–2022  
 Built the user interface to flagship product platform and deliver scalable solutions for new features that have the power
 to positively impact millions.

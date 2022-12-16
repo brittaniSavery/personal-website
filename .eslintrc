@@ -42,6 +42,10 @@
         "@typescript-eslint/explicit-module-boundary-types": ["error"],
         "@typescript-eslint/no-var-requires": ["error"]
       }
+    },
+    {
+      "files": ["*.md"],
+      "extends": ["plugin:markdown/recommended"]
     }
   ]
 }

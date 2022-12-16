@@ -23,8 +23,13 @@ Javascript :separator: Typescript :separator: React :separator: Redux/Context AP
 
 ### Senior Software Engineer
 
-SimpleHealth | Remote  
+Turnberry Solutions | Remote  
 2022–Present
+
+### Senior Software Engineer
+
+SimpleHealth | Remote  
+2022
 Integrated the complexity of insurance-based payments for SimpleHealth, allowing more options for women and people with ovaries to get birth control easily.
 
 - Developed a messaging system between the SimpleHealth app and the pharmacy API to simplify the workflow for pharmacists
@@ -134,7 +139,3 @@ Originally hired as an intern and quickly extended a full-time position before g
 ### Bachelors of Science in Computer Science
 
 University of Nebraska at Omaha | Omaha, NE
-
-- Honor Graduate (Cum Laude)
-- Concentration: Internet Technologies
-- Tools: Java, C, PHP, Perl, Javascript, HTML, MySQL, UNIX

@@ -3,7 +3,7 @@ title: In Memory of Grandma and Meshach
 publishDate: 2022-03-25
 tags:
   - personal
-newsletter: lifestyle
+newsletter: personal
 description: "Content Warning: death, suicide—The last two years have sucked. I have experienced unemployment, sickness, and the death of loved ones. Specifically I lost my grandma and my dog, Meshach, in December 2021. In this post, I talk about the good memories I have of them that help me combat my sorrow."
 meta:
   description: "CW: death, suicide—In December 2021, I lost my grandma and my dog, Meshach. Here, I count the good memories that help me combat my sorrow."

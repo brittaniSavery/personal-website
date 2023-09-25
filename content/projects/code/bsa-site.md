@@ -30,8 +30,8 @@ The first version of my personal website solely focused on my life as a publishe
 
 I introduced version 2 of my website on May 11, 2020 in the first post of my new blog, [New Year, New Look, Same Me](/post/new-year-new-look-same-me). The shortened version is that I wanted to have my website reflect more than just my life as an author. I feel that I accomplished that well with version 2.
 
-Version 3 is the here and now. I moved away from Wix since it was slow and honestly, I knew that I could build something that better fit my needs. I used Next.js and Bulma (staples in my personal programming) as well as Typescript to try to see what all the buzz is about. I can see where it would be useful, but honestly it's just okay. :shrug: You can read more about the creation of this version in the post [New Year, New Look: Round 2](/post/new-year-new-look-round-2).
+Version 3 is the here and now. I moved away from Wix since it was slow and honestly, I knew that I could build something that better fit my needs. I used Next.js and Bulma (staples in my personal programming) as well as Typescript to try to see what all the buzz is about. I can see where it would be useful, but honestly it's just okay. 🤷🏾‍♀️ You can read more about the creation of this version in the post [New Year, New Look: Round 2](/post/new-year-new-look-round-2).
 
 ## Peek Behind the Curtain
 
-The code for the website is available on Github. I am quite proud of how I integrated [Iconify](https://iconify.design/) and [Markdown-It](https://markdown-it.github.io/) into Next. I enjoy uniformity, so seeing the same style of emojis no matter what device one uses makes me happy. :smile:
+The code for the website is available on Github. I am quite proud of how I integrated [Iconify](https://iconify.design/) and [Markdown-It](https://markdown-it.github.io/) into Next. I enjoy uniformity, so seeing the same style of emojis no matter what device one uses makes me happy. 😊

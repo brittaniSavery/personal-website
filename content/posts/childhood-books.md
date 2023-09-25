@@ -3,7 +3,7 @@ title: The Influence of Childhood Books
 publishDate: 2022-02-22
 tags:
   - writer
-newsletter: lifestyle
+newsletter: personal
 description: A previous prompt from the site Hardcover, an up-and-coming alternative to Goodreads, asked us about our favorite childhood books That got me thinking about my favorites and how they may have influenced my writing style.
 meta:
   description: Hardcover, a Goodreads alternative, asked about our favorite childhood books. These are some of mine.

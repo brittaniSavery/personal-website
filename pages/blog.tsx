@@ -134,10 +134,10 @@ export const getStaticProps: GetStaticProps = async () => {
     copyright: `${copyright} Brittani S Avery, all rights reserved.`,
   });
 
-  const lifestyleFeed = new Feed({
+  const personalFeed = new Feed({
     id: process.env.WEBSITE,
     link: process.env.WEBSITE,
-    title: "Brittani S Avery's Lifestyle Blog",
+    title: "Brittani S Avery's Personal Blog",
     description:
       "The thoughts and ramblings of Brittani S Avery on her life outside of coding and writing.",
     language: "en-us",
@@ -170,8 +170,8 @@ export const getStaticProps: GetStaticProps = async () => {
       writerFeed.addItem(postDetails);
     }
 
-    if (post.newsletter === "lifestyle") {
-      lifestyleFeed.addItem(postDetails);
+    if (post.newsletter === "personal") {
+      personalFeed.addItem(postDetails);
     }
   });
 
@@ -179,8 +179,8 @@ export const getStaticProps: GetStaticProps = async () => {
   fs.writeFileSync(`${process.cwd()}/public/coderFeed.xml`, coderFeed.rss2());
   fs.writeFileSync(`${process.cwd()}/public/writerFeed.xml`, writerFeed.rss2());
   fs.writeFileSync(
-    `${process.cwd()}/public/lifestyleFeed.xml`,
-    lifestyleFeed.rss2()
+    `${process.cwd()}/public/personalFeed.xml`,
+    personalFeed.rss2()
   );
 
   const postCardDetails = posts.map((p) => ({

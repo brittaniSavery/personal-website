@@ -7,7 +7,7 @@ tags:
   - gamer
   - nerd
   - personal
-newsletter: coder | writer | lifestyle
+newsletter: coder | writer | personal
 description:
 meta:
   description: This description must be shorter than 140 characters

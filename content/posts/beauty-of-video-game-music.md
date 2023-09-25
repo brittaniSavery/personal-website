@@ -3,7 +3,7 @@ title: The Beauty of Video Game Music
 publishDate: 2021-04-01
 tags:
   - gamer
-newsletter: lifestyle
+newsletter: personal
 description: Exploring the vast library of Spotify, I found songs from games of my childhood and it reignited my love for video game music. So I took a trip down memory lane, rediscovering songs and opening myself up to some new favorites.
 meta:
   description: Exploring Spotify allowed me to reignite my love for video game music, causing me to discover and rediscover favorites.

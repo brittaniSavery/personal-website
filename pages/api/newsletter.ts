@@ -17,7 +17,7 @@ export default async function handler(
     const interests: Record<string, boolean> = {};
     if (req.body.writing) interests[req.body.writing] = true;
     if (req.body.coding) interests[req.body.coding] = true;
-    if (req.body.lifestyle) interests[req.body.lifestyle] = true;
+    if (req.body.personal) interests[req.body.personal] = true;
 
     try {
       const email = req.body.email.toLowerCase();

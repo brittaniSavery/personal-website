@@ -12,8 +12,9 @@ $bsa-red: #972228;
 $tablet: 768px;
 
 //typography
-$family-sans-serif: "Quicksand", sans-serif;
-$family-monospace: "Anonymous Pro", monospace;
+
+$family-sans-serif: "Quicksand", "Noto Color Emoji", sans-serif;
+$family-monospace: "Fira Code", Consolas, "Courier New", monospace;
 
 @import "../node_modules/bulma/sass/utilities/initial-variables.sass";
 @import "../node_modules/bulma/sass/utilities/functions.sass";
@@ -176,8 +177,8 @@ strong {
 //iconify
 
 .iconify {
-  width: 1.5em;
-  height: 1.5em;
+  width: 1em;
+  height: 1em;
   vertical-align: text-bottom !important;
 }
 

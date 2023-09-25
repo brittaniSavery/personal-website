@@ -189,7 +189,7 @@ function getTopicDescription(topic: string) {
       return "Receive novel updates and backstage passes into my creative writing processes";
     case "coding":
       return "Learn about my hobby projects and libraries/frameworks I've found";
-    case "lifestyle":
+    case "personal":
       return "See big life events from my point of view or just some ramblings from me";
     default:
       return null;
@@ -222,7 +222,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
   const topics: Topic[] = interestsResponse.interests.map((interest) => ({
     id: interest.id,
-    name: interest.name === "Lifestyle" ? "Personal" : interest.name,
+    name: interest.name,
     description: getTopicDescription(interest.name.toLowerCase()),
   }));
 

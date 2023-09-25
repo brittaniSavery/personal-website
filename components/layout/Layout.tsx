@@ -1,6 +1,5 @@
 import { useMatomo } from "@datapunt/matomo-tracker-react";
-import Head from "next/head";
-import React from "react";
+import { useEffect } from "react";
 import Footer from "./Footer";
 import MetaTags from "./MetaTags";
 import Navigation from "./Navigation";
@@ -12,7 +11,7 @@ type LayoutProps = BasicProps & {
 export default function Layout({ meta, children }: LayoutProps): JSX.Element {
   const { trackPageView } = useMatomo();
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (process.env.NODE_ENV === "production") trackPageView({});
   }, []);
 

@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import React from "react";
+import { useState, ChangeEvent } from "react";
 import Emoji from "../Emoji";
 import SelectField from "../fields/SelectField";
 import TextField from "../fields/TextField";
@@ -97,12 +97,10 @@ export default function OrderBooks({
     zip: "",
   };
 
-  const [formErrors, setFormErrors] = React.useState<OrderBooksErrors>(
-    noErrors
-  );
-  const [successMessage, setSuccessMessage] = React.useState("");
+  const [formErrors, setFormErrors] = useState<OrderBooksErrors>(noErrors);
+  const [successMessage, setSuccessMessage] = useState("");
 
-  async function orderSubmit(event: React.ChangeEvent<HTMLFormElement>) {
+  async function orderSubmit(event: ChangeEvent<HTMLFormElement>) {
     event.preventDefault();
 
     const form = event.target;

@@ -1,5 +1,4 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-import Image from "next/image";
 import { useState } from "react";
 import ExternalLink from "../../components/ExternalLink";
 import OrderBooks from "../../components/projects/OrderBooks";

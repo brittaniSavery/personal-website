@@ -1,4 +1,3 @@
-import React from "react";
 import emojiDefinitions from "../lib/emoji-definitions";
 
 type EmojiProps = {

@@ -5,6 +5,7 @@
     "node": true
   },
   "parser": "@typescript-eslint/parser",
+  "plugins": ["react", "@typescript-eslint", "markdown", "prettier"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true

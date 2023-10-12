@@ -10,11 +10,11 @@ meta:
 thumbnail: mailchimp-attack-of-bots.jpg
 ---
 
-Well, it finally happened. The spam bots found my little piece of the internet and flooded my poor Mailchimp newsletter with hundreds of thousands of sign-ups, all from a "Hot Alisa" apparently. :eye_roll:
+Well, it finally happened. The spam bots found my little piece of the internet and flooded my poor Mailchimp newsletter with hundreds of thousands of sign-ups, all from a "Hot Alisa" apparently. 🙄
 
-I discovered the spam while on vacation in Atlanta with my sister. I usually check my newsletter every once in a while to see if someone new signed up and if I can recognize the name. The newsletter is mostly family, friends, and work colleagues but I'll also have an interested stranger sign up every once in a while. That always gives me the warm fuzzies. :hug:
+I discovered the spam while on vacation in Atlanta with my sister. I usually check my newsletter every once in a while to see if someone new signed up and if I can recognize the name. The newsletter is mostly family, friends, and work colleagues but I'll also have an interested stranger sign up every once in a while. That always gives me the warm fuzzies. 🤗
 
-So, while on my laptop and checking out Mailchimp, I noticed the thousands of sign-ups and saw that sign-ups had been paused since I'm on the free plan for Mailchimp that only allows 500 contacts and 2,500 emails per month. I was definitely well over that. The worst part was that I had to manually archive all of those spam sign-ups. It wasn't hard but rather tedious. :/ I told my sister that as soon as I got home, I would have to add a CAPTCHA of some kind to prevent this from happening again.
+So, while on my laptop and checking out Mailchimp, I noticed the thousands of sign-ups and saw that sign-ups had been paused since I'm on the free plan for Mailchimp that only allows 500 contacts and 2,500 emails per month. I was definitely well over that. The worst part was that I had to manually archive all of those spam sign-ups. It wasn't hard but rather tedious. 😕 I told my sister that as soon as I got home, I would have to add a CAPTCHA of some kind to prevent this from happening again.
 
 ![An animated gif showing the checkbox for Google reCAPTCHA](/images/posts/google-recaptcha-example.gif) {.is-pulled-right}
 
@@ -22,20 +22,20 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/CAPTCHA), a CAPTCHA (whic
 
 There are two main options for CAPTCHA: Google reCAPTCHA and hCaptcha. I picked hCaptcha since it's more focused on privacy. The documentation also seemed a bit easier to understand and implement for me. There is a React component for hCaptcha and it was super easy to integrate into the current newsletter form. A fragment of the `newsletter.tsx` below:
 
-```js
+```tsx
 import HCaptcha from "@hcaptcha/react-hcaptcha";
-.
-.
-.
+
+// ...
+
 export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
   // This keeps track of any errors with the CAPTCHA
   const [captchaError, setCaptchaError] = useState("");
 
   // This holds the token generated once the user completes the CAPTCHA
   const [captchaToken, setCaptchaToken] = useState<string>(null);
-.
-.
-.
+
+  // ...
+
   function joinSubmit() {
     // making sure the CAPTCHA is not empty and successfully completed
     if (isEmpty(formJson["h-captcha-response"])) {
@@ -63,25 +63,24 @@ export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
 
   return (
     <form>
-    .
-    .
-    .
-        <div className="field">
-          <span className="label has-text-primary">Proof of Humanity</span>
-          <HCaptcha
-            sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY}
-            onVerify={(token) => {
-              setCaptchaToken(token);
-            }}
-            ref={captchaRef}
-          />
-          <p className={clsx("help is-danger")} aria-live="polite">
-            {captchaError}
-          </p>
-        </div>
+      {/* ... */}
+
+      <div className="field">
+        <span className="label has-text-primary">Proof of Humanity</span>
+        <HCaptcha
+          sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY}
+          onVerify={(token) => {
+            setCaptchaToken(token);
+          }}
+          ref={captchaRef}
+        />
+        <p className={clsx("help is-danger")} aria-live="polite">
+          {captchaError}
+        </p>
+      </div>
     </form>
-  )
+  );
 }
 ```
 
-With hCaptcha in place, I have not experienced any spamming. :raised_hands: If you want to try out the new and exciting CAPTCHA, sign up for the [newsletter](/newsletter) and you'll get the bonus of updates from me. :smile: Do you have any funny stories about your dealings with spam bots or other tech security concerns? Let me know!
+With hCaptcha in place, I have not experienced any spamming. :raised_hands: If you want to try out the new and exciting CAPTCHA, sign up for the [newsletter](/newsletter) and you'll get the bonus of updates from me. 😊 Do you have any funny stories about your dealings with spam bots or other tech security concerns? Let me know!

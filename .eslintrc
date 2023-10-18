@@ -45,8 +45,11 @@
       }
     },
     {
-      "files": ["*.md"],
-      "extends": ["plugin:markdown/recommended"]
+      "files": ["*.md", "*.md/*.ts"],
+      "extends": ["plugin:markdown/recommended"],
+      "rules": {
+        "@typescript-eslint/explicit-module-boundary-types": ["ignore"]
+      }
     }
   ]
 }

@@ -8,7 +8,7 @@ alt: The homepages of the different versions of my website
 tech:
   - Next.js
   - Typescript
-  - Bulma CSS Framework
+  - Bulma CSS
   - Markdown-It
 card:
   image: website-card.png
@@ -19,7 +19,7 @@ links:
 meta:
   description: The background and coding details of how the official site for Brittani S Avery was made.
   image: meta/website.png
-  alt: Next.js, Typescript, Bulma CSS Framework, and Markdown-It were used to create brittanisavery.com.
+  alt: Next.js, Typescript, Bulma CSS, and Markdown-It were used to create brittanisavery.com.
 ---
 
 This site, brittanisavery.com, is the official website for all things me. Books, code projects, blog posts, and other updates will be here first and foremost.

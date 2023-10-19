@@ -1,14 +1,13 @@
-import React from "react";
-import ExternalLink from "../ExternalLink";
+import copyright from "../../lib/copyright";
 import BSAFullLogo from "../../public/images/logo-initials.svg";
 import FacebookLogo from "../../public/images/social/facebook-grey.svg";
-import TwitterLogo from "../../public/images/social/twitter-grey.svg";
 import GithubLogo from "../../public/images/social/github-grey.svg";
 import GoodreadsLogo from "../../public/images/social/goodreads-grey.svg";
 import InstagramLogo from "../../public/images/social/instagram-grey.svg";
-import LinkedInLogo from "../../public/images/social/linkedin-grey.svg";
 import KofiLogo from "../../public/images/social/ko-fi.svg";
-import copyright from "../../lib/copyright";
+import LinkedInLogo from "../../public/images/social/linkedin-grey.svg";
+import TwitterLogo from "../../public/images/social/twitter-grey.svg";
+import ExternalLink from "../ExternalLink";
 
 export default function Footer(): JSX.Element {
   return (

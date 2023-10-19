@@ -1,5 +1,3 @@
-import React from "react";
-
 type Props = { content: string; className?: string };
 
 export default function MarkdownParser({

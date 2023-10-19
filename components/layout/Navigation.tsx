@@ -1,10 +1,10 @@
-import React from "react";
+import { useState } from "react";
 import Link from "next/link";
 import BSALogo from "../../public/images/logo-no-initials.svg";
 import clsx from "clsx";
 
 export default function Navigation(): JSX.Element {
-  const [isMenuActive, setMenuActive] = React.useState(false);
+  const [isMenuActive, setMenuActive] = useState(false);
   return (
     <nav className="navbar">
       <div className="navbar-brand">

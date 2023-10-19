@@ -197,7 +197,7 @@ strong {
   vertical-align: top;
 }
 
-@import "./prism-nord.css"; //css for syntax highlighting
+@import "./prism-bsa.css"; //css for syntax highlighting
 @import "./bulma-tags.scss"; //same logic as bulma tags just separated to avoid conflict with prism classes
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/components/card.sass";

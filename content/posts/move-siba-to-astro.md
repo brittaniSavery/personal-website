@@ -1,6 +1,6 @@
 ---
 title: "Code Fix: The SIBA Website's Move from Create-React-App to Astro 1.0"
-publishDate: 2023-10-23
+publishDate: 2023-10-30
 tags:
   - coder
 newsletter: coder

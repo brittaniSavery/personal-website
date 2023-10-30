@@ -6,7 +6,7 @@ image: projects/dcldb-results.png
 alt: A sample results page from the Lineage Database
 tech:
   - Next.js
-  - Bulma CSS Framework
+  - Bulma CSS
   - MongoDB
 card:
   image: dcldb-card.png
@@ -19,7 +19,7 @@ links:
 meta:
   description: The background and coding details of DCLDB, an online database of lineages of the digital dragons from the creature collection game, Dragon Cave.
   image: meta/dcldb.png
-  alt: Next.js, Bulma CSS Framework, and MongoDB were used to created DCLDB
+  alt: Next.js, Bulma CSS, and MongoDB were used to created DCLDB
 ---
 
 The Dragon Cave Lineage Database (DCLDB) is an online database of lineages of the digital dragons from the creature collection game, [Dragon Cave](https://dragcave.net).

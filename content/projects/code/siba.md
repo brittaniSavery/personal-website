@@ -6,7 +6,8 @@ image: projects/siba-logos.jpg
 alt: The professional and college logos for our fictional leagues.
 tech:
   - React
-  - Bootstrap
+  - Astro
+  - Bulma CSS
   - AWS Lamda
   - PHP
   - MySQL
@@ -17,11 +18,11 @@ links:
   - text: Visit SIBA
     url: http://siba.averyincorporated.com
   - text: View Code
-    url: https://github.com/brittaniSavery/siba-league-site
+    url: https://github.com/brittaniSavery/siba-league-site-v2
 meta:
   description: The background and coding details of SIBA, a fictional basketball league created by the father-daughter team of Kelley and Brittani Avery.
   image: meta/siba.png
-  alt: React, Bootstrap, AWS Lamda, PHP, and MySQL were used to create SIBA
+  alt: React, Astro, Bulma CSS, AWS Lamda, PHP, and MySQL were used to create SIBA
 ---
 
 The Simulation Internet Basketball Association (SIBA) is a fictional basketball league created my father, Kelley Avery, and me, as well as powered by the pro and college basketball simulation games from [Wolverine Studios](https://www.wolverinestudios.com/).

@@ -18,6 +18,8 @@ I decided that I would also make this a bit of a learning opportunity, so I pick
 
 I made progress on my site, setting up pages and adding routes. Eventually, I needed to style the app because things need to be pretty. I originally went with Material UI since I have enjoyed using it for work. It has a wide variety of components, which can be easily customized. Normally to use Material UI, you only have to include the `@material-ui/core` package to your React app, add a ThemeProvider around the start of your app (normally located in `app.js`), and you're good to go. However, there is a bit more needed to get Material UI to render sever-side with Next.js. You have to add the following to the `_document.js`.
 
+<!-- eslint-skip -->
+
 ```jsx
 MuiDocument.getInitialProps = async (ctx) => {
   const sheets = new ServerStyleSheets();

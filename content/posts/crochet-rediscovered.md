@@ -12,7 +12,7 @@ thumbnail: crochet-post-header.jpg
 
 As a child, my siblings and I often stayed at my aunt's daycare while my parents worked. Those memories included educational computer games like Putt-Putt Saves the Zoo, the Veggie Tales show and movies, and crocheting. My Aunt Peaches is an amazing crocheter, creating dresses for dolls as well as hats and scarfs for her friends and family. I remember learning basic stitches from her and enjoying the actvity of crocheting. Yet, I don't remember actually making anything, so crocheting became a forgotten pasttime as I grew older.
 
-Fast forward to Summer 2023 and I start to see all these crochet kits from [the Woobles](https://thewoobles.com/) on Instagram. Inspriation for writing (novels, poetry, or whatever) has been next to nil. Most of my personal coding projects are more about refactoring than creating. And gaming (at least the types I tend to play) doesn't provide that same creative spark. Remembering that I did like the rythmic movement of crocheting, I bought a set of kits that ranged from beginner to intermidate.
+Fast forward to Summer 2023 and I start to see all these crochet kits from [the Woobles](https://thewoobles.com/) on Instagram. Inspriation for writing (novels, poetry, or whatever) has been next to nil. Most of my personal coding projects are more about refactoring than creating. And gaming (at least my preferred sort) doesn't provide that same creative spark. Remembering that I did like the rythmic movement of crocheting, I bought a set of kits that ranged from beginner to intermidate.
 
 ![My version of the finished Wooble kit, Pierre the Penguin](/images/posts/pierre-the-penguin.jpg) {.has-text-centered}
 

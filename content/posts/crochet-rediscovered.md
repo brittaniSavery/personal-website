@@ -1,6 +1,6 @@
 ---
 title: Crochet—An Old Hobby Rediscovered
-publishDate: 2024-03-28
+publishDate: 2024-03-29
 tags:
   - nerd
 newsletter: personal

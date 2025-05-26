@@ -4,7 +4,6 @@ import clsx from "clsx";
 import { isEmpty } from "lodash-es";
 import { GetStaticProps } from "next";
 import { useRef, useState } from "react";
-import Emoji from "../components/Emoji";
 import TextField from "../components/fields/TextField";
 
 type NewsletterProps = {
@@ -107,11 +106,11 @@ export default function Newsletter({ topics }: NewsletterProps): JSX.Element {
     <>
       <h1>Join the Newsletter</h1>
       <p>
-        By joining the monthly(-ish) newsletter, you will be one of the first to
-        receive updates on all of my on-going projects, from code to novels to
-        poetry. There will also be sneak peaks on upcoming releases as well as
-        an exclusive backstage pass to my creative process. Sign up and get in
-        on the fun! <Emoji name="smile" />
+        By joining the newsletter, you will be one of the first to receive
+        updates on all of my on-going projects, from code to novels to poetry.
+        There will also be sneak peaks on upcoming releases as well as an
+        exclusive backstage pass to my creative process. Sign up and get in on
+        the fun! 😊
       </p>
 
       <div

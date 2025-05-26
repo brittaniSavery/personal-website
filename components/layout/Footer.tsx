@@ -1,13 +1,17 @@
+import {
+  faBluesky,
+  faFacebookF,
+  faGithub,
+  faGoodreadsG,
+  faInstagram,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import copyright from "../../lib/copyright";
 import BSAFullLogo from "../../public/images/logo-initials.svg";
-import FacebookLogo from "../../public/images/social/facebook-grey.svg";
-import GithubLogo from "../../public/images/social/github-grey.svg";
-import GoodreadsLogo from "../../public/images/social/goodreads-grey.svg";
-import InstagramLogo from "../../public/images/social/instagram-grey.svg";
-import KofiLogo from "../../public/images/social/ko-fi.svg";
-import LinkedInLogo from "../../public/images/social/linkedin-grey.svg";
-import TwitterLogo from "../../public/images/social/twitter-grey.svg";
 import ExternalLink from "../ExternalLink";
+import { faSquare } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export default function Footer(): JSX.Element {
   return (
@@ -31,48 +35,94 @@ export default function Footer(): JSX.Element {
             </p>
             <p className="bsa-social">
               <ExternalLink href="https://facebook.com/brittanisavery">
-                <FacebookLogo />
+                <span className="fa-layers fa-fw fa-2xl">
+                  <FontAwesomeIcon icon={faSquare} />
+                  <FontAwesomeIcon
+                    icon={faFacebookF}
+                    transform={"shrink-2"}
+                    color="white"
+                  />
+                </span>
                 <span className="is-sr-only" role="presentation">
-                  Facebook Page
+                  Facebook
                 </span>
               </ExternalLink>
               <ExternalLink href="https://www.instagram.com/brittanisavery">
-                <InstagramLogo />
+                <span className="fa-layers fa-fw fa-2xl">
+                  <FontAwesomeIcon icon={faSquare} />
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    transform={"shrink-4"}
+                    color="white"
+                  />
+                </span>
                 <span className="is-sr-only" role="presentation">
-                  Instagram Profile
+                  Instagram
                 </span>
               </ExternalLink>
-              <ExternalLink href="https://twitter.com/brittanisavery">
-                <TwitterLogo />
+              <ExternalLink href="https://bsky.app/profile/brittanisavery.bsky.social">
+                <span className="fa-layers fa-fw fa-2xl">
+                  <FontAwesomeIcon icon={faSquare} />
+                  <FontAwesomeIcon
+                    icon={faBluesky}
+                    transform={"shrink-4"}
+                    color="white"
+                  />
+                </span>
                 <span className="is-sr-only" role="presentation">
-                  Twitter Profile
+                  Bluesky
                 </span>
               </ExternalLink>
               <ExternalLink href="https://www.linkedin.com/in/brittanisavery">
-                <LinkedInLogo />
+                <span className="fa-layers fa-fw fa-2xl">
+                  <FontAwesomeIcon icon={faSquare} />
+                  <FontAwesomeIcon
+                    icon={faLinkedinIn}
+                    transform={"shrink-3"}
+                    color="white"
+                  />
+                </span>
                 <span className="is-sr-only" role="presentation">
-                  LinkedIn Profile
+                  LinkedIn
                 </span>
               </ExternalLink>
               <ExternalLink href="https://github.com/brittaniSavery">
-                <GithubLogo />
+                <span className="fa-layers fa-fw fa-2xl">
+                  <FontAwesomeIcon icon={faSquare} />
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    transform={"shrink-3"}
+                    color="white"
+                  />
+                </span>
                 <span className="is-sr-only" role="presentation">
-                  Github Profile
+                  Github
                 </span>
               </ExternalLink>
               <ExternalLink href="https://www.goodreads.com/author/show/17074316.Brittani_S_Avery">
-                <GoodreadsLogo />
+                <span className="fa-layers fa-fw fa-2xl">
+                  <FontAwesomeIcon icon={faSquare} />
+                  <FontAwesomeIcon
+                    icon={faGoodreadsG}
+                    transform={"shrink-3"}
+                    color="white"
+                  />
+                </span>
                 <span className="is-sr-only" role="presentation">
-                  Goodreads Profile
+                  Goodreads
                 </span>
               </ExternalLink>
             </p>
-            <ExternalLink href="https://ko-fi.com/brittanisavery">
-              <KofiLogo className="bsa-social ko-fi" />
-              <span className="is-sr-only" role="presentation">
-                Support Me on Ko-fi
-              </span>
-            </ExternalLink>
+            <p className="bsa-social">
+              <ExternalLink href="https://ko-fi.com/brittanisavery">
+                <Image
+                  src="/images/social/support_me_on_kofi_dark.png"
+                  alt="Support me on Ko-fi"
+                  width={200}
+                  height={40}
+                />
+              </ExternalLink>
+            </p>
             <p className="pt-3 is-size-7">
               Copyright &copy; {copyright} Brittani S Avery
             </p>
